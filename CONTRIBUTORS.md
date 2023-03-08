@@ -1,3 +1,3 @@
-<!-- Please follow FIRST NAME ALPHABETICAL ORDER -->
-- [Emilio Rivera](https://github.com/emilio12345)
+<!-- Please follow LAST NAME ALPHABETICAL ORDER -->
 - [Mikey Nichols](https://github.com/mnichols08)
+- [Emilio Rivera](https://github.com/emilio12345)
