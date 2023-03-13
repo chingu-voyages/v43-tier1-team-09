@@ -3,3 +3,4 @@
 - [Mikey Nichols](https://github.com/mnichols08)
 - [Emilio Rivera](https://github.com/emilio12345)
 - [Gabriela de Paula](https://github.com/PaulaR-05)
+- [Nazile Tag](https://github.com/Nazile-Tag)
