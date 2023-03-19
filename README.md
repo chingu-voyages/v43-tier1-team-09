@@ -1,85 +1,65 @@
-# Chingu Voyage Project - Tier 1 - Mad Libs word game
+# Chingu Voyage 43 - Tier 1 - Mad Libs Word Game
 
-## Table of Contents
+A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program. The goal of this project is not actually the finished project - but to experience getting there as a team. While getting there is the goal, there are certainly some Minimum Viable Product details that must be met. This project is to be built following Agile Principles using the SCRUM Framework. For most of us it is our first time with any experience like this so it is brand new. By the end of this project we should all be better developers and understand SCRUM and Agilie much better.
 
-* [Overview](#overview)
-* [General Instructions](#general-instructions)
-* [Requirements & Specifications](#requirements-specifications)
-* [About Chingu](#about-chingu)
+## Getting Started
 
-## Overview
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Mad Libs is a phrasal template word game created by Leonard Stern and Roger Price. 
-It consists of one player prompting others for a list of words to substitute for blanks 
-in a story before reading aloud. The game is frequently played as a party game or as a pastime. [Wikipedia](https://en.wikipedia.org/wiki/Mad_Libs)
+### Prerequisites
 
-In Voyage 43 we want all Tier 1 teams to create a game, a Mad Libs word game to be more precise.
-A Mad Libs game can be very simple, but it can also be as complex as you want it to be. Remember that 
-the direction the team decides to go in, could determine if you are ready for Tier 2 in voyage 44.
+What things you need to install the software and how to install them
 
+```
+live-server
+```
 
-## General Instructions
+### Installing
 
-This project is designed to be worked on by a team rather than an individual
-Chingu. This means you and your team will need to thoroughly read and
-understand the requirements and specifications below, **_and_** define and
-manage your project following the _Agile Methodology_ defined in the
-[Voyage Handbook](https://chingucohorts.notion.site/Voyage-Guide-1e528dcbf1d241c9a93b4627f6f1c809).
+A step by step series of examples that tell you how to get a development env running
 
-As you create this project make sure it meets all of the requirements, but once
-it reaches MVP start implementing the optional features or get creative and
-extend it in ways we haven't envisioned. In other words, use the power of
-teamwork to make it distinctive and unique.
+Install live-server globally if you haven't already
 
-Take note that we haven't given specific direction on what your UI/UX should
-look like. This is another area where you and your team can put your creativity 
-to work! 
+```
+npm install live-server -g
+```
 
-## Requirements & Specifications
-### What You Need to Do
+Then launch the server
 
-Your task for this Voyage Project is to create a Mad Libs word game. We are intentionally
-being vague here, simply because the possibilities are endless and we dont want to limit your creativity. 
+```
+live-server
+```
 
-#### Requirements
+The page will render in a new window.
 
-*Structure*
+## Deployment
 
-- [x] This is a purely frontend application. No backend is required. 
-- [ ] You may use any languages, tools, or libraries you prefer when designing and building this app. 
-- [ ] You may **_NOT_** use AI-base solution generators like GitHub Coilot. 
+This site is just a static website with html, css, and js so it should not need to be deployed past hosting somewhere
 
-*Styling:*
+## Built With
 
-- [ ] Surprise us!!!
-- [ ] Add a footer containing a link to your teams GitHub repo
-- [ ] In general, you will find these [UI design principles](https://www.justinmind.com/ui-design/principles) helpful.
-- [ ] Recommend using this resource for [clean CSS](https://www.devbridge.com/articles/implementing-clean-css-bem-method/)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
+* [CSS3](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
 
-*Functionality*
+## Authors
 
-- [ ] Your game should have at least 5 different stories, and each story should have at least 5 places where the users can type their word.
-- [ ] The game must follow our community standards and **_must exclude_** stories that has "explicit" content and also "religious" and "political" stories (see [Chingu Community Standards](https://discord.com/channels/330284646283608064/914163956405395476/914165230119034900)). This also means that the Mad Lib game should not accept any words from the user that are in any of the categories mentioned above.
-- [ ] Make your game [responsive](https://developers.google.com/web/fundamentals/design-and-ux/responsive/) so its UI/UX will be usable and attractive on a wide range of devices.
+* **Chingu Voyages** - *Initial work* - [chingu-voyages](https://github.com/chingu-voyages)
+* **Jim Medlock** - *Initial work* - [jmedlock](https://github.com/jdmedlock)
+* **Emilie Echevin** -- *Developer* - [Emimint](https://github.com/Emimint)
+* **Emilio Rivera** -- *Developer* - [author](https://github.com/)
+* **Mikey Nichols** -- *Developer* - [author](https://github.com/)
+* **Gabriela de Paula** -- *Developer* - [author](https://github.com/)
+* **Nazile Tag** -- *Developer* - [author](https://github.com/)
 
-*Other:*
+See also the list of [contributors](/contributors) who participated in this project.
 
-- [ ] Your repo needs to have a robust [README](https://medium.com/chingu/keys-to-a-well-written-readme-55c53d34fe6d)
-- [ ] Make sure that there are no errors in the developer console before submitting
+## License
 
-**Extras (Not Required)**
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-- [ ] Follow [A11Y principles and practices](https://www.a11yproject.com/) so your app will be accessible to users with impairments.
-- [ ] Allow the user to switch between light and dark modes.
-- [ ] Add animation and visual effects to capture user interest in the page.
-- [ ] Add a team page to highlight members of your team. Be sure to include links to their professional and social media.
-- [ ] Allow the user to choose story based on a category (fantasy, sci fi etc.)
-- [ ] Allow the user to download thier story as a PDF (or any other file format)
-- [ ] Add a user profile feature and keep track of the stories that the user has made.
-- [ ] Be creative and come up with your own new features or enhancements! 
+## Acknowledgments
 
-## About Chingu
-
-If you aren’t yet a member of Chingu we invite you to join us. We help our 
-members transform what they’ve learned in courses & tutorials into the 
-practical experience employers need and want.
+* Huge thank you to Chingu and everyone over there especially Jim Medloc for giving us this wonderful oppurtunity!
+* Big shout out to our personal Mentor, Aryse Gabrielle Pagano [Medic1111](https://github.com/medic1111) for helping guide us along the way.
+* The staff and crew at Southern Auto Supply in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
