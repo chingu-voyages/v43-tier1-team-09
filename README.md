@@ -45,18 +45,14 @@ This site is just a static website with html, css, and js so it should not need 
 ## Authors
 
 * **Chingu Voyages** - *Initial work* - [chingu-voyages](https://github.com/chingu-voyages)
-* **Jim Medlock** - *Initial work* - [jmedlock](https://github.com/jdmedlock)
 * **Emilie Echevin** -- *Developer* - [Emimint](https://github.com/Emimint)
 * **Emilio Rivera** -- *Developer* - [author](https://github.com/)
-* **Mikey Nichols** -- *Developer* - [author](https://github.com/)
 * **Gabriela de Paula** -- *Developer* - [author](https://github.com/)
+* **Jim Medlock** - *Initial work* - [jmedlock](https://github.com/jdmedlock)
+* **Mikey Nichols** -- *Developer* - [author](https://github.com/)
 * **Nazile Tag** -- *Developer* - [author](https://github.com/)
 
 See also the list of [contributors](/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
