@@ -39,23 +39,23 @@ This site is just a static website with html, css, and js so it should not need 
 ## Built With
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
-* [CSS3](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used
+* [CSS](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used // The offical docs just call it CSS
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
 
 ## Authors
 
 * **Chingu Voyages** - *Initial work* - [chingu-voyages](https://github.com/chingu-voyages)
 * **Emilie Echevin** -- *Developer* - [Emimint](https://github.com/Emimint)
-* **Emilio Rivera** -- *Developer* - [author](https://github.com/)
-* **Gabriela de Paula** -- *Developer* - [author](https://github.com/)
+* **Emilio Rivera** -- *Developer* - [emilio12345](https://github.com/emilio12345) 
+* **Gabriela de Paula** -- *Developer* - [PaulaR-05](https://github.com/PaulaR-05) 
 * **Jim Medlock** - *Initial work* - [jmedlock](https://github.com/jdmedlock)
-* **Mikey Nichols** -- *Developer* - [author](https://github.com/)
-* **Nazile Tag** -- *Developer* - [author](https://github.com/)
+* **Mikey Nichols** -- *Developer* - [mnichols08](https://github.com/mnichols08)
+* **Nazile Tag** -- *Developer* - [Nazile-Tag](https://github.com/Nazile-Tag) 
 
-See also the list of [contributors](/contributors) who participated in this project.
+See also the list of [contributors](/CONTRIBUTORS.md) who participated in this project. 
 
 ## Acknowledgments
 
-* Huge thank you to Chingu and everyone over there especially Jim Medloc for giving us this wonderful oppurtunity!
-* Big shout out to our personal Mentor, Aryse Gabrielle Pagano [Medic1111](https://github.com/medic1111) for helping guide us along the way.
-* The staff and crew at Southern Auto Supply in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
+* Huge thank you to [Chingu](https://www.chingu.io/) and everyone over there especially [Jim Medloc](https://github.com/jdmedlock) for giving us this wonderful oppurtunity! 
+* Big shout out to our personal Mentor,  [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
+* The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
