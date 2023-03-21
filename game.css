@@ -1,0 +1,24 @@
+section.game ul.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.game ul.flex > li {
+  width: 33%;
+}
+
+@media screen and (max-width: 768px) {
+    section.game ul.flex > li {
+      width: 50%;
+    }
+  }
+
+@media screen and (max-width: 499px) {
+  section.game ul.flex > li {
+    width: 100%;
+  }
+}
+
+.no-list {
+  list-style: none;
+}
