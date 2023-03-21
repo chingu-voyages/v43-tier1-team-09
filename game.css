@@ -1,24 +1,44 @@
-section.game ul.flex {
+
+.flex {
   display: flex;
+}
+
+.flex.wrap {
   flex-wrap: wrap;
 }
 
-section.game ul.flex > li {
+.flex.center {
+    align-items: center;;
+}
+
+.flex > * {
   width: 33%;
 }
 
 @media screen and (max-width: 768px) {
-    section.game ul.flex > li {
-      width: 50%;
-    }
+  .flex > * {
+    width: 50%;
   }
+}
 
 @media screen and (max-width: 499px) {
-  section.game ul.flex > li {
+  .flex > * {
     width: 100%;
   }
 }
 
+.margin-sm {
+    margin: 2px;
+}
+
 .no-list {
   list-style: none;
+}
+
+section.game ul > li {
+    margin: 1em;
+}
+
+section.game ul li div {
+    display: flex;
 }
