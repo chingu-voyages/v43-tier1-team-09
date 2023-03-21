@@ -1,4 +1,4 @@
-# Chingu Voyage 43 - Tier 1 - Mad Libs Word Game
+# [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
 A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program. The goal of this project is not actually the finished project - but to experience getting there as a team. While getting there is the goal, there are certainly some Minimum Viable Product details that must be met. This project is to be built following Agile Principles using the SCRUM Framework. For most of us it is our first time with any experience like this so it is brand new. By the end of this project we should all be better developers and understand SCRUM and Agilie much better.
 
