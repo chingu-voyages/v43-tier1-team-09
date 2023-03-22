@@ -1,0 +1,7 @@
+.flex,
+.flex > *,
+.flex__middle--inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
