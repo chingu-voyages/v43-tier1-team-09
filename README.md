@@ -39,7 +39,7 @@ This site is just a static website with html, css, and js so it should not need 
 ## Built With
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
-* [CSS](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used // The offical docs just call it CSS
+* [CSS](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
 
 ## Authors
