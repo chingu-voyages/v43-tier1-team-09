@@ -1,7 +1,9 @@
 .flex,
 .flex > *,
-.flex__middle--inner {
+.flex__middle--inner,
+.flex__bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center
 }
