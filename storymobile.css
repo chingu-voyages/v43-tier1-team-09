@@ -1,0 +1,40 @@
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-color: #9933cc
+    }
+
+    header {
+        color: #ffffff;
+        padding: 15px;
+      }
+
+    h1 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        color: #ecb7c0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        background-color: #ffffff;
+        border-radius: 40px;
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 15px;
+        line-height: 30px;
+    }
+}
+
