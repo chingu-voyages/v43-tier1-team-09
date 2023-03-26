@@ -1,5 +1,4 @@
 .flex,
-.flex > *,
 .flex__middle--inner,
 .flex__bottom {
   display: flex;
