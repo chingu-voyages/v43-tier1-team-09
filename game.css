@@ -1,4 +1,3 @@
-
 .flex {
   display: flex;
 }
@@ -8,7 +7,7 @@
 }
 
 .flex.center {
-    align-items: center;;
+  align-items: center;
 }
 
 .flex > * {
@@ -28,7 +27,7 @@
 }
 
 .margin-sm {
-    margin: 2px;
+  margin: 2px;
 }
 
 .no-list {
@@ -36,9 +35,9 @@
 }
 
 section.game ul > li {
-    margin: 1em;
+  margin: 1em;
 }
 
 section.game ul li div {
-    display: flex;
+  display: flex;
 }
