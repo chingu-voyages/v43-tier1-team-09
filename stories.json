@@ -1,0 +1,77 @@
+[
+  {
+    "Category": "Lullaby",
+    "Word Count": 191,
+    "Scenario_title": "Millons of &lt;nouns/&gt;",
+    "Scenario": "Movin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat me a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nI'm gonna eat a lot of {{noun}}es\\n{{noun}}es come from a {{secondNoun}}\\nThey were put there by a {{rhymesWithSecondNoun}}\\nIn a {{typeOfBuilding}} downtown\\nIf I had my little way\\nI'd eat {{noun}}es every day\\n{{adjective}} bulges in the shade\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat me a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nTook a little nap where the roots all twist\\nSquished a rotten {{noun}} in my fist\\nAnd dreamed about you, woman\\nI poked my {{appendage}} down inside\\nMake a little room for an &lt;type of bug&gt; to hide\\nNature's {{secondNoun}} in my hand or {{secondNoun}} or a {{typeOfFood}}\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nLook out\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nLook out",
+    "Source": "Mikey",
+    "Variables": {
+      "place": "Place",
+      "noun": "Noun",
+      "secondNoun": "Second Noun",
+      "rhymesWithSecondNoun": "Word that Rhymes with Second Noun",
+      "typeOfBuilding": "Type of Building",
+      "adjective": "Adjective",
+      "appendage": "Appendage",
+      "typeOfFood": "Type of Food"
+    },
+    "Vars": [
+      {
+        "place": "Place"
+      },
+      {
+        "noun": "Noun"
+      },
+      {
+        "secondNoun": "Second Noun"
+      },
+      {
+        "rhymesWithSecondNoun": "Word that rhymes with previous"
+      },
+      {
+        "typeOfBuilding": "Type of Building"
+      },
+      {
+        "adjective": "Adjective"
+      },
+      {
+        "appendage": "Appendage"
+      },
+      {
+        "typeOfFood": "Type of Food"
+      }
+    ]
+  },
+  {
+    "Category": "Holidays",
+    "Word Count": 103,
+    "Scenario_title": "Trick-or-Treating On Halloween",
+    "Scenario": "On Halloween, you get to go trick-or-treating! \\nEveryone will dress up in costumes, like a/an {{NOUN}} or a/an {{NOUN}}. \\nThis year, you decided to dress up as a/an {{ADJECTIVE NOUN}}. \\nYour mom takes you and your best friend trick-or-treating. While you are out, your dad stays at home and {{VERB}}. \\nOther fun things to do on Halloween are {{VERB ENDING IN 'ING'}} scary movies and {{VERB ENDING IN 'ING'}}. \\nThis year, you get lots of {{ADJECTIVE}} candy! \\nWhen you get home, your dad says he wants some, because he works hard at a JOB and he deserves some of your {{TYPE OF CANDY}}. \\nYou are {{ADJECTIVE}} but you give it to him anyway!",
+    "Source": "Gabriela",
+    "Variables": ""
+  },
+  {
+    "Category": "Lullaby",
+    "Word Count": 117,
+    "Scenario_title": "Mary had a little lamb",
+    "Scenario": "Mary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And {{pronoun}} everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.\\n\\nIt followed her to {{place}}, which was {{adjective}} and {{verb}} with cheer. And then it followed her to {{place}}, where {{adjective}} things did {{verb}} appear.\\n\\nIt followed her to {{place}}, where {{adjective}} fields did {{verb}} and play. And then it followed her back home, where it {{verb}} all {{adverb}} day.\\n\\n\"Mary, Mary, {{exclamation}},\" the children {{verb}} in delight. \"Look at the lamb that follows you, it's such a {{adjective}} sight!\"\\n\\nMary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.",
+    "Source": "Emilio",
+    "Variables": ""
+  },
+  {
+    "Category": "Fantasy",
+    "Word Count": 135,
+    "Scenario_title": "Kingdom of Eldoria",
+    "Scenario": "In the kingdom of Eldoria, the princess was cursed with a sleeping spell that could only be broken by a true love's kiss. The entire kingdom was desperate to break the curse, but no one knew who the princess's true love was. One day, a young wizard named Aiden appeared at the castle gates, claiming he could break the curse. As he approached the princess's bed, he realized she was his childhood friend, the only person who had ever truly understood him. He leaned in and kissed her, breaking the curse and awakening the princess. The two were reunited and fell in love, but their happiness was short-lived as a dark force threatened to destroy the kingdom. Aiden and the princess must use their magic and love to save their people from the invading army.",
+    "Source": "ChatGPT",
+    "Variables": ""
+  },
+  {
+    "Category": "Fantasy",
+    "Word Count": 121,
+    "Scenario_title": "The enchanted forest of Wyvernwood",
+    "Scenario": "In the enchanted forest of Wyvernwood, a young apprentice wizard named Aiden was searching for rare ingredients to brew a potion that would grant him immense power. As he journeyed deeper into the woods, he stumbled upon an ancient stone circle, where he discovered a mystical portal. Despite his apprehension, Aiden stepped through the gateway and suddenly found himself transported to a distant realm of dragons and sorcery. He soon realized that he had unwittingly become embroiled in a deadly quest to retrieve a powerful artifact that could tip the balance of power between good and evil. With only his wits and his magic to aid him, Aiden set out on his perilous adventure, determined to emerge victorious against all odds.",
+    "Source": "ChatGPT",
+    "Variables": ""
+  }
+]
