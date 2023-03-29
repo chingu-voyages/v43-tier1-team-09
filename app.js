@@ -9,3 +9,9 @@ function collectScenarios() {
   );
   return json;
 }
+
+/* Function to empty the content of the anchor element */
+
+function clearAnchor() {
+  anchor.innerHTML ="";
+}
