@@ -36,13 +36,17 @@ for key in data:
     scenario = key['Scenario']
     word_list = re.findall(my_regex, scenario)
 
-    print(word_list)
     var_list = list(map(lambda x: camelcase_format(x), word_list))
 
     description_list = list(map(lambda x: description_format(x), word_list))
 
-    print(var_list)
-    print(description_list)
+    my_Dict =dict(zip(var_list, description_list))
+
+    my_var_Object = {"Variables": my_Dict}
+
+    key.update(my_var_Object)
+
+    print(json.dumps(key))
 
 # Closing file
 f.close()
