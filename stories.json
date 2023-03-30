@@ -1,77 +1,235 @@
 [
-  {
-    "Category": "Lullaby",
-    "Word Count": 191,
-    "Scenario_title": "Millons of &lt;nouns/&gt;",
-    "Scenario": "Movin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat me a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nI'm gonna eat a lot of {{noun}}es\\n{{noun}}es come from a {{secondNoun}}\\nThey were put there by a {{rhymesWithSecondNoun}}\\nIn a {{typeOfBuilding}} downtown\\nIf I had my little way\\nI'd eat {{noun}}es every day\\n{{adjective}} bulges in the shade\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat me a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nTook a little nap where the roots all twist\\nSquished a rotten {{noun}} in my fist\\nAnd dreamed about you, woman\\nI poked my {{appendage}} down inside\\nMake a little room for an &lt;type of bug&gt; to hide\\nNature's {{secondNoun}} in my hand or {{secondNoun}} or a {{typeOfFood}}\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nLook out\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nLook out",
-    "Source": "Mikey",
-    "Variables": {
-      "place": "Place",
-      "noun": "Noun",
-      "secondNoun": "Second Noun",
-      "rhymesWithSecondNoun": "Word that Rhymes with Second Noun",
-      "typeOfBuilding": "Type of Building",
-      "adjective": "Adjective",
-      "appendage": "Appendage",
-      "typeOfFood": "Type of Food"
+    {
+      "Category": "Lullaby",
+      "Word Count": 191,
+      "Scenario_title": "Millons of &lt;nouns/&gt;",
+      "Scenario": "Movin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat me a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nI'm gonna eat a lot of {{noun}}es\\n{{noun}}es come from a {{secondNoun}}\\nThey were put there by a {{rhymesWithSecondNoun}}\\nIn a {{typeOfBuilding}} downtown\\nIf I had my little way\\nI'd eat {{noun}}es every day\\n{{adjective}} bulges in the shade\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat me a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nMovin' to the {{place}}\\nGonna eat a lot of {{noun}}es\\nTook a little nap where the roots all twist\\nSquished a rotten {{noun}} in my fist\\nAnd dreamed about you, woman\\nI poked my {{appendage}} down inside\\nMake a little room for an &lt;type of bug&gt; to hide\\nNature's {{secondNoun}} in my hand or {{secondNoun}} or a {{typeOfFood}}\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nLook out\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nMillions of {{noun}}es, {{noun}}es for me\\nMillions of {{noun}}es, {{noun}}es for free\\nLook out",
+      "Source": "Mikey",
+      "Variables": {
+        "place": "Place",
+        "noun": "Noun",
+        "secondNoun": "Second Noun",
+        "rhymesWithSecondNoun": "Word that Rhymes with Second Noun",
+        "typeOfBuilding": "Type of Building",
+        "adjective": "Adjective",
+        "appendage": "Appendage",
+        "typeOfFood": "Type of Food"}
+      },
+    {
+      "Category": "Holidays",
+      "Word Count": 103,
+      "Scenario_title": "Trick-or-Treating On Halloween",
+      "Scenario": "On Halloween, you get to go trick-or-treating! \\nEveryone will dress up in costumes, like a/an {{NOUN}} or a/an {{NOUN}}. \\nThis year, you decided to dress up as a/an {{ADJECTIVE NOUN}}. \\nYour mom takes you and your best friend trick-or-treating. While you are out, your dad stays at home and {{VERB}}. \\nOther fun things to do on Halloween are {{VERB ENDING IN 'ING'}} scary movies and {{VERB ENDING IN 'ING'}}. \\nThis year, you get lots of {{ADJECTIVE}} candy! \\nWhen you get home, your dad says he wants some, because he works hard at a JOB and he deserves some of your {{TYPE OF CANDY}}. \\nYou are {{ADJECTIVE}} but you give it to him anyway!",
+      "Source": "Gabriela",
+      "Variables": ""
     },
-    "Vars": [
-      {
-        "place": "Place"
-      },
-      {
-        "noun": "Noun"
-      },
-      {
-        "secondNoun": "Second Noun"
-      },
-      {
-        "rhymesWithSecondNoun": "Word that rhymes with previous"
-      },
-      {
-        "typeOfBuilding": "Type of Building"
-      },
-      {
-        "adjective": "Adjective"
-      },
-      {
-        "appendage": "Appendage"
-      },
-      {
-        "typeOfFood": "Type of Food"
-      }
-    ]
-  },
-  {
-    "Category": "Holidays",
-    "Word Count": 103,
-    "Scenario_title": "Trick-or-Treating On Halloween",
-    "Scenario": "On Halloween, you get to go trick-or-treating! \\nEveryone will dress up in costumes, like a/an {{NOUN}} or a/an {{NOUN}}. \\nThis year, you decided to dress up as a/an {{ADJECTIVE NOUN}}. \\nYour mom takes you and your best friend trick-or-treating. While you are out, your dad stays at home and {{VERB}}. \\nOther fun things to do on Halloween are {{VERB ENDING IN 'ING'}} scary movies and {{VERB ENDING IN 'ING'}}. \\nThis year, you get lots of {{ADJECTIVE}} candy! \\nWhen you get home, your dad says he wants some, because he works hard at a JOB and he deserves some of your {{TYPE OF CANDY}}. \\nYou are {{ADJECTIVE}} but you give it to him anyway!",
-    "Source": "Gabriela",
-    "Variables": ""
-  },
-  {
-    "Category": "Lullaby",
-    "Word Count": 117,
-    "Scenario_title": "Mary had a little lamb",
-    "Scenario": "Mary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And {{pronoun}} everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.\\n\\nIt followed her to {{place}}, which was {{adjective}} and {{verb}} with cheer. And then it followed her to {{place}}, where {{adjective}} things did {{verb}} appear.\\n\\nIt followed her to {{place}}, where {{adjective}} fields did {{verb}} and play. And then it followed her back home, where it {{verb}} all {{adverb}} day.\\n\\n\"Mary, Mary, {{exclamation}},\" the children {{verb}} in delight. \"Look at the lamb that follows you, it's such a {{adjective}} sight!\"\\n\\nMary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.",
-    "Source": "Emilio",
-    "Variables": ""
-  },
-  {
-    "Category": "Fantasy",
-    "Word Count": 135,
-    "Scenario_title": "Kingdom of Eldoria",
-    "Scenario": "In the kingdom of Eldoria, the princess was cursed with a sleeping spell that could only be broken by a true love's kiss. The entire kingdom was desperate to break the curse, but no one knew who the princess's true love was. One day, a young wizard named Aiden appeared at the castle gates, claiming he could break the curse. As he approached the princess's bed, he realized she was his childhood friend, the only person who had ever truly understood him. He leaned in and kissed her, breaking the curse and awakening the princess. The two were reunited and fell in love, but their happiness was short-lived as a dark force threatened to destroy the kingdom. Aiden and the princess must use their magic and love to save their people from the invading army.",
-    "Source": "ChatGPT",
-    "Variables": ""
-  },
-  {
-    "Category": "Fantasy",
-    "Word Count": 121,
-    "Scenario_title": "The enchanted forest of Wyvernwood",
-    "Scenario": "In the enchanted forest of Wyvernwood, a young apprentice wizard named Aiden was searching for rare ingredients to brew a potion that would grant him immense power. As he journeyed deeper into the woods, he stumbled upon an ancient stone circle, where he discovered a mystical portal. Despite his apprehension, Aiden stepped through the gateway and suddenly found himself transported to a distant realm of dragons and sorcery. He soon realized that he had unwittingly become embroiled in a deadly quest to retrieve a powerful artifact that could tip the balance of power between good and evil. With only his wits and his magic to aid him, Aiden set out on his perilous adventure, determined to emerge victorious against all odds.",
-    "Source": "ChatGPT",
-    "Variables": ""
-  }
-]
+    {
+      "Category": "Lullaby",
+      "Word Count": 117,
+      "Scenario_title": "Mary had a little lamb",
+      "Scenario": "Mary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And {{pronoun}} everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.\\n\\nIt followed her to {{place}}, which was {{adjective}} and {{verb}} with cheer. And then it followed her to {{place}}, where {{adjective}} things did {{verb}} appear.\\n\\nIt followed her to {{place}}, where {{adjective}} fields did {{verb}} and play. And then it followed her back home, where it {{verb}} all {{adverb}} day.\\n\\n\"Mary, Mary, {{exclamation}},\" the children {{verb}} in delight. \"Look at the lamb that follows you, it's such a {{adjective}} sight!\"\\n\\nMary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.",
+      "Source": "Emilio",
+      "Variables": ""
+    },
+    {
+      "Category": "Fantasy",
+      "Word Count": 135,
+      "Scenario_title": "Kingdom of Eldoria",
+      "Scenario": "In the kingdom of Eldoria, the princess was cursed with a sleeping spell that could only be broken by a true love's kiss. The entire kingdom was desperate to break the curse, but no one knew who the princess's true love was. One day, a young wizard named Aiden appeared at the castle gates, claiming he could break the curse. As he approached the princess's bed, he realized she was his childhood friend, the only person who had ever truly understood him. He leaned in and kissed her, breaking the curse and awakening the princess. The two were reunited and fell in love, but their happiness was short-lived as a dark force threatened to destroy the kingdom. Aiden and the princess must use their magic and love to save their people from the invading army.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Fantasy",
+      "Word Count": 121,
+      "Scenario_title": "The enchanted forest of Wyvernwood",
+      "Scenario": "In the enchanted forest of Wyvernwood, a young apprentice wizard named Aiden was searching for rare ingredients to brew a potion that would grant him immense power. As he journeyed deeper into the woods, he stumbled upon an ancient stone circle, where he discovered a mystical portal. Despite his apprehension, Aiden stepped through the gateway and suddenly found himself transported to a distant realm of dragons and sorcery. He soon realized that he had unwittingly become embroiled in a deadly quest to retrieve a powerful artifact that could tip the balance of power between good and evil. With only his wits and his magic to aid him, Aiden set out on his perilous adventure, determined to emerge victorious against all odds.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Fantasy",
+      "Word Count": 117,
+      "Scenario_title": "The story of Elara",
+      "Scenario": "In the midst of a misty forest, a young elven ranger named Elara journeys to find a rare herb that can heal her sick father. As she navigates through unknown paths, she encounters a group of mischievous fairies who offer to guide her in exchange for a small favor. Along the way, they face dangerous creatures and mysterious obstacles, but Elara's determination and skills as a ranger prove useful in their journey. However, when they finally reach the location of the herb, they discover it is guarded by a powerful sorceress who demands a high price for its use. Elara must decide whether to sacrifice everything for her father's life or find another way to save him.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Fantasy",
+      "Word Count": 109,
+      "Scenario_title": "Rescue the elf princess",
+      "Scenario": "As the sun set behind the castle walls, the princess stood on the balcony, staring out at the darkening forest. Suddenly, a rustling in the bushes caught her attention. She gasped as a handsome young man emerged, wearing a cloak of shimmering green. \"My lady,\" he said, dropping to one knee, \"I have come to rescue you from this cursed kingdom.\" The princess beamed, taking his hand. They fled into the woods, pursued by the wicked witch who had cursed the land. Racing through twisting paths, the princess and her rescuer battled trolls, overcame obstacles, and ultimately arrived at a hidden palace where they could live happily ever after.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Fantasy",
+      "Word Count": 109,
+      "Scenario_title": "Rescue the elf princess",
+      "Scenario": "In a land of magic and monsters, a young orphan named Lily discovers she possesses incredible powers. As she sets out on a journey to discover the truth about her past, she befriends a band of misfits including a talking dragon, a rogue elf, and a kindly wizard who guides her on her journey. Along the way, they face dangerous challenges and encounter mysterious creatures, but Lily's growing mastery of her abilities gives them hope. As they draw closer to the answers they seek, they discover a dark force threatening to destroy the world, and it's up to Lily and her friends to stop it before it's too late.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Science",
+      "Word Count": 83,
+      "Scenario_title": "The theory of relativity",
+      "Scenario": "The theory of relativity, proposed by Albert Einstein in 1905 and 1915, is the understanding that physical laws are the same for all observers in motion. The theory states that the speed of light is always constant and that time and space are relative to the observer's motion. This theory led to the famous equation E=mc², which relates energy and mass. The theory of relativity has been confirmed by multiple experiments and has had a significant impact on our understanding of the universe.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Science",
+      "Word Count": 110,
+      "Scenario_title": "Why birds fly",
+      "Scenario": "Birds fly for various reasons, including foraging for food, escaping predators, and migration. They have several adaptations that allow their wings to create lift and generate thrust, allowing them to stay in the air. The shape of bird wings is specially designed to produce lift as air moves over them, while the downward flapping motion produces thrust. The chest muscles in birds are strong, which helps them to power their flight. Birds also have hollow bones, reducing their overall weight, and making it easier for them to take off and stay aloft. Additionally, birds have a high metabolic rate, which allows them to generate enough energy needed for continuous flying.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Science",
+      "Word Count": 106,
+      "Scenario_title": "Why roses are red",
+      "Scenario": "Roses are red due to the presence of a pigment called anthocyanin. This pigment is responsible for giving the petals their red color. The production of this pigment is influenced by the pH level of the soil in which the rose plant grows. If the soil is acidic, the rose petals will be redder, while more alkaline conditions result in pink or white petals. In addition to anthocyanin, other pigments also contribute to the variety of colors seen in roses, including carotenoids {{yellow and orange}} and flavonols {{white and cream}}. Overall, roses' red color is a result of a complex biochemical process stimulated by environmental factors.",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Food",
+      "Word Count": 121,
+      "Scenario_title": "Let's make brownies",
+      "Scenario": "Preheat the oven to 350 degrees Fahrenheit.Grease an 8-inch square baking pan with cooking spray or butter.Melt the butter in a medium saucepan over low heat.Add the sugar and stir until combined.Remove the pan from the heat and let it cool for a few minutes.Add the eggs and vanilla extract, whisking until smooth.In a separate bowl, sift the flour, cocoa powder, salt, and baking powder together.Add the dry ingredients to the wet ingredients in thirds, stirring constantly until fully combined.Pour the batter into the prepared pan and spread it out evenly.Bake for 20-25 minutes or until a toothpick inserted in the center of the pan comes out clean.Allow the brownies to cool completely before cutting them into squares and serving. Enjoy!",
+      "Source": "ChatGPT",
+      "Variables": ""
+    },
+    {
+      "Category": "Dev",
+      "Word Count": 471,
+      "Scenario_title": "Learning JavaScript",
+      "Scenario": "Once upon a time, there was a {{adjective}} programmer named {{name}} who decided to learn JavaScript. They were excited to take their coding skills to the next level and create {{adjective}} web applications that would make their friends {{verb}} with envy.\\n\\nAt first, they found JavaScript to be {{adjective}} and {{adjective}}, with strange concepts like variables, loops, and functions. But with the help of some {{adjective}} tutorials and a lot of {{noun}}, they slowly began to understand the basics.\\n\\nThey soon realized that JavaScript was like a {{noun}} playground, with endless possibilities for creating {{adjective}} programs that could {{verb}} and {{verb}} and {{verb}}.\\n\\nBut as they were coding their latest project, they encountered a {{adjective}} problem. Every time they ran the code, the website would {{verb}} like a {{noun}}, making their computer sound like it was about to {{verb}}!\\n\\nThey tried everything they could think of - changing the {{noun}}, tweaking the {{noun}}, and even yelling at the screen - but nothing seemed to work.\\n\\nFinally, in a moment of {{adjective}} desperation, they turned to a {{adjective}} online forum for help. They posted their problem, and within minutes, they received a response from a {{adjective}} user named {{username}}.\\n\\n\"Have you tried turning it off and on again?\" the user suggested.\\n\\nFeeling {{adjective}} and {{verb}} with frustration, they reluctantly tried the suggestion. And to their surprise, the code worked perfectly!\\n\\nFrom that day on, {{name}} was known as a {{adjective}} JavaScript master, able to create {{adjective}} programs that could {{verb}} and {{verb}} and {{verb}} with ease, thanks to the power of turning things off and on again.\\nAt first, they found HTML to be {{adjective}} and {{adjective}}, with strange tags like {{div}}, {{p}}, and {{img}}. But with the help of some {{adjective}} tutorials and a lot of {{noun}}, they slowly began to understand the basics.\\n\\nThey soon realized that HTML was like a {{noun}} puzzle, with each tag fitting together like a {{adjective}} piece of the bigger picture. And as they continued to {{verb}},{{adverb}} on their projects, they began to see the beauty of the web.\\n\\nBut as they were putting the finishing touches on their latest project, they encountered a {{adjective}} problem. The website looked {{adverb}} on their computer, but when they tried to view it on their friend's computer, everything was {{adjective}}!\\n\\nThey tried everything they could think of - changing the {{noun}}, tweaking the {{noun}}, and even sacrificing a {{noun}} to the coding gods - but nothing seemed to work.\\n\\nFinally, in a moment of {{adjective}} inspiration, they realized the problem - they had forgotten to add a {{noun}} to their code! They quickly added the missing {{noun}}, and the website looked {{adjective}} on every computer.\\n\\nFrom that day on, {{name}} was known as a {{adjective}} HTML wizard, able to weave tags and attributes like {{noun}} into beautiful, functional websites that would make even the most experienced web developer {{verb}} with admiration.",
+      "Source": "Emilio",
+      "Variables": ""
+    },
+    {
+      "Category": "Celebration",
+      "Word Count": 86,
+      "Scenario_title": "Birthday Party Fun!",
+      "Scenario": "Yesterday I went to {{PERSON'S NAME}} birthday party. I got him/her a {{NOUN}}. The party was {{ADJECTIVE}}. We started by playing {{ACTIVITY}} and then there was a {{VERB}} party. Lots of my friends were there but I mostly hung out with {{PERSON'S NAME}}. We talked about {{NOUN}} and how our friend {{PERSON'S NAME}} is a {{NOUN}}. During the cake everyone {{PAST TENSE VERB}} and sang {{SONG NAME}}. I had a {{ADJECTIVE}} time at the party and enjoyed celebrating {{PERSONS NAME}}. He/she is such a {{ADJECTIVE}} friend.",
+      "Source": "Gabriela",
+      "Variables": ""
+    },
+    {
+      "Category": "Fun Facts",
+      "Word Count": 76,
+      "Scenario_title": "Famous Cat",
+      "Scenario": "Morris—the cat with the {{adjective}} attitude and the posh {{noun}} is the \"spokesperson\" for {{number}} Lives cat {{type of food}}. Garfield—the famous comic-stip cat who hates {{plural noun}}, loves to {{verb}}, and has no respect for {{female name}}, his owner's dog. Smelly Cat—made famous in the song sung by {{female name}} on the TV show {{plural noun}}. Grumpy Cat—an Internet noun known for her hilarious {{part of the body}}.Stubbs—the Mayor of {{the}} {{town}}, Alaska. Cat—the feline Heroine of the movie Breakfast at {{female name}}'s.Tom—the {{adjective}} cat that will never catch his nemesis, Jerry the {{animal}}.",
+      "Source": "Gabriela",
+      "Variables": ""
+    },
+    {
+      "Category": "Nature",
+      "Word Count": 69,
+      "Scenario_title": "Spring Baby Animals!",
+      "Scenario": "Spring is a season when {{adjective}} baby animals are born. {{Animals}} build {{plural noun}} in trees, where they {{verb}},{{plural noun}} that will hatch in a few weeks. Some animals like {{plural noun;animal}} and {{adjective}},{{plural noun;animal}},{{verb}} underground and their babies are born there. Others, like {{adjective}},{{plural noun;animal}} and {{plural noun;animal}} live in the forest or on farms. Wherever they live, baby animals are so {{adjective}} !",
+      "Source": "Nazile",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 103,
+      "Scenario_title": "Trick-or-Treating On Halloween",
+      "Scenario": "On Halloween, you get to go trick-or-treating! \\nEveryone will dress up in costumes, like a/an {{NOUN}} or a/an {{NOUN}}. \\nThis year, you decided to dress up as a/an {{ADJECTIVE NOUN}}. \\nYour mom takes you and your best friend trick-or-treating. While you are out, your dad stays at home and {{VERB}}. \\nOther fun things to do on Halloween are {{VERB ENDING IN 'ING'}} scary movies and {{VERB ENDING IN 'ING'}}. \\nThis year, you get lots of {{ADJECTIVE}} candy! \\nWhen you get home, your dad says he wants some, because he works hard at a JOB and he deserves some of your {{TYPE OF CANDY}}. \\nYou are {{ADJECTIVE}} but you give it to him anyway!",
+      "Source": "Emilio",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 117,
+      "Scenario_title": "Mary had a little lamb",
+      "Scenario": "Mary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And {{pronoun}} everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.\\n\\nIt followed her to {{place}}, which was {{adjective}} and {{verb}} with cheer. And then it followed her to {{place}}, where {{adjective}} things did {{verb}} appear.\\n\\nIt followed her to {{place}}, where {{adjective}} fields did {{verb}} and play. And then it followed her back home, where it {{verb}} all {{adverb}} day.\\n\\n\"Mary, Mary, {{exclamation}},\" the children {{verb}} in delight. \"Look at the lamb that follows you, it's such a {{adjective}} sight!\"\\n\\nMary had a {{adjective}} lamb, its {{color}} fleece was {{adjective}} as snow. And everywhere that Mary went, the lamb was sure to {{verb}},{{past tense}}.",
+      "Source": "Emilio",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 471,
+      "Scenario_title": "Learning JavaScript",
+      "Scenario": "Once upon a time, there was a {{adjective}} programmer named {{name}} who decided to learn JavaScript. They were excited to take their coding skills to the next level and create {{adjective}} web applications that would make their friends {{verb}} with envy.\\n\\nAt first, they found JavaScript to be {{adjective}} and {{adjective}}, with strange concepts like variables, loops, and functions. But with the help of some {{adjective}} tutorials and a lot of {{noun}}, they slowly began to understand the basics.\\n\\nThey soon realized that JavaScript was like a {{noun}} playground, with endless possibilities for creating {{adjective}} programs that could {{verb}} and {{verb}} and {{verb}}.\\n\\nBut as they were coding their latest project, they encountered a {{adjective}} problem. Every time they ran the code, the website would {{verb}} like a {{noun}}, making their computer sound like it was about to {{verb}}!\\n\\nThey tried everything they could think of - changing the {{noun}}, tweaking the {{noun}}, and even yelling at the screen - but nothing seemed to work.\\n\\nFinally, in a moment of {{adjective}} desperation, they turned to a {{adjective}} online forum for help. They posted their problem, and within minutes, they received a response from a {{adjective}} user named {{username}}.\\n\\n\"Have you tried turning it off and on again?\" the user suggested.\\n\\nFeeling {{adjective}} and {{verb}} with frustration, they reluctantly tried the suggestion. And to their surprise, the code worked perfectly!\\n\\nFrom that day on, {{name}} was known as a {{adjective}} JavaScript master, able to create {{adjective}} programs that could {{verb}} and {{verb}} and {{verb}} with ease, thanks to the power of turning things off and on again.\\nAt first, they found HTML to be {{adjective}} and {{adjective}}, with strange tags like {{div}}, {{p}}, and {{img}}. But with the help of some {{adjective}} tutorials and a lot of {{noun}}, they slowly began to understand the basics.\\n\\nThey soon realized that HTML was like a {{noun}} puzzle, with each tag fitting together like a {{adjective}} piece of the bigger picture. And as they continued to {{verb}},{{adverb}} on their projects, they began to see the beauty of the web.\\n\\nBut as they were putting the finishing touches on their latest project, they encountered a {{adjective}} problem. The website looked {{adverb}} on their computer, but when they tried to view it on their friend's computer, everything was {{adjective}}!\\n\\nThey tried everything they could think of - changing the {{noun}}, tweaking the {{noun}}, and even sacrificing a {{noun}} to the coding gods - but nothing seemed to work.\\n\\nFinally, in a moment of {{adjective}} inspiration, they realized the problem - they had forgotten to add a {{noun}} to their code! They quickly added the missing {{noun}}, and the website looked {{adjective}} on every computer.\\n\\nFrom that day on, {{name}} was known as a {{adjective}} HTML wizard, able to weave tags and attributes like {{noun}} into beautiful, functional websites that would make even the most experienced web developer {{verb}} with admiration.",
+      "Source": "Gabriela",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 86,
+      "Scenario_title": "Birthday Party Fun!",
+      "Scenario": "Yesterday I went to {{PERSON'S NAME}} birthday party. I got him/her a {{NOUN}}. The party was {{ADJECTIVE}}. We started by playing {{ACTIVITY}} and then there was a {{VERB}} party. Lots of my friends were there but I mostly hung out with {{PERSON'S NAME}}. We talked about {{NOUN}} and how our friend {{PERSON'S NAME}} is a {{NOUN}}. During the cake everyone {{PAST TENSE VERB}} and sang {{SONG NAME}}. I had a {{ADJECTIVE}} time at the party and enjoyed celebrating {{PERSONS NAME}}. He/she is such a {{ADJECTIVE}} friend.",
+      "Source": "Gabriela",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 76,
+      "Scenario_title": "Famous Cat",
+      "Scenario": "Morris—the cat with the {{adjective}} attitude and the posh {{noun}} is the \"spokesperson\" for {{number}} Lives cat {{type of food}}. Garfield—the famous comic-stip cat who hates {{plural noun}}, loves to {{verb}}, and has no respect for {{female name}}, his owner's dog. Smelly Cat—made famous in the song sung by {{female name}} on the TV show {{plural noun}}. Grumpy Cat—an Internet noun known for her hilarious {{part of the body}}.Stubbs—the Mayor of {{the}} {{town}}, Alaska. Cat—the feline Heroine of the movie Breakfast at {{female name}}'s.Tom—the {{adjective}} cat that will never catch his nemesis, Jerry the {{animal}}.",
+      "Source": "Nazile",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 69,
+      "Scenario_title": "Spring Baby Animals!",
+      "Scenario": "Spring is a season when {{adjective}} baby animals are born. {{Animals}} build {{plural noun}} in trees, where they {{verb}},{{plural noun}} that will hatch in a few weeks. Some animals like {{plural noun;animal}} and {{adjective}},{{plural noun;animal}},{{verb}} underground and their babies are born there. Others, like {{adjective}},{{plural noun;animal}} and {{plural noun;animal}} live in the forest or on farms. Wherever they live, baby animals are so {{adjective}} !",
+      "Source": "Mikey",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 219,
+      "Scenario_title": "Hillarious Mad Lib",
+      "Scenario": "Once upon a time, in a faraway kingdom, there was a {adjective} prince named {name}. He was {adjective} and {adjective}, but also quite {adjective}.\\n\\nOne day, while {verb ending in -ing} through the forest, he stumbled upon a {adjective},{noun}. It was so {adjective} that he couldn't help but {verb} it.\\n\\nSuddenly, a {adjective},{noun} appeared out of nowhere and started {verb ending in -ing} towards him. The prince was so {adjective} that he {verb} and ran away as fast as he could.\\n\\nBut the {adjective},{noun} chased him all the way back to the castle. When the prince arrived, he was so {adjective} that he {verb} and fell to the ground.\\n\\nJust then, the {adjective},{noun} spoke up and said, \"Don't be afraid, Prince {name}. I am actually a {adjective} fairy in disguise, and I have come to grant you three wishes!\"\\n\\nThe prince couldn't believe his luck. He quickly made his first wish, which was for a {adjective},{noun}. Then he made his second wish, which was for a lifetime supply of {adjective},{noun}s. And finally, for his third wish, he asked for a {adjective},{noun} to rule the kingdom with him.\\n\\nFrom that day on, the prince lived happily ever after with his {adjective},{noun}, surrounded by {adjective},{noun}s, and ruling the kingdom with his {adjective},{noun} by his side. The end!",
+      "Source": "Mikey",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 219,
+      "Scenario_title": "Mad Lib about Elon Musk",
+      "Scenario": "Elon Musk is a {adjective} entrepreneur who is known for his {adjective} vision and {adjective} approach to business. He is the CEO of {company name}, which is a {adjective} company that is focused on {verb ending in -ing} the world.\\n\\nMusk is also the founder of {company name}, which is a {adjective} company that is working to {verb} humans to other planets. He has a {adjective} vision for the future of space travel and believes that we can {verb} humans to Mars within the next {number} years.\\n\\nIn addition to his work with SpaceX, Musk is also the founder of {company name}, which is a {adjective} company that is focused on {verb ending in -ing} the world's energy problems. He believes that we can {verb} the world to a {adjective} future by using {adjective} energy sources like solar and wind power.\\n\\nMusk is known for his {adjective} personality and his {adjective} approach to business. He is not afraid to {verb} the status quo and is always {verb ending in -ing} for new and innovative ways to {verb} the world. He has been called a {adjective} genius and a {adjective} visionary, and his work has inspired {number} of people around the world.\\n\\nOverall, Elon Musk is a {adjective} figure who is changing the world with his {adjective} ideas and his {adjective} approach to business.",
+      "Source": "Mikey",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 198,
+      "Scenario_title": "Mad Lib Filled With Bugs",
+      "Scenario": "One {adjective} day, a group of {adjective} friends decided to go on a {adjective} adventure through the {adjective} forest. As they {verb} through the trees, they encountered all sorts of {adjective} bugs, from {adjective} beetles to {adjective} spiders.\\n\\nAt first, the bugs were {adjective} and didn't bother the group. But as they {verb} deeper into the forest, the bugs became more {adjective} and started to {verb} around them. The friends tried to {verb} the bugs away, but it was no use. They were {adjective} and everywhere.\\n\\nSuddenly, one of the friends noticed a {adjective} bug on their arm. It was {adjective} and {adjective} and looked like it might be poisonous. The friend started to {verb} and run around, trying to get the bug off.\\n\\nAs they continued through the forest, they encountered even more {adjective} bugs. There were {adjective} caterpillars, {adjective} ants, and even {adjective} mosquitoes. The friends tried to {verb} away, but the bugs just kept coming.\\n\\nFinally, they made it out of the forest and back to their {adjective} campsite. They spent the rest of the night picking {adjective} bugs out of their hair and clothes. Despite the {adjective} experience, they all agreed that it had been a {adjective} adventure.",
+      "Source": "Mikey",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 201,
+      "Scenario_title": "Mad Lib for Teenagers",
+      "Scenario": "It was a {adjective} Friday night and a group of {adjective} teenagers were {verb ending in -ing} at the local {noun}. The music was {adjective} and the vibe was {adjective}, and everyone was {verb ending in -ing} to the beat.\\n\\nAs the night went on, the group started to feel {adjective} and decided to {verb} to another party. They piled into a {adjective} car and {verb} down the {adjective} road, singing along to the {adjective} songs on the radio.\\n\\nWhen they arrived at the party, they were greeted by {adjective} people and the sound of {adjective} music. They grabbed some {adjective} snacks and {adjective} drinks and started to {verb} around the room.\\n\\nAs the party went on, the teenagers started to {verb} up and get {adjective}. Some started to {verb} on the dance floor, while others {verb} on the {noun}. It was a {adjective} scene and everyone was having a {adjective} time.\\n\\nAt the end of the night, the group piled back into the car and {verb} back home. They were {adjective} and {adjective} and couldn't stop {verb ending in -ing} about the {adjective} party they had just been to. It was a night they would always {verb} and a memory they would {verb} forever.",
+      "Source": "Mikey",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 189,
+      "Scenario_title": "Mad Libs For JavaScript Developers",
+      "Scenario": "As a JavaScript developer, I love working with {adjective} libraries and {adjective} frameworks. My favorite is {library or framework name}, which allows me to easily {verb},{noun} and {verb},{noun}.\\n\\nWhen I'm debugging my JavaScript code, I often use the {adjective} console to {verb},{noun} and {verb},{noun}. This helps me to {verb} the issue and {verb} a {adjective} solution.\\n\\nOne of the challenges of JavaScript development is dealing with {adjective} browser compatibility issues. To overcome this, I often use {library or tool name} to {verb} my code and ensure that it works {adverb} across different browsers.\\n\\nOne of my favorite features of JavaScript is {adjective} functions. I love being able to {verb},{noun} and {verb},{noun} using simple and {adjective} code.\\n\\nWhen I'm working on a complex JavaScript project, I always make sure to {verb} my code into {adjective} modules. This helps me to {verb} my code and ensure that it is {adjective} and {adverb} to maintain.\\n\\nAs a JavaScript developer, I always make sure to {verb},{noun} and {verb},{noun} using {adjective} coding practices. This helps me to create {adjective} and {adjective} code that is easy to {verb} and {verb} over time.",
+      "Source": "Emilio",
+      "Variables": ""
+    },
+    {
+      "Category": "",
+      "Word Count": 72,
+      "Scenario_title": "CSS is hard lol",
+      "Scenario": "One day, a web developer tried to style a button with CSS, but it was as finicky as a {{Adjective}},{{Animal}}. They spent hours adjusting the {{Adjective}},{{Color}} background, but CSS kept pushing it to the {{Adjective}},{{Direction}}. In frustration, the developer exclaimed \"Why won't you work, you {{Adjective}} stylesheet?!\" They eventually got it right, but not without a few {{Adjective}},{{Body Part}} and a newfound respect for the power of CSS.",
+      "Source": "",
+      "Variables": ""
+    }
+  ]
+  
