@@ -9,21 +9,42 @@ f = open(path_to_fileA)
 # returns JSON object as
 # a dictionary
 data = json.load(f)
-print(data)
+
+
+# print(data)
 # exit(0)
 
-# print scenarios and words found:
+def camelcase_format(input_word):
+    word_split = "".join(re.split(r"[;_' ]", input_word.title()))
+    return word_split[0].lower() + word_split[1:]
+
+
+def description_format(input_word):
+    word_split = input_word.lower() \
+        .replace("_", " ") \
+        .replace(";", ", ") \
+        .replace("1", " once") \
+        .replace("2", " twice") \
+        .replace("  ", " ")
+    return word_split[0].upper() + word_split[1:]
+
+
 for key in data:
     delimiter_strs = key['Delimiter']
     my_regex = "\\" + delimiter_strs[0] + r"(.*?)" + "\\" + delimiter_strs[2]
 
     scenario = key['Scenario']
-    print(scenario)
-    print(re.findall(my_regex, scenario))
+    word_list = re.findall(my_regex, scenario)
 
+    print(word_list)
+    var_list = list(map(lambda x: camelcase_format(x), word_list))
+
+    description_list = list(map(lambda x: description_format(x), word_list))
+
+    print(var_list)
+    print(description_list)
 
 # Closing file
 f.close()
 
-
-
+# print scenarios and words found:
