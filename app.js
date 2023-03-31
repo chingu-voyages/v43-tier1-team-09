@@ -49,3 +49,19 @@ async function renderScenarios(data) {
 
 document.querySelector("button").onclick = () =>
   renderScenarios(collectScenarios());
+
+  //declare a function that does not take any arguments and runs the clear function
+  function appInit() {
+    clearAnchor();
+  // declare a variable that creates a section html element - https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+  const createSection = document.createElement('section')
+// fill in the section element with the html from index.html - https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+createSection.innerHTML = `<h2>Welcome</h2>
+<p>Fill in the blanks and be the funniest person in the Room!</p>
+<button>&gt; GO MAD</button>`;
+// append the section element to the anchor container - https://developer.mozilla.org/en-US/docs/Web/API/Element/append
+anchor.append('section');
+// select the button and create an onclick event to call the render function and pass in the arguments required to work
+document.querySelector("button").onclick = () =>
+   renderScenarios(collectScenarios());
+  }
