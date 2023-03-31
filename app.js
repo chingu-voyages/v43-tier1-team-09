@@ -5,17 +5,19 @@ const anchor = document.querySelector("main");
 function clearAnchor() {
   anchor.innerHTML = "";
 }
-
+// function that collect data on json file
 function collectScenarios() {
   const json = fetch("./stories.json").then((response) =>
     response.json().then((data) => data.map((data) => data))
   );
   return {
     json,
-    renderInputs: (e) => console.log("clicked", e),
+    renderInputs: (json, e) => {
+      return console.log(json[e].Scenario_title, json[e].Variables, e);
+    },
   };
 }
-
+// function that render scenarios on screen and send the variables to input Page
 async function renderScenarios(data) {
   const scenarios = await data.json;
   const section = document.createElement("section");
@@ -44,7 +46,7 @@ async function renderScenarios(data) {
   anchor.append(section);
   document
     .querySelectorAll(".game ul li")
-    .forEach((e, i) => (e.onclick = () => data.renderInputs(i)));
+    .forEach((e, i) => (e.onclick = () => data.renderInputs(scenarios, i)));
 }
 
 document.querySelector("button").onclick = () =>
