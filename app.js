@@ -64,4 +64,4 @@ anchor.append('section');
 // select the button and create an onclick event to call the render function and pass in the arguments required to work
 document.querySelector("button").onclick = () =>
    renderScenarios(collectScenarios());
-  }
+  };
