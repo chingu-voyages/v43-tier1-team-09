@@ -12,16 +12,6 @@ def camelcase_format(input_word):
     return word_split[0].lower() + word_split[1:]
 
 
-def description_format(input_word):
-    word_split = input_word.lower() \
-        .replace("_", " ") \
-        .replace(";", ", ") \
-        .replace("1", " once") \
-        .replace("2", " twice") \
-        .replace("  ", " ")
-    return word_split[0].upper() + word_split[1:]
-
-
 with open(path_to_json, "r") as read_file:  # Opening JSON file
 
     data = json.load(read_file)  # returns JSON object as a dictionary
@@ -34,7 +24,7 @@ with open(path_to_json, "r") as read_file:  # Opening JSON file
 
         var_list = list(map(lambda x: camelcase_format(x), word_list))  # create list of variables' name
 
-        description_list = list(map(lambda x: description_format(x), word_list))  # create list of variables' value
+        description_list = word_list  # the variable's value will match exactly with the scenario text
 
         my_Dict = dict(zip(var_list, description_list))  # join lists into a dictionary
 
