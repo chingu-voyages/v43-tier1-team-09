@@ -2,14 +2,19 @@ import json
 import re
 from string import printable
 
-path_to_json = "scenarios.json"
-path_to_output = "all_scenarios.json"
+path_to_json = "input_scenarios.json"
+path_to_output = "scenarios.json"
 
 
 # functions for string treatments:
 def camelcase_format(input_word):
-    word_split = "".join(re.split(r"[;_' ]", input_word.title()))
+    word_split = "".join(re.split(r"[_' ]", input_word.title()))
     return word_split[0].lower() + word_split[1:]
+
+
+def propercase_format(input_word):
+    word_split = "".join(re.split(r"[_']", input_word.title()))
+    return word_split[0].upper() + word_split[1:].lower()
 
 
 with open(path_to_json, "r") as read_file:  # Opening JSON file
@@ -24,7 +29,8 @@ with open(path_to_json, "r") as read_file:  # Opening JSON file
 
         var_list = list(map(lambda x: camelcase_format(x), word_list))  # create list of variables' name
 
-        description_list = word_list  # the variable's value will match exactly with the scenario text
+        description_list = list(map(lambda x: propercase_format(x),
+                                    word_list))  # the variable's value will match exactly with the scenario text, but with "propercase"
 
         my_Dict = dict(zip(var_list, description_list))  # join lists into a dictionary
 
