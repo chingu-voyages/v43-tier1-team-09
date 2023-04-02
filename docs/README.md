@@ -11,8 +11,15 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
+@babel/core
+babel-loader
 concurrently
+css-loader
+mini-css-extract-plugin
+node-sass
+sass-loader
 serve
+style-loader
 webpack
 webpack-cli
 ```
@@ -44,7 +51,7 @@ npm run build
 ## Built With
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
-* [CSS](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used
+* [SASS](https://sass-lang.com/) - The styling language used
 * [Webpack](https://webpack.js.org/) - A script bundler to combine multiple scripts
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
 

@@ -33,8 +33,14 @@
   },
   "homepage": "https://chingu-voyages.github.io/v43-tier1-team-09/",
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "babel-loader": "^9.1.2",
     "concurrently": "^8.0.1",
+    "css-loader": "^6.7.3",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.2",
     "serve": "^14.2.0",
+    "style-loader": "^3.3.2",
     "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1"
   }
