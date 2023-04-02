@@ -7,7 +7,7 @@ function clearAnchor() {
 }
 // function that collect data on json file
 function collectScenarios() {
-  const json = fetch("./stories.json").then((response) =>
+  const json = fetch("./src/model/stories.json").then((response) =>
     response.json().then((data) => data.map((data) => data))
   );
   return {
