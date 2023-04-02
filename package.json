@@ -13,6 +13,12 @@
     "collaboration",
     "educational-project"
   ],
+  "scripts": {
+    "build": "webpack",
+    "dev": "concurrently \"npm run watch\" \"npm start\" --kill-others-on-fail",
+    "start": "serve dist",
+    "watch": "webpack --watch"
+  },
   "author": "chingu-voyages",
   "contributors": [
     "Emimint",
