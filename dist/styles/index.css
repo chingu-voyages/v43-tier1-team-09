@@ -1,0 +1,107 @@
+.flex,
+.flex__middle--inner,
+.flex__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.center {
+  align-items: center;
+}
+
+.flex > * {
+  width: 33%;
+}
+
+@media screen and (max-width: 768px) {
+  .flex > * {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .flex > * {
+    width: 100%;
+  }
+}
+
+.margin-sm {
+  margin: 2px;
+}
+
+.no-list {
+  list-style: none;
+}
+
+section.game ul > li {
+  margin: 1em;
+}
+
+section.game ul li div {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #9933cc;
+  }
+
+  header {
+    color: #ffffff;
+    padding: 15px;
+  }
+
+  h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    color: #ecb7c0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    background-color: #ffffff;
+    border-radius: 40px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 15px;
+    line-height: 30px;
+    height: auto;
+    width: auto;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 15%;
+  }
+
+  .author {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+}
