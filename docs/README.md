@@ -12,6 +12,7 @@ What things you need to install the software and how to install them
 
 ```
 @babel/core
+@babel/plugin-syntax-import-assertions
 babel-loader
 concurrently
 css-loader
