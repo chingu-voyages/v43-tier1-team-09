@@ -11,35 +11,41 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-live-server
+concurrently
+serve
+webpack
+webpack-cli
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Install live-server globally if you haven't already
+Install dependencies
 
 ```
-npm install live-server -g
+npm install
 ```
 
 Then launch the server
 
 ```
-live-server
+npm run dev
 ```
 
 The page will render in a new window.
 
 ## Deployment
 
-This site is just a static website with html, css, and js so it should not need to be deployed past hosting somewhere
+```
+npm run build
+```
 
 ## Built With
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
 * [CSS](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used
+* [Webpack](https://webpack.js.org/) - A script bundler to combine multiple scripts
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
 
 ## Authors
