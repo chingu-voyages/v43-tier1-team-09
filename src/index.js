@@ -1,3 +1,4 @@
+import json from './model/stories.json' assert {type: 'json'};
 import './styles/index.scss'
 /* as recommend, anchored everything to the <main>, so if we declare the variable it no longer matters it is just defined */
 const anchor = document.querySelector("main");
@@ -8,9 +9,6 @@ function clearAnchor() {
 }
 // function that collect data on json file
 function collectScenarios() {
-  const json = fetch("./model/stories.json").then((response) =>
-    response.json().then((data) => data.map((data) => data))
-  );
   return {
     json,
     renderInputs: (json, e) => {
@@ -20,7 +18,7 @@ function collectScenarios() {
 }
 // function that render scenarios on screen and send the variables to input Page
 async function renderScenarios(data) {
-  const scenarios = await data.json;
+  const scenarios = data.json
   const section = document.createElement("section");
   const heading = document.createElement("h2");
   const ul = document.createElement("ul");
