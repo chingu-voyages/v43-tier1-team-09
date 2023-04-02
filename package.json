@@ -34,6 +34,7 @@
   "homepage": "https://chingu-voyages.github.io/v43-tier1-team-09/",
   "devDependencies": {
     "@babel/core": "^7.21.4",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "babel-loader": "^9.1.2",
     "concurrently": "^8.0.1",
     "css-loader": "^6.7.3",
