@@ -2,7 +2,7 @@ import json from '../model/stories.json' assert {type: 'json'};
 import renderInputPage from '../views/renderInputPage';
 
 // function that collect data on json file
-function collectScenarios() {
+function controller() {
     return {
       json,
       renderInputs: (json, e) => {
@@ -11,4 +11,4 @@ function collectScenarios() {
     };
   }
 
-  export default collectScenarios
+  export default controller
