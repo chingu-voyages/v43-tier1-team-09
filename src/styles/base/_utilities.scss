@@ -1,0 +1,49 @@
+.u{
+    &-text-center{
+        text-align:center !important;
+    }
+    &-margin {
+        &-bottom {
+            &-sm {
+                margin-bottom: 1.5rem !important;
+            }
+            &-md {
+                margin-bottom: 4rem !important;
+
+                @include respond(tab-port) {
+                    margin-bottom: 3rem !important;
+                }
+            }
+            &-lg {
+                margin-bottom: 8rem !important;
+
+                @include respond(tab-port) {
+                    margin-bottom: 5rem !important;
+                }
+            }
+        }
+    }
+        &-top {
+            &-lg {
+                margin-top: 8rem !important;
+            }
+            &-xl {
+                margin-top: 10rem !important; 
+            }
+        }
+    &-float-right {
+        float:right !important;
+    }
+    &-container{
+        background: #eee !important;
+        width: 75% !important;
+        margin: auto !important;
+        border: 1px dotted black !important;
+    }
+
+}
+.d {
+    &-absolute {
+        display: absolute !important;
+    }
+}

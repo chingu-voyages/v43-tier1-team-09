@@ -1,0 +1,49 @@
+/*
+COLORS:
+
+Gabriela's Super Purple Background: #955AFF
+A great bottom purple: #c63cc8
+
+*/
+
+// Colors
+$color-primary: #955AFF;
+$color-primary-light: #C9C5C5;
+$color-primary-dark:  #0711086c;
+
+$color-secondary: #ffffff;
+$color-secondary-light:#ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eeeeee;
+    
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-card-light: #000;
+$color-card-dark: #fff;
+
+$color-green: green;
+$color-yellow: hsl(41, 97%, 56%);
+$color-white: #fff;
+$color-black: #000;
+$color-transwhite: hsla(0, 0%, 100%, 0.226);
+$color-shadow:  rgba(0, 0, 0, 0.2);
+
+// Grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// Font
+$default-font-size: 1.6rem;
+
+// Border
+$border-radius-value: 3px;
+$border-radius-leaf-value: 5rem;
