@@ -8,6 +8,9 @@ function controller() {
       renderInputs: (json, e) => {
         return renderInputPage(json[e].Scenario_title, json[e].Variables, e);
       },
+      renderStory: (index, values, keys) => {
+        return console.log(index, values, keys)
+      }
     };
   }
 
