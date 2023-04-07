@@ -1,5 +1,4 @@
 import "../styles/components/init.scss";
-// import clearAnchor, { anchor } from "./clearAnchor";
 import clearAnchor, { anchor } from "./clearAnchor";
 import renderScenarios from "./renderScenarios";
 import controller from "../controller/index.js";
