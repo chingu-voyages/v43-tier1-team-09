@@ -1,0 +1,45 @@
+.header {
+    height: 75vh;
+    background-image:linear-gradient(45deg,rgba($color-primary,.1),rgba($color-primary-dark,.5)), url();
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55vh, 0 100%);
+    /* From tutorial
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  
+     Triangle
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+     Arrow
+    clip-path: polygon(0 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 80%);
+    */
+
+    @include respond(phone) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    }
+  
+    &__logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+    }
+  
+    &__logo {
+      height: 3;
+    &:hover {
+      animation: hueRotate 9s infinite;
+      }
+    }
+  
+    &__text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  
+  }

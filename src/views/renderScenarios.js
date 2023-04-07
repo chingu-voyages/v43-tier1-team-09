@@ -1,6 +1,7 @@
 import clearAnchor, { anchor } from "./clearAnchor";
 // function that render scenarios on screen and send the variables to input Page
 async function renderScenarios(data) {
+  document.querySelector('.rocket').classList.add('blast-off')
   const scenarios = data.json;
   const section = document.createElement("section");
   const heading = document.createElement("h2");

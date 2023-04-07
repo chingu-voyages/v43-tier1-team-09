@@ -1,0 +1,22 @@
+button {
+  width: 125px;
+  height: 35px;
+  background: #ffcd29;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  color: #ffffff;
+  margin: 1em;
+
+  &:hover {
+    filter: invert(1) hue-rotate(45deg);
+    transition: all 0.25s ease-in;
+    border-radius: 5px;
+    transform:scale(1.025) translateY(-1rem);
+    cursor: pointer;
+  }
+  &:active{
+    filter: hue-rotate(90deg);
+    transition: all .75s ease-in;
+    cursor: pointer;
+  }
+}

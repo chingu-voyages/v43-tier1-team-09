@@ -4,6 +4,6 @@ const renderInputPage = (title, variables, index) => {
   // determine the placeholders by mapping over the keys and pulling out the appropriate placeholder
   // define appropriate containers necessary to render the page
   // map over the keys array and create a 'div' container with the innerhtml set to be the labels and inputs we need dynamically rendered
-  // finally append the containers where they below
+  // finally append the containers where they belong
 };
 export default renderInputPage;
