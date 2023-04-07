@@ -1,5 +1,6 @@
 import json from '../model/stories.json' assert {type: 'json'};
 import renderInputPage from '../views/renderInputPage';
+import renderStoryPage from '../views/renderStoryPage';
 
 // function that collect data on json file
 function controller() {

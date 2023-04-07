@@ -4,6 +4,7 @@ import pegarDifferenca from "../utils/pegarDifferenca";
 
 // function to render inputs
 const renderInputPage = (title, variables, index) => {
+
   // maps over the inputs array to extract the key values from it
   const keys = Object.keys(variables);
   const placeholders = keys.map((key) => variables[key]);
@@ -45,6 +46,7 @@ const renderInputPage = (title, variables, index) => {
   clearAnchor();
   section.append(form);
   anchor.append(section);
+
 };
 
 export default renderInputPage;
