@@ -1,3 +1,12 @@
+.flex,
+.flex__middle--inner,
+.flex__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .flex {
   display: flex;
 }
@@ -40,15 +49,6 @@ section.game ul > li {
 
 section.game ul li div {
   display: flex;
-}
-
-.flex,
-.flex__middle--inner,
-.flex__bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
