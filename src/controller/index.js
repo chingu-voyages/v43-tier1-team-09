@@ -9,11 +9,9 @@ function controller() {
       renderInputs: (json, e) => {
         return renderInputPage(json[e].Scenario_title, json[e].Variables, e);
       },
-      renderStories: (index, values, keys) => renderStoryPage(scenarios[index].Scenario,
-        values,
-        scenarios[index].Scenario_title,
-        index,
-        keys)
+      renderStory: (index, values, keys) => {
+        return console.log(index, values, keys)
+      }
     };
   }
 
