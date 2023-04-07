@@ -1,4 +1,4 @@
-import clearAnchor, { anchor } from "./clear";
+import clearAnchor, { anchor } from "./clearAnchor";
 // function to render a story page
 const renderStoryPage = (scenario, values, title, index, keys) => {
   const section = document.createElement("section"); // creates an html element to build page within
