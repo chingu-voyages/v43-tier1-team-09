@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mad Libs Word Game - Chingu Voyage 43 - Group 9</title>
     <link rel="stylesheet" href="storymobile.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
   </head>
   <body>
     <header>
@@ -15,15 +16,25 @@
       <section>
         <h2>Birthday Party Fun 🎂</h2>
         <p>
-          Yesterday I went to {personsName}'s birthday party. I got him/her a
-          {noun1}. The party was {adjective}. We started by playing {activity}
-          and then there was a {verb} party. Lots of my friends were there but I
-          mostly hung out with {personsName2}. We talked about {noun2}, and how
-          our friend {personsName3} is a {noun3}. During cake everyone
-          {pastTenseVerb} and sang {songName}. I had a/an {adjective2} time at
-          the party and enjoyed celebrating {personsName}. He/she is such a
-          {adjective3} friend.
+          Yesterday I went to <span>{personsName}</span>'s birthday party. I got
+          him/her a <span>{noun}</span>. The party was
+          <span>{adjective}</span>. We started by playing
+          <span>{activity}</span> and then there was a
+          <span>{verb}</span> party. Lots of my friends were there but I mostly
+          hung out with <span>{personsName}</span>. We talked about
+          <span>{noun}</span>, and how our friend
+          <span>{personsName}</span> is a <span>{noun3}</span>. During cake
+          everyone <span>{pastTenseVerb}</span> and sang
+          <span>{songName}</span>. I had a/an <span>{adjective}</span> time at the party and
+          enjoyed celebrating <span>{personsName}</span>. He/she is such a
+          <span>{adjective}</span> friend.
         </p>
+        <input
+          type="button"
+          class="btn_Print"
+          value="PRINT"
+          onClick="window.print()"
+        />
       </section>
     </main>
     <footer>
