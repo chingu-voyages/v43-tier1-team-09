@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- [Repository:](https://github.com/chingu-voyages/v43-tier1-team-09)
-- [Live Site URL:](https://v43-tier1-team-09.netlify.app/)
+- [Repository](https://github.com/chingu-voyages/v43-tier1-team-09)
+- [Live Site URL](https://v43-tier1-team-09.netlify.app/)
 
 ## General Instructions
 
