@@ -2,8 +2,6 @@
 
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
-A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program. The goal of this project is not actually the finished project - but to experience getting there as a team. While getting there is the goal, there are certainly some Minimum Viable Product details that must be met. This project is to be built following Agile Principles using the SCRUM Framework. For most of us it is our first time with any experience like this so it is brand new. By the end of this project we should all be better developers and understand SCRUM and Agilie.
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -23,7 +21,7 @@ A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu V
 
 ### The project
 
-We were required to create a Mad Libs word game, following the Agile Methodology. Mad Libs consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
+A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program, following the Agile Methodology and the Minimum Viable Product(MVP). The game consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
 
 Users should be able to:
 
@@ -79,23 +77,25 @@ webpack-cli
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Our application is using npm for package management. To install all the necessary package follow these steps:
 
-Install dependencies
+1. Install dependencies
 
 ```
 npm install
 ```
 
-Then launch the server
+2. Then launch the server
 
 ```
 npm run dev
 ```
 
-The page will render in a new window.
+3. The page will render in a new window.
 
 ### Deployment
+
+To deploy the package, enter the command:
 
 ```
 npm run build
@@ -116,6 +116,9 @@ See also the list of [contributors](/CONTRIBUTORS.md) who participated in this p
 ## Acknowledgments
 
 - Huge thank you to [Chingu](https://www.chingu.io/) and everyone over there especially [Jim Medloc](https://github.com/jdmedlock) for giving us this wonderful oppurtunity!
+
 - Big shout out to our personal Mentor, [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
+
 - [Maurice Butler](https://github.com/MauriceButler) is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js) in the Contributors table. He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository.
+
 - The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
