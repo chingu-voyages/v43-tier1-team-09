@@ -33,7 +33,7 @@ Users should be able to:
 - Receive validation errors if:
   - Any field is empty when the form is submitted
   - Any field has profane words
-- Allow the user to download their story
+- Download their story
 
 ### Screenshot
 
