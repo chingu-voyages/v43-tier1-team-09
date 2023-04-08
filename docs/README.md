@@ -23,7 +23,7 @@ A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu V
 
 ### The project
 
-In Voyage 43, all Tier 1 teams are required to create a Mad Libs word game, following the Agile Methodology. Mad Libs consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
+We were required to create a Mad Libs word game, following the Agile Methodology. Mad Libs consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
 
 Users should be able to:
 
