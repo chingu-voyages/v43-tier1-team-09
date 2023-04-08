@@ -1,8 +1,60 @@
+![](/dist/Readme_frame.png)
+
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
-A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program. The goal of this project is not actually the finished project - but to experience getting there as a team. While getting there is the goal, there are certainly some Minimum Viable Product details that must be met. This project is to be built following Agile Principles using the SCRUM Framework. For most of us it is our first time with any experience like this so it is brand new. By the end of this project we should all be better developers and understand SCRUM and Agilie much better.
+A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program. The goal of this project is not actually the finished project - but to experience getting there as a team. While getting there is the goal, there are certainly some Minimum Viable Product details that must be met. This project is to be built following Agile Principles using the SCRUM Framework. For most of us it is our first time with any experience like this so it is brand new. By the end of this project we should all be better developers and understand SCRUM and Agilie.
 
-## Getting Started
+## Table of contents
+
+- [Overview](#overview)
+  - [The project](#the-project)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [General Instructions](#general-instructions)
+  - [Built with](#built-with)
+  - [Getting Started](#getting-started)
+  - [Prerequisites](#Prerequisites)
+  - [Installing](#installing)
+  - [Deployment](#deployment)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The project
+
+In Voyage 43, all Tier 1 teams are required to create a Mad Libs word game, following the Agile Methodology. Mad Libs consists of one player prompting a list of words to substitute for blanks in a story before reading aloud :joy:.
+
+Users should be able to:
+
+- View the optimal layout for the interface depending on their device's screen size
+- See focus and hover states for all interactive elements on the page
+- View a Madlib story after submitting a valid data through the form
+- Receive validation errors if:
+  - Any field is empty when the form is submitted
+  - Any field has profane words
+- Allow the user to download their story
+
+### Screenshot
+
+![](../dist/screenshot.jpg)
+
+### Links
+
+- [Repository:](https://github.com/chingu-voyages/v43-tier1-team-09)
+- [Live Site URL:](https://v43-tier1-team-09.netlify.app/)
+
+## General Instructions
+
+### Built with
+
+- [Figma](https://www.figma.com/) - A cloud-based design tool
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
+- [SASS](https://sass-lang.com/) - The styling language used
+- [Webpack](https://webpack.js.org/) - A script bundler to combine multiple scripts
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
+
+### Getting started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -43,18 +95,11 @@ npm run dev
 
 The page will render in a new window.
 
-## Deployment
+### Deployment
 
 ```
 npm run build
 ```
-
-## Built With
-
-- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
-- [SASS](https://sass-lang.com/) - The styling language used
-- [Webpack](https://webpack.js.org/) - A script bundler to combine multiple scripts
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
 
 ## Authors
 
