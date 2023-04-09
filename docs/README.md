@@ -11,51 +11,66 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-live-server
+@babel/core
+@babel/plugin-syntax-import-assertions
+babel-loader
+concurrently
+css-loader
+mini-css-extract-plugin
+node-sass
+sass-loader
+serve
+style-loader
+webpack
+webpack-cli
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Install live-server globally if you haven't already
+Install dependencies
 
 ```
-npm install live-server -g
+npm install
 ```
 
 Then launch the server
 
 ```
-live-server
+npm run dev
 ```
 
 The page will render in a new window.
 
 ## Deployment
 
-This site is just a static website with html, css, and js so it should not need to be deployed past hosting somewhere
+```
+npm run build
+```
 
 ## Built With
 
-* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
-* [CSS](https://developer.mozilla.org/en-US/docs/Glossary/css) - The styling language used
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
+- [SASS](https://sass-lang.com/) - The styling language used
+- [Webpack](https://webpack.js.org/) - A script bundler to combine multiple scripts
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
 
 ## Authors
 
-* **Chingu Voyages** - *Initial work* - [chingu-voyages](https://github.com/chingu-voyages)
-* **Emilie Echevin** -- *Developer* - [Emimint](https://github.com/Emimint)
-* **Emilio Rivera** -- *Developer* - [emilio12345](https://github.com/emilio12345) 
-* **Gabriela de Paula** -- *Developer* - [PaulaR-05](https://github.com/PaulaR-05) 
-* **Jim Medlock** - *Initial work* - [jmedlock](https://github.com/jdmedlock)
-* **Mikey Nichols** -- *Developer* - [mnichols08](https://github.com/mnichols08)
-* **Nazile Tag** -- *Developer* - [Nazile-Tag](https://github.com/Nazile-Tag) 
+- **Chingu Voyages** - _Initial work_ - [chingu-voyages](https://github.com/chingu-voyages)
+- **Emilie Echevin** -- _Developer_ - [Emimint](https://github.com/Emimint)
+- **Emilio Rivera** -- _Developer_ - [emilio12345](https://github.com/emilio12345)
+- **Gabriela de Paula** -- _Developer_ - [PaulaR-05](https://github.com/PaulaR-05)
+- **Jim Medlock** - _Initial work_ - [jmedlock](https://github.com/jdmedlock)
+- **Mikey Nichols** -- _Developer_ - [mnichols08](https://github.com/mnichols08)
+- **Nazile Tag** -- _Developer_ - [Nazile-Tag](https://github.com/Nazile-Tag)
 
-See also the list of [contributors](/CONTRIBUTORS.md) who participated in this project. 
+See also the list of [contributors](/CONTRIBUTORS.md) who participated in this project.
 
 ## Acknowledgments
 
-* Huge thank you to [Chingu](https://www.chingu.io/) and everyone over there especially [Jim Medloc](https://github.com/jdmedlock) for giving us this wonderful oppurtunity! 
-* Big shout out to our personal Mentor,  [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
-* The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
+- Huge thank you to [Chingu](https://www.chingu.io/) and everyone over there especially [Jim Medloc](https://github.com/jdmedlock) for giving us this wonderful oppurtunity!
+- Big shout out to our personal Mentor, [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
+- [Maurice Butler](https://github.com/MauriceButler) is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js) in the Contributors table. He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository.
+- The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
