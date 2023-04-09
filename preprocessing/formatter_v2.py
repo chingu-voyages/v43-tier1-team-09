@@ -3,8 +3,8 @@ import re
 from string import printable
 
 path_to_json = "input_scenarios.json"  # table with json object
-path_to_output = "scenarios.json"
-
+path_to_output = "../src/model/stories.json"
+final_array = []
 
 with open(path_to_json, "r") as read_file:  # Opening JSON file
 
@@ -32,7 +32,8 @@ with open(path_to_json, "r") as read_file:  # Opening JSON file
 
         key.update(my_var_Object)  # add the "Variables" object
 
-        # write each dictionary (json object) to output file
-        with open(path_to_output, "a") as write_file:
-            json.dump(key, write_file, indent=4)
-            write_file.write(',')
+        final_array.append(key) # write each dictionary (json object) to final array
+
+
+with open(path_to_output, "a") as write_file:
+    json.dump(final_array, write_file, indent=4)
