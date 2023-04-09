@@ -1,4 +1,4 @@
-![](/dist/Readme_frame.png)
+![](../docs/Images/madlibs.png)
 
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](../dist/screenshot.jpg)
+![](../docs/Images/screenshot.jpg)
 
 ### Links
 
