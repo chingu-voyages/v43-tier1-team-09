@@ -30,11 +30,11 @@ const renderHeader = (page) => {
       // prepends the header to the document body
       document.body.prepend(header);
       // defines the dots on the top right to initially be off the screen
-      topRightDots.classList = "from-right dots__top-right";
+      topRightDots.classList = "shift-right dots__top-right";
       // prepends the dots on the top right to the body
       document.body.prepend(topRightDots);
       // immediately invokes an asynchronous function to remove the class that places it off the screen to the right.
-      setTimeout(() => topRightDots.classList.remove("from-right"), 1);
+      setTimeout(() => topRightDots.classList.remove("shift-right"), 1);
       break;
     // case "InputPage":
     //   console.log("Input Screen");
@@ -46,7 +46,7 @@ const renderHeader = (page) => {
     default:
       // Landing Page Header
       // Adds a class to the dots on the right that shifts them off screen to the right
-      topRightDots.classList.add("from-right");
+      topRightDots.classList.add("shift-right");
       // After a 300ms delay removes the dots on the right from the DOM
       setTimeout(() => topRightDots.remove(), 300);
       // removes any classes from header we may have defined in another case

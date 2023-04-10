@@ -37,10 +37,10 @@ const renderFooter = (page) => {
       // 300ms later runs a function to remove them from the DOM
       setTimeout(() => bottomLeftDots.remove(), 300);
       // Adds a class that renders the dots off screen initially
-      bottomRightDots.classList = "from-right dots__bottom-right";
+      bottomRightDots.classList = "shift-right dots__bottom-right";
       document.body.append(bottomRightDots); // renders the dots on screen
       // Immediately removes the class, causing them to shift from the right onto the screen
-      setTimeout(() => bottomRightDots.classList.remove("from-right"), 1);
+      setTimeout(() => bottomRightDots.classList.remove("shift-right"), 1);
       break;
     // case "InputPage":
     //   console.log("Input Screen");
@@ -52,7 +52,7 @@ const renderFooter = (page) => {
     default:
       // Landing Page Footer
       // Adds a class to the dots on the right that shifts them off screen to the right
-      bottomRightDots.classList.add("from-right");
+      bottomRightDots.classList.add("shift-right");
       // After a 300ms delay removes the dots on the right from the DOM
       setTimeout(() => bottomRightDots.remove(), 300);
       // Checks if we have a rocket ship on screen or creates a div with this variable name
