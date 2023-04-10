@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   background-color: #955aff;
+  margin: 0 auto;
 }
 
 img,
@@ -44,11 +45,7 @@ a {
 }
 
 .header {
-  background-image: url(./Images/Doodle\ Dots.png);
-  background-repeat: no-repeat;
-  background-size: 10em;
   margin: 0 auto;
-  padding: 2em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,19 +53,19 @@ a {
 
 .header h1 {
   margin: 0 auto;
+  padding-top: 1em;
   font-size: 3em;
   font-weight: 900;
   color: white;
 }
 .header p {
   margin: 0 auto;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 900;
   color: #96e6aa;
 }
 .header p::before {
   content: "";
-  padding-left: 2.5em;
   animation: animate infinite 10s;
 }
 
@@ -76,35 +73,26 @@ a {
   color: #ffd000;
   font-weight: bolder;
 }
-.header__logo {
-  padding-left: 0.1em;
-  width: 5em;
-  height: 5em;
-}
+
 .container__card {
+  max-width: 90%;
+  margin: 1em auto;
+  padding: 0.5em;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
 }
 
 .container__card--information {
-  max-width: 15em;
-  margin: 1em;
   text-align: center;
-  padding: 1em;
   box-sizing: border-box;
 }
 .container__card--information img {
-  width: 10em;
+  width: 8.5em;
   margin: 0 auto;
   transition: 1s ease;
 }
-
-.container__card--information h2 {
-  color: #ffffff;
-  font-size: 1.5em;
-}
-
 .container__card--information img:hover {
   cursor: pointer;
   -webkit-filter: grayscale(100%);
@@ -114,10 +102,16 @@ a {
   transform: scale(1.1);
   transition: 1s ease;
 }
+
+.container__card--information h2 {
+  color: #ffffff;
+  font-size: 1em;
+}
+
 .title {
   color: #ffd000;
   font-weight: 500;
-  font-size: 1.1em;
+  font-size: 1em;
   font-style: italic;
 }
 
@@ -148,22 +142,49 @@ footer .heart {
 
 @keyframes animate {
   0% {
-    content: "[Hello World]";
+    content: "[Hello World]🌎";
   }
 
   25% {
-    content: "[Bonjour le monde]";
+    content: "[Bonjour le monde]🌎";
   }
 
   50% {
-    content: "[Hola Mundo]";
+    content: "[Hola Mundo]🌎";
   }
 
   75% {
-    content: "[Selam Dünya]";
+    content: "[Selam Dünya]🌎";
   }
 
   100% {
-    content: "[Olá Mundo]";
+    content: "[Olá Mundo]🌎";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+  .header p {
+    font-size: 1.5em;
+  }
+  .container__card {
+    max-width: 90%;
+  }
+  .container__card--information h2 {
+    font-size: 1em;
+  }
+
+  .title {
+    font-size: 0.8em;
+  }
+
+  .change {
+    padding-top: 10em;
   }
 }
