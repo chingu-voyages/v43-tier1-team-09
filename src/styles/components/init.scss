@@ -5,23 +5,39 @@
   min-width: 15em;
   position: fixed;
   background-size: contain;
+  transition: all 0.5s;
+  &.shift-left {
+    transform: translate(-50vw, 0);
+  }
+  &.from-right {
+    transform: translate(50vw, 0);
+  }
+  &__top {
+    @extend .dots;
+    top: -5em;
+    &-left {
+      @extend .dots__top;
+      left: -5em;
+    }
+    &-right {
+      @extend .dots__top;
+      right: -5em;
+    }
+  }
+  &__bottom {
+    @extend .dots;
+    bottom: -5em;
+    &-left {
+      @extend .dots__bottom;
+      left: -9em;
+    }
+    &-right {
+      @extend .dots__bottom;
+      right: -9em;
+    }
+  }
 }
-.dots__top {
-  @extend .dots;
-  top: -5em;
-}
-.dots__top-left {
-  @extend .dots__top;
-  left: -5em;
-}
-.dots__bottom {
-  @extend .dots;
-  bottom: -5em;
-}
-.dots__bottom-left {
-  @extend .dots__bottom;
-  left: -9em;
-}
+
 header {
   position: relative;
   top: 1em;
@@ -36,6 +52,18 @@ header {
   letter-spacing: 0em;
   text-align: center;
   text-transform: uppercase;
+  
+  &.SelectPage {
+    & h1 {
+      transition: all .3s;
+      font-size: 1em;
+      z-index:1;
+    }
+    & .world {
+      transition: all .3s;
+      zoom: .5;
+    }
+  }
 }
 
 .world {
