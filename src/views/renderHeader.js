@@ -19,7 +19,7 @@ const renderHeader = (page) => {
   document.body.prepend(header);
   const world = document.querySelector(".world"); // creates a variable for the world div that we just created
   // runs the init function when we click on the world container
-  world.onclick = init;
+  //world.onclick = init; (Nazille's task)
   switch (page) {
     case "SelectPage":
       // Story Select Screen Header
