@@ -1,19 +1,27 @@
 // imports other views from our project
 import clearAnchor, { anchor } from "./clearAnchor";
-import renderHeader from './renderHeader';
-import renderFooter from './renderFooter';
+import renderHeader from "./renderHeader";
+import renderFooter from "./renderFooter";
+
+// function that generate random number, then we can view different images
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 // function that render scenarios on screen and send the variables to input Page
 async function renderScenarios(data) {
   // when we render scenarios, it adds a class to the rocket ship, which causes it to 'blast off'
-  document.querySelector('.rocket').classList.add('blast-off')
+  document.querySelector(".rocket").classList.add("blast-off");
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
-  renderHeader('SelectPage');
+  renderHeader("SelectPage");
   // defines our scenarios from the data being passed into this function
   const scenarios = data.json;
   // creates DOM elements for our scenarios
   const section = document.createElement("section");
   const heading = document.createElement("h2");
   const ul = document.createElement("ul");
+
   // maps over our scenarios to create individual items from each story
   scenarios.map((story) => {
     // creates an html list item for each scenario
@@ -22,7 +30,7 @@ async function renderScenarios(data) {
     li.innerHTML = `
       <div>
                 <img
-                  src="https://placehold.jp/150x150.png"
+                  src="https://picsum.photos/150?random=${getRandomInt(10000)}"
                   alt="placeholder description"
                 />
                 <a href="#"><h3>${story.Scenario_title}</h3></a>
@@ -48,8 +56,8 @@ async function renderScenarios(data) {
   document
     .querySelectorAll(".game ul li")
     .forEach((e, i) => (e.onclick = () => data.renderInputs(scenarios, i)));
-    // calls the renderFooter function passing in this page
-    renderFooter("SelectPage")
+  // calls the renderFooter function passing in this page
+  renderFooter("SelectPage");
 }
 
 export default renderScenarios;
