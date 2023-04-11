@@ -1,6 +1,8 @@
 import clearAnchor, { anchor } from "./clearAnchor";
 import controller from "../controller/index";
 import pegarDifferenca from "../utils/pegarDifferenca";
+import renderHeader from './renderHeader';
+import renderFooter from './renderFooter';
 
 // function to render inputs
 const renderInputPage = (title, variables, index) => {
@@ -25,7 +27,8 @@ const renderInputPage = (title, variables, index) => {
         `;
     form.append(div);
   });
-
+  // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
+  renderHeader("InputPage");
   // event listener must be inside of this function as this is where the form is rendered.
   form.addEventListener("submit", (e) => {
     e.preventDefault(); // stops page from following default protocol to process the form
@@ -36,7 +39,6 @@ const renderInputPage = (title, variables, index) => {
       // checks the responses given against a badword filter
       controller().renderStory(index, formResponses, keys); // render the story since it passed the check
   });
-
   // creates a button at the bottom of the form
   const input = document.createElement("div");
   input.innerHTML = `<input type="submit" value="&gt; Go Mad" />`;
@@ -44,6 +46,8 @@ const renderInputPage = (title, variables, index) => {
   clearAnchor();
   section.append(form);
   anchor.append(section);
+  // calls the renderFooter function passing in this page
+  renderFooter("InputPage")
 };
 
 export default renderInputPage;

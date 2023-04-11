@@ -1,3 +1,18 @@
+.shift {
+  transition: all .5s;
+  &-left {
+    transform: translate(-50vw, 0);
+  }
+  &-right {
+    transform: translate(50vw, 0);
+  }
+  &-down {
+    transform: translate(0, 50vh);
+  }
+  &-up {
+    transform: translate(0, -50vh);
+  }
+}
 .dots {
   background: url(../assets/dots.png);
   background-repeat: no-repeat;
@@ -6,12 +21,7 @@
   position: fixed;
   background-size: contain;
   transition: all 0.5s;
-  &.shift-left {
-    transform: translate(-50vw, 0);
-  }
-  &.shift-right {
-    transform: translate(50vw, 0);
-  }
+
   &__top {
     @extend .dots;
     top: -5em;
@@ -46,22 +56,22 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 77px;
   letter-spacing: 0em;
   text-align: center;
   text-transform: uppercase;
-  
+
   &.SelectPage {
     & h1 {
-      transition: all .3s;
+      transition: all 0.3s;
       font-size: 1em;
-      z-index:1;
+      z-index: 1;
     }
     & .world {
-      transition: all .3s;
-      zoom: .5;
+      transition: all 0.3s;
+      zoom: 0.5;
     }
   }
 }
@@ -99,6 +109,7 @@ header {
 }
 
 footer {
+  transition: all .5s;
   background: linear-gradient(
     45deg,
     #0054676e,
