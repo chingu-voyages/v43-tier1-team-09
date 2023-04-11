@@ -8,6 +8,9 @@
   position: absolute;
   right: 0;
   bottom: 23%;
+  @media print {
+    display: none;
+  }
   &.blast-off {
     transform: translate(-1000vw, -750vh);
   }
