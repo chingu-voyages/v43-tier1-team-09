@@ -61,6 +61,7 @@ const renderHeader = (page) => {
       </div>
       `;
       header.classList = '';
+      header.classList.add('fade-in');
       const rightHeader = document.querySelector(".right");
       console.log(rightHeader);
       const rightWorld = document.querySelector(".world");
