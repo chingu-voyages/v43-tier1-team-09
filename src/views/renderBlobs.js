@@ -1,5 +1,6 @@
 const renderBlobs = () => {
-    const blobs = document.createElement('div');
+    const blobs = document.getElementById('blobs') || document.createElement('div');
+    blobs.id = 'blobs';
     blobs.innerHTML = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <path fill="#9b5de5" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
