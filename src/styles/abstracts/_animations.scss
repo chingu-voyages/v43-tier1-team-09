@@ -14,7 +14,7 @@
     transform: rotate(0);
   }
   50% {
-    border-radius:0px;
+    border-radius: 0px;
   }
   to {
     transform: rotate(360deg);
@@ -22,6 +22,25 @@
 }
 @keyframes hue-rotate {
   0% {
-    filter: hue-rotate(0deg); }
+    filter: hue-rotate(0deg);
+  }
   100% {
-    filter: hue-rotate(360deg); } }
+    filter: hue-rotate(360deg);
+  }
+}
+
+.shift {
+  transition: all 0.5s;
+  &-left {
+    transform: translate(-50vw, 0);
+  }
+  &-right {
+    transform: translate(50vw, 0);
+  }
+  &-down {
+    transform: translate(0, 50vh);
+  }
+  &-up {
+    transform: translate(0, -50vh);
+  }
+}
