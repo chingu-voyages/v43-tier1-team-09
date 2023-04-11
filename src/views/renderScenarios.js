@@ -48,6 +48,7 @@ async function renderScenarios(data) {
   document
     .querySelectorAll(".game ul li")
     .forEach((e, i) => (e.onclick = () => data.renderInputs(scenarios, i)));
+    // calls the renderFooter function passing in this page
     renderFooter("SelectPage")
 }
 

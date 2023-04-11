@@ -1,8 +1,12 @@
 import clearAnchor, { anchor } from "./clearAnchor";
+import renderHeader from "./renderHeader";
+import renderFooter from "./renderFooter";
 // function to render a story page
 const renderStoryPage = (scenario, values, title, index, keys) => {
   const section = document.createElement("section"); // creates an html element to build page within
   let madlib = scenario;
+  // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
+  renderHeader("StoryPage");
   // loops over the values to render and replaces them with the key index
   values.forEach((value, i) => {
     const replaceVar = `{{${keys[i]}}}`; // defines this key index using the index of this value
@@ -21,6 +25,8 @@ const renderStoryPage = (scenario, values, title, index, keys) => {
     }); // maps over the newly created array and created `<p>` tags for each of them, and then appends them inside of the section created initally
   clearAnchor();
   anchor.append(section);
+  // calls the renderFooter function passing in this page
+  renderFooter("StoryPage");
 };
 
 export default renderStoryPage;
