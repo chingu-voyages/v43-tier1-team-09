@@ -46,7 +46,7 @@ Therefore, the second step after organizing all these stories in a single CSV fi
 
 ### Screenshot
 
-![](../docs/Images/screenshot.jpg)
+![](./Images/screenshot.jpg)
 
 ### Links
 
