@@ -1,4 +1,4 @@
-![](../docs/Images/madlibs.png)
+![](./Images/madlibs.png)
 
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
@@ -41,7 +41,8 @@ The first step we took as a team was to create the required files for our projec
 ```
 {{placeholder}}
 ```
-Therefore, the second step after organizing all these stories in a single CSV file separated by categories, size, and placeholders, was to convert the CSV to a JSON file. Once open, we use a for loop to go over each JSON object of the file. The first loop identified all the placeholder variables in a given scenario. Those variables are stored in the var_list array. In the second loop, each variable is split into a list of words _(ie. "aTypeOfBuilding" becomes ["a","Type","Of","Building"])_ and then converted into a string variable _(ie. the list["a","Type","Of","Building"] becomes the string "A type of building")_. Those variables are then stored in the description_array. Finally, both lists are zipped into a __Python__ dictionary, converted, and added to their corresponding Scenario object. The resulting Scenario object is stored in a final array. The final array is saved in the stories.json file, and then we can use it as a component for replacing in the DOM.
+
+Therefore, the second step after organizing all these stories in a single CSV file separated by categories, size, and placeholders, was to convert the CSV to a JSON file. Once open, we use a for loop to go over each JSON object of the file. The first loop identified all the placeholder variables in a given scenario. Those variables are stored in the var*list array. In the second loop, each variable is split into a list of words *(ie. "aTypeOfBuilding" becomes ["a","Type","Of","Building"])_ and then converted into a string variable _(ie. the list["a","Type","Of","Building"] becomes the string "A type of building")\_. Those variables are then stored in the description_array. Finally, both lists are zipped into a **Python** dictionary, converted, and added to their corresponding Scenario object. The resulting Scenario object is stored in a final array. The final array is saved in the stories.json file, and then we can use it as a component for replacing in the DOM.
 
 ### Screenshot
 
