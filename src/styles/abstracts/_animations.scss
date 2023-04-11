@@ -71,6 +71,14 @@
       transform: rotate(360deg);
   }
 }
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .out-top {
   animation: rotate 20s linear infinite;
   transform-origin: 13px 25px;
@@ -86,4 +94,7 @@
 .in-bottom {
   animation: rotate 15s linear infinite;
   transform-origin: 84px 93px;
+}
+.fade-in {
+  animation: fadeIn 1.5s linear;
 }
