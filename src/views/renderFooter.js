@@ -1,3 +1,4 @@
+import renderTeamPage from "./renderTeamPage";
 const renderFooter = (page) => {
   // defines dots div containers or creates them as needed
   const bottomLeftDots =
@@ -23,13 +24,15 @@ const renderFooter = (page) => {
   <span> &copy; 2023 </span
   ><span
     >Inspired by <a href="https://www.chingu.io" target="_blank">Chingu</a>.
-    Built for Voyage 43.<a
-      href="https://github.com/chingu-voyages/v43-tier1-team-09"
-      target="_blank"
+    Built for Voyage 43. <a
+      href="#"
+      id="teamPage"
       >We are Team 09</a
     ></span>`;
   footer.classList.add("shift-down");
   document.body.append(footer); // Appends the footer to the document body
+  const teamPageLink = document.getElementById("teamPage");
+  teamPageLink.onclick = () => renderTeamPage();
   switch (page) {
     case "SelectPage":
       // Story Select Screen footer
@@ -58,6 +61,13 @@ const renderFooter = (page) => {
       // Immediately invokes a function to remove the class which positions the element off screen, which causes it to appear on screen
       setTimeout(() => bottomLeftDots.classList.remove("shift-down"), 1);
       break;
+    case "TeamPage":
+      bottomLeftDots.classList.add("shift-down");
+      setTimeout(() => bottomLeftDots.remove(), 300);
+      bottomRightDots.classList = "shift-down dots__bottom-right";
+      document.body.append(bottomRightDots);
+      setTimeout(() => bottomRightDots.classList.remove("shift-down"));
+      break;
     default:
       // Landing Page Footer
       // Adds a class to the dots on the right that shifts them off screen to the right
@@ -81,15 +91,18 @@ const renderFooter = (page) => {
 };
 
 // https://stackoverflow.com/users/10703934/kia-abdi && https://techstacker.com/javascript-detect-when-scrolled-to-bottom/
-window.onwheel = e => {
-  const footer = document.querySelector('footer');
-  if(e.deltaY >= 0 && window.innerHeight + window.pageYOffset >= document.body.offsetHeight){
+window.onwheel = (e) => {
+  const footer = document.querySelector("footer");
+  if (
+    e.deltaY >= 0 &&
+    window.innerHeight + window.pageYOffset >= document.body.offsetHeight
+  ) {
     // Scrolling down causes the footer to slide up from the bottom
-    footer.classList.remove('shift-down');
+    footer.classList.remove("shift-down");
   } else {
     // Hides the footer when the user scrolls up
-    footer.classList.add('shift-down');
+    footer.classList.add("shift-down");
   }
-}
+};
 
 export default renderFooter;
