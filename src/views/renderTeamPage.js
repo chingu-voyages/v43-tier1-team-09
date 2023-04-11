@@ -6,7 +6,7 @@ const renderTeamPage = () => {
     clearAnchor();
     renderHeader("TeamPage");
     const main = document.createElement('main');
-    main.classList = 'container';
+    main.classList = 'container fade-in';
     main.innerHTML = `
     <section class="container__card">
         <div class="container__card--information">
