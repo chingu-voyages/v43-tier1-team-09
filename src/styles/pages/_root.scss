@@ -1,17 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
 body {
-  font-family: "Baloo Thambi 2";
-  background: $color-primary;
-  color: $color-primary-light;
+  background-color: $color-primary;
 }
 header {
   color: $color-secondary;
+}
+.flex {
+  display: flex;
 }
 main {
   text-align: center;
   margin-top: 8em;
   ul.flex.wrap.no-list.center {
     overflow-x: scroll;
+    & li {
+      list-style: none;
+      margin: 1em;
+      img {
+        border-radius: 100%;
+      }
+    }
   }
   p {
     font-size: 20px;
