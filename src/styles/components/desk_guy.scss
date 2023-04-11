@@ -1,0 +1,14 @@
+.desk_guy {
+    background: url(../assets/desk_guy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 5%;
+
+    @media print {
+        display: none;
+    }
+}
