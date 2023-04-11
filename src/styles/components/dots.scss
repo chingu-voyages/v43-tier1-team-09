@@ -6,6 +6,9 @@
   position: fixed;
   background-size: contain;
   transition: all 0.5s;
+  @media print {
+    display: none;
+  }
 
   &__top {
     @extend .dots;
