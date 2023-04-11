@@ -134,4 +134,6 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 - [Maurice Butler](https://github.com/MauriceButler) is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js) in the Contributors table. He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository.
 
+- Big shout out to [Ksenia Kondrashova](https://github.com/uuuulala) for the Background Blob Animation that gives the illusion of blobs morphing randomly. [Step-by-Step Guide](https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482).
+
 - The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
