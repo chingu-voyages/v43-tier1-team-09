@@ -1,11 +1,16 @@
 @import "abstracts/animations";
+@import "abstracts/utilities";
 @import "abstracts/variables";
 
 @import "base/base";
+@import "base/footer";
+@import "base/header";
 @import "base/typography";
 
+@import "components/blobs";
 @import "components/button";
 @import "components/confetti";
 
 @import "pages/root";
 @import "pages/print";
+@import "pages/teampage";

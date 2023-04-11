@@ -48,6 +48,31 @@ const renderHeader = (page) => {
       // After 300ms we remove the element from the DOM
       setTimeout(() => topLeftDots.remove(), 300);
       break;
+    case "TeamPage":
+      header.innerHTML = `
+      <div class="right shift-right">
+        <div class="world"></div>
+        <h1 class="heading-primary">Mad Libs</h1>
+      </div>
+      <div class="header">
+      
+      <h1>Meet Our <span>Devs</span></h1>
+      <p></p>
+      </div>
+      `;
+      header.classList = '';
+      header.classList.add('fade-in');
+      const rightHeader = document.querySelector(".right");
+      console.log(rightHeader);
+      const rightWorld = document.querySelector(".world");
+      rightWorld.onclick = () => init();
+      setTimeout(() => rightHeader.classList.remove("shift-right"), 1);
+      topRightDots.classList.add("shift-up");
+      setTimeout(() => topRightDots.remove(), 300);
+      topLeftDots.classList = "shift-up dots__top-left";
+      document.body.prepend(topLeftDots);
+      setTimeout(() => topLeftDots.classList.remove("shift-up"), 1);
+      break;
     default:
       // Landing Page Header
       // Adds a class to the dots on the right that shifts them off screen to the right
