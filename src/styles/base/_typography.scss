@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
+
+body {
+  font-family: "Baloo Thambi 2", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-secondary;
+}
+.heading {
+  &-primary {
+    text-transform: uppercase;
+    text-shadow: 0 0 3em lighten($color-yellow, 15%);
+    line-height: 0;
+  }
+
+  &:hover {
+    transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
