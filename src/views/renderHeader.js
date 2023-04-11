@@ -60,6 +60,7 @@ const renderHeader = (page) => {
       <p></p>
       </div>
       `;
+      header.classList = '';
       const rightHeader = document.querySelector(".right");
       console.log(rightHeader);
       const rightWorld = document.querySelector(".world");
