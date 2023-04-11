@@ -1,19 +1,27 @@
 @media print {
   footer,
-  .btn_Print,
-  input {
+  button {
     display: none;
   }
 
   body {
     text-align: center;
+    background-color: white;
+    color: black;
+  }
+  .dots__top-left {
+    display: none;
   }
 
+  .heading-primary,
+  .world {
+    display: none;
+  }
   section {
     border: 1px ridge rgb(228, 21, 56);
     margin: 0 auto;
     width: 90%;
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     line-height: 2;
   }
 
