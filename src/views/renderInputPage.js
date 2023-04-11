@@ -1,8 +1,8 @@
 import clearAnchor, { anchor } from "./clearAnchor";
 import controller from "../controller/index";
 import pegarDifferenca from "../utils/pegarDifferenca";
-import renderHeader from './renderHeader';
-import renderFooter from './renderFooter';
+import renderHeader from "./renderHeader";
+import renderFooter from "./renderFooter";
 
 // function to render inputs
 const renderInputPage = (title, variables, index) => {
@@ -35,7 +35,7 @@ const renderInputPage = (title, variables, index) => {
     const formResponses = [...new FormData(e.target).entries()].map(
       (data) => data[1]
     ); // converts responses from form into an array to be passed into the function to collect scenarios
-    if (pegarDifferenca(formResponses))
+    if (pegarDifferenca(formResponses.map(response => response.toLowerCase()))); // converts each response to a lowercase object to check if uppercase curse word;
       // checks the responses given against a badword filter
       controller().renderStory(index, formResponses, keys); // render the story since it passed the check
   });
@@ -47,7 +47,7 @@ const renderInputPage = (title, variables, index) => {
   section.append(form);
   anchor.append(section);
   // calls the renderFooter function passing in this page
-  renderFooter("InputPage")
+  renderFooter("InputPage");
 };
 
 export default renderInputPage;
