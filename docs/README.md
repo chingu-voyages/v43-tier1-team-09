@@ -45,7 +45,7 @@ Finally, both lists are zipped into a **Python** dictionary, converted, and adde
 
 ### Screenshot
 
-![](../docs/Images/screenshot.jpg)
+![](../docs/Images/screenshot.png)
 
 ### Links
 
