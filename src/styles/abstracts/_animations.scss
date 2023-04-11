@@ -1,0 +1,27 @@
+@keyframes roll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: rotate(random(360) + deg) translateY(random(4) + rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    border-radius:0px;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
