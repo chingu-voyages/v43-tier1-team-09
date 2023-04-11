@@ -44,3 +44,25 @@
     transform: translate(0, -50vh);
   }
 }
+
+@keyframes animate {
+  0% {
+    content: "[Hello World]🌎";
+  }
+
+  25% {
+    content: "[Bonjour le monde]🌎";
+  }
+
+  50% {
+    content: "[Hola Mundo]🌎";
+  }
+
+  75% {
+    content: "[Selam Dünya]🌎";
+  }
+
+  100% {
+    content: "[Olá Mundo]🌎";
+  }
+}
