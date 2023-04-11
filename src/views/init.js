@@ -16,7 +16,7 @@ const init = () => {
   // create a section element
   const section = document.createElement("section");
   // fill in the section element with the HTML from index.html
-  section.innerHTML = `<p>Fill in the blanks and be the funniest person in the Room!</p>
+  section.innerHTML = `<p>Fill in the <span>blanks</span> and be the <span>funniest</span> person in the Room!</p>
   <button>&gt; GO MAD</button>`;
   // append the section element to the anchor container
   anchor.append(section);
