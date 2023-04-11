@@ -40,9 +40,9 @@ const renderInputPage = (title, variables, index) => {
       controller().renderStory(index, formResponses, keys); // render the story since it passed the check
   });
   // creates a button at the bottom of the form
-  const input = document.createElement("div");
-  input.innerHTML = `<input type="submit" value="&gt; Go Mad" />`;
-  form.append(input);
+  const button = document.createElement("button");
+  button.innerText = `> Go Mad!`;
+  form.append(button);
   clearAnchor();
   section.append(form);
   anchor.append(section);
