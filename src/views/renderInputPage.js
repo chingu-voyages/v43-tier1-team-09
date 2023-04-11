@@ -12,7 +12,7 @@ const renderInputPage = (title, variables, index) => {
   // renders the text on screen
   const h2 = document.createElement("h2");
   const h3 = document.createElement("h3");
-  h2.innerText = title; // dynamically changes the title
+  h2.innerHTML = title; // dynamically changes the title
   h3.innerText = "Fill in the blank fields below.";
   section.append(h2);
   form.append(h3);

@@ -10,13 +10,13 @@ const renderStoryPage = (scenario, values, title, index, keys) => {
   });
   // renders the title
   const h2 = document.createElement("h2");
-  h2.innerText = title;
+  h2.innerHTML = title;
   section.append(h2);
   madlib
     .split("\\n") // creates an array from the madlib, creating a new item for each line break
     .map((line) => {
       const p = document.createElement("p");
-      p.innerText = line;
+      p.innerHTML = line;
       section.append(p);
     }); // maps over the newly created array and created `<p>` tags for each of them, and then appends them inside of the section created initally
   clearAnchor();
