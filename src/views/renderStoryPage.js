@@ -5,8 +5,9 @@ const renderStoryPage = (scenario, values, title, index, keys) => {
   let madlib = scenario;
   // loops over the values to render and replaces them with the key index
   values.forEach((value, i) => {
+    let newValue = `<span key='${keys[i]}'>${value}</span>` // wrap the value in a span and also exposes the key to the dom so we could render in print later perhaps
     const replaceVar = `{{${keys[i]}}}`; // defines this key index using the index of this value
-    madlib = madlib.replaceAll(replaceVar, value); // generates the mad lib by replacing all of the static variables with their passed in values
+    madlib = madlib.replaceAll(replaceVar, newValue); // generates the mad lib by replacing all of the static variables with their passed in values
   });
   // renders the title
   const h2 = document.createElement("h2");
@@ -20,7 +21,11 @@ const renderStoryPage = (scenario, values, title, index, keys) => {
       section.append(p);
     }); // maps over the newly created array and created `<p>` tags for each of them, and then appends them inside of the section created initally
   clearAnchor();
-  anchor.append(section);
+  const button = document.createElement('button'); // creates a button
+  button.innerText = `> Print Mad Lib` // sets the text to message
+  button.onclick = () => window.print(); // on click is set to a function that calls window.print
+  section.append(button) // sews the button to the section
+  anchor.append(section); // attaches the section to the anchor container
 };
 
 export default renderStoryPage;
