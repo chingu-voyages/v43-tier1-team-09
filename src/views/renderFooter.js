@@ -13,22 +13,17 @@ const renderFooter = (page) => {
   // Defines the static HTML for the footer on the page
   footer.innerHTML = `
   <span> &lt;/&gt; with </span><i class="heart"></i><span> by </span>
-  <span>
-    <a href="https://github.com/Emimint" target="_blank">Emimint</a>,
-    <a href="https://github.com/emilio12345" target="_blank">emilio12345</a
-    >, <a href="https://github.com/PaulaR-05" target="_blank">PaulaR-05</a>,
-    <a href="https://github.com/mnichols08" target="_blank">mnichols08</a>,
-    <a href="https://github.com/Nazile-Tag" target="_blank">Nazile-Tag</a>
-  </span>
-  <hr />
-  <span> &copy; 2023 </span
-  ><span
-    >Inspired by <a href="https://www.chingu.io" target="_blank">Chingu</a>.
-    Built for Voyage 43. <a
-      href="#"
-      id="teamPage"
-      >We are Team 09</a
-    ></span>`;
+<span>
+	<a href="https://github.com/Emimint" target="_blank">Emimint</a>,
+	<a href="https://github.com/emilio12345" target="_blank">emilio12345</a>, <a href="https://github.com/PaulaR-05" target="_blank">PaulaR-05</a>,
+	<a href="https://github.com/mnichols08" target="_blank">mnichols08</a>,
+	<a href="https://github.com/Nazile-Tag" target="_blank">Nazile-Tag</a>
+</span>
+<hr />
+<span> &copy; 2023 </span><span>Inspired by <a href="https://www.chingu.io" target="_blank">Chingu</a>.
+	Built for Voyage 43.
+	| <a href="https://github.com/chingu-voyages/v43-tier1-team-09" target="_blank">View Source</a> | <a href="https://chingu-voyages.github.io/v43-tier1-team-09/" target="_blank">Learn More</a></span> | <a href="#" id="teamPage">Meet Team 09</a></span>
+  `;
   footer.classList.add("shift-down");
   document.body.append(footer); // Appends the footer to the document body
   const teamPageLink = document.getElementById("teamPage");
