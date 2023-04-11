@@ -1,0 +1,34 @@
+.dots {
+  background: url(../assets/dots.png);
+  background-repeat: no-repeat;
+  min-height: 15em;
+  min-width: 15em;
+  position: fixed;
+  background-size: contain;
+  transition: all 0.5s;
+
+  &__top {
+    @extend .dots;
+    top: -5em;
+    &-left {
+      @extend .dots__top;
+      left: -5em;
+    }
+    &-right {
+      @extend .dots__top;
+      right: -5em;
+    }
+  }
+  &__bottom {
+    @extend .dots;
+    bottom: -5em;
+    &-left {
+      @extend .dots__bottom;
+      left: -9em;
+    }
+    &-right {
+      @extend .dots__bottom;
+      right: -9em;
+    }
+  }
+}
