@@ -1,8 +1,12 @@
 import clearAnchor, { anchor } from "./clearAnchor";
+import renderHeader from "./renderHeader";
+import renderFooter from "./renderFooter";
 // function to render a story page
 const renderStoryPage = (scenario, values, title, index, keys) => {
   const section = document.createElement("section"); // creates an html element to build page within
   let madlib = scenario;
+  // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
+  renderHeader("StoryPage");
   // loops over the values to render and replaces them with the key index
   values.forEach((value, i) => {
     let newValue = `<span key='${keys[i]}'>${value}</span>` // wrap the value in a span and also exposes the key to the dom so we could render in print later perhaps
@@ -25,7 +29,10 @@ const renderStoryPage = (scenario, values, title, index, keys) => {
   button.innerText = `> Print Mad Lib` // sets the text to message
   button.onclick = () => window.print(); // on click is set to a function that calls window.print
   section.append(button) // sews the button to the section
-  anchor.append(section); // attaches the section to the anchor container
+  anchor.append(section);
+  // calls the renderFooter function passing in this page
+  renderFooter("StoryPage");
+
 };
 
 export default renderStoryPage;
