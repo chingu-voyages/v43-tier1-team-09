@@ -49,6 +49,7 @@ const renderHeader = (page) => {
       setTimeout(() => topLeftDots.remove(), 300);
       break;
     case "TeamPage":
+      // renders the html from Gabriela's design file and adds the logo from before but inside of a div
       header.innerHTML = `
       <div class="right shift-right">
         <div class="world"></div>
@@ -60,18 +61,17 @@ const renderHeader = (page) => {
       <p></p>
       </div>
       `;
-      header.classList = '';
-      header.classList.add('fade-in');
-      const rightHeader = document.querySelector(".right");
-      console.log(rightHeader);
-      const rightWorld = document.querySelector(".world");
-      rightWorld.onclick = () => init();
-      setTimeout(() => rightHeader.classList.remove("shift-right"), 1);
-      topRightDots.classList.add("shift-up");
-      setTimeout(() => topRightDots.remove(), 300);
-      topLeftDots.classList = "shift-up dots__top-left";
-      document.body.prepend(topLeftDots);
-      setTimeout(() => topLeftDots.classList.remove("shift-up"), 1);
+      header.classList = ''; // removes the class from header
+      header.classList.add('fade-in'); // adds class of fade-in, causing the header to fade in when this page loads
+      const rightHeader = document.querySelector(".right"); // defines the right container we created above
+      const rightWorld = document.querySelector(".world"); // defines the world that was created above
+      rightWorld.onclick = () => init(); // defines a function to run init() when the user clicks on the world (returning home)
+      setTimeout(() => rightHeader.classList.remove("shift-right"), 1); // immediately invokes a function to cause the right header to shift in from the right
+      topRightDots.classList.add("shift-up"); // adds a class to cause the top right dots to move off screen
+      setTimeout(() => topRightDots.remove(), 300); // after 300ms removes them from the DOM
+      topLeftDots.classList = "shift-up dots__top-left"; // adds an initial classList with to render top left dots off screen
+      document.body.prepend(topLeftDots); // prepends those dots to the body
+      setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediatley invokes a function to remove the class hiding them, causing them to slide into view
       break;
     default:
       // Landing Page Header
