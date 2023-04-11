@@ -6,6 +6,7 @@
 
 - [Overview](#overview)
   - [The project](#the-project)
+  - [Project Setup](#project-setup)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [General Instructions](#general-instructions)
@@ -33,6 +34,14 @@ Users should be able to:
   - Any field has profane words
 - Download or Print their story
 
+### Project Setup
+
+The first step we took as a team was to create the required files for our project and ways to connect them. To organize, we did a simple Google search that led us to stories of different genres and scenarios, also with placeholders that would be used as input for adjectives, nouns, exclamations, or a person's name. In our file, these placeholders were delimited by double brackets in camelcase as in the following example:
+
+<{{placeholder}}>
+
+Therefore, the second step after organizing all these stories in a single CSV file separated by categories, size, and placeholders, was to convert the CSV to a JSON file. Once open, we use a for loop to go over each JSON object of the file. The first loop identified all the placeholder variables in a given scenario. Those variables are stored in the var_list array. In the second loop, each variable is split into a list of words (ie. "aTypeOfBuilding" becomes ["a","Type","Of","Building"]) and then converted into a string variable (ie. the list["a","Type","Of","Building"] becomes the string "A type of building"). Those variables are then stored in the description_array. Finally, both lists are zipped into a Python dictionary, converted, and added to their corresponding Scenario object. The resulting Scenario object is stored in a final array. The final array is then saved in the stories.json file, and then we can use as a component for replacing it in the DOM from a JSON file.
+
 ### Screenshot
 
 ![](../docs/Images/screenshot.jpg)
@@ -47,6 +56,7 @@ Users should be able to:
 ### Built with
 
 - [Figma](https://www.figma.com/) - A cloud-based design tool
+- [Python](https://www.python.org/) - Used to work with JSON files
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - The web framework used
 - [SASS](https://sass-lang.com/) - The styling language used
 - [Webpack](https://webpack.js.org/) - A script bundler to combine multiple scripts
@@ -111,7 +121,7 @@ npm run build
 - **Mikey Nichols** -- _Developer_ - [mnichols08](https://github.com/mnichols08)
 - **Nazile Tag** -- _Developer_ - [Nazile-Tag](https://github.com/Nazile-Tag)
 
-See also the list of [contributors](/CONTRIBUTORS.md) who participated in this project.
+See also the list of [contributors](./CONTRIBUTORS.md) who participated in this project.
 
 ## Acknowledgments
 
