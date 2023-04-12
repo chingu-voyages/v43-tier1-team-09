@@ -50,7 +50,7 @@ const renderInputPage = (title, variables, index) => {
     )
       // converts each response to a lowercase object to check if uppercase curse word;
       // double checks the responses given against a badword filter
-      controller().renderStory(index, formResponses, keys); // render the story since it passed the check
+      controller().renderStory(index, formResponses, keys, placeholders); // render the story since it passed the check
   });
 
   clearAnchor();
