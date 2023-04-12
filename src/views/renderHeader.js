@@ -1,4 +1,5 @@
 import init from "./init"; // pulls in the initiliaze application function to be called on demand
+import { visuals } from "./clearAnchor";
 const renderHeader = (page) => {
   // defines dots div containers or creates them as needed
   let topLeftDots =
@@ -32,14 +33,14 @@ const renderHeader = (page) => {
       // defines the dots on the top right to initially be off the screen
       topRightDots.classList = "shift-right dots__top-right";
       // prepends the dots on the top right to the body
-      document.body.prepend(topRightDots);
+      visuals.prepend(topRightDots);
       // immediately invokes an asynchronous function to remove the class that places it off the screen to the right.
       setTimeout(() => topRightDots.classList.remove("shift-right"), 1);
       break;
     case "InputPage":
       // Story Input Page Header
       topLeftDots.classList = "shift-up dots__top-left"; // defines the dots on the left to render off the screen to the top initially
-      document.body.prepend(topLeftDots); // appends the left dots onto the screen
+      visuals.prepend(topLeftDots); // appends the left dots onto the screen
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediately removes the class that places the dots on the left off screen, which places them on screen
       break;
     case "StoryPage":
@@ -61,8 +62,8 @@ const renderHeader = (page) => {
       <p></p>
       </div>
       `;
-      header.classList = ''; // removes the class from header
-      header.classList.add('fade-in'); // adds class of fade-in, causing the header to fade in when this page loads
+      header.classList = ""; // removes the class from header
+      header.classList.add("fade-in"); // adds class of fade-in, causing the header to fade in when this page loads
       const rightHeader = document.querySelector(".right"); // defines the right container we created above
       const rightWorld = document.querySelector(".world"); // defines the world that was created above
       rightWorld.onclick = () => init(); // defines a function to run init() when the user clicks on the world (returning home)
@@ -70,7 +71,7 @@ const renderHeader = (page) => {
       topRightDots.classList.add("shift-up"); // adds a class to cause the top right dots to move off screen
       setTimeout(() => topRightDots.remove(), 300); // after 300ms removes them from the DOM
       topLeftDots.classList = "shift-up dots__top-left"; // adds an initial classList with to render top left dots off screen
-      document.body.prepend(topLeftDots); // prepends those dots to the body
+      visuals.prepend(topLeftDots); // prepends those dots to the body
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediatley invokes a function to remove the class hiding them, causing them to slide into view
       break;
     default:
@@ -82,7 +83,7 @@ const renderHeader = (page) => {
       // removes any classes from header we may have defined in another case
       header.classList = "";
       topLeftDots.classList = "shift-left dots__top-left"; // defines the dots on the left to render off the screen to the left initially
-      document.body.prepend(topLeftDots); // appends the left dots onto the screen
+      visuals.prepend(topLeftDots); // appends the left dots onto the screen
       setTimeout(() => topLeftDots.classList.remove("shift-left"), 1); // immediately removes the class that places the dots on the left off screen, which places them on screen
   }
 };

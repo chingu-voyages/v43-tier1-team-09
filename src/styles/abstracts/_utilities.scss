@@ -10,3 +10,10 @@
     position:static;
   }
 }
+
+div[data-completed=false][data-inprogress=true]{
+  display: block;
+}
+.hide, div[data-completed=true], div[data-inprogress=false] {
+    display: none;
+}
