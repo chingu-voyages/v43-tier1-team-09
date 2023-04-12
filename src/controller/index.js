@@ -10,18 +10,15 @@ function controller() {
     renderInputs: (json, e) => {
       return renderInputPage(json[e].Scenario_title, json[e].Variables, e);
     },
-    renderStory: (index, values, keys) => {
+    renderStory: (index, values, keys, placeholders) => {
       return renderStoryPage(
         json[index].Scenario,
         values,
         json[index].Scenario_title,
         index,
-        keys
+        keys,
+        placeholders
       );
-    },
-    collectInput: input => {
-      inputs.push(input);
-      console.log(inputs)
     }
   };
 }
