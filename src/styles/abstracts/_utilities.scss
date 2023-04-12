@@ -14,3 +14,6 @@
 .hide, form div[data-completed=false] {
   display: none;
 }
+form div[data-completed=false][data-inprogress=true]{
+  display: block;
+}
