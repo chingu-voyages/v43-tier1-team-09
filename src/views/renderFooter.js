@@ -83,6 +83,16 @@ const renderFooter = (page) => {
       if (!document.querySelector(".desk_guy")) visuals.append(deskGuy);
       deskGuy.classList = "desk_guy";
 
+      const calendar =
+        document.querySelector(".calendar") || document.createElement("div");
+      if (!document.querySelector(".calendar")) visuals.append(calendar);
+      calendar.classList = "calendar";
+
+      const jugglingGuy =
+        document.querySelector(".juggling_guy") || document.createElement("div");
+      if (!document.querySelector(".juggling_guy")) visuals.append(jugglingGuy);
+      jugglingGuy.classList = "juggling_guy";
+
       // Adds a class to the bottom left dots that will render them off screen initially
       bottomLeftDots.classList = "shift-left dots__bottom-left";
       // Appends the bottom left dots to the document body

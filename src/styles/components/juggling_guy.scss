@@ -1,12 +1,12 @@
-.desk_guy {
+.juggling_guy {
     @media only screen and (min-width: 768px) {
-        background: url(../assets/desk_guy.png);
+        background: url(../assets/juggling_guy.png);
         background-size: contain;
         background-repeat: no-repeat;
-        height: 300px;
+        height: 200px;
         width: 300px;
         position: absolute;
-        right: 10%;
-        top: 5%;
+        right: 35%;
+        bottom: 0%;
     }
 }
