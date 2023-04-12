@@ -4,6 +4,7 @@ import renderStoryPage from "../views/renderStoryPage";
 
 // function that collect data on json file
 function controller() {
+  const inputs = [];
   return {
     json,
     renderInputs: (json, e) => {
@@ -18,6 +19,10 @@ function controller() {
         keys
       );
     },
+    collectInput: input => {
+      inputs.push(input);
+      console.log(inputs)
+    }
   };
 }
 

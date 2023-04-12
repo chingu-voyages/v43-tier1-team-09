@@ -2,14 +2,33 @@
 import clearAnchor, { anchor } from "./clearAnchor";
 import renderHeader from './renderHeader';
 import renderFooter from './renderFooter';
+
+// credit to https://stackoverflow.com/a/2450976/15950715
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
 // function that render scenarios on screen and send the variables to input Page
 async function renderScenarios(data) {
   // when we render scenarios, it adds a class to the rocket ship, which causes it to 'blast off'
   document.querySelector('.rocket').classList.add('blast-off')
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader('SelectPage');
-  // defines our scenarios from the data being passed into this function
-  const scenarios = data.json;
+  // defines our scenarios from the data being passed into this function (shuffled)
+  const scenarios = shuffle(data.json);
   // creates DOM elements for our scenarios
   const section = document.createElement("section");
   const heading = document.createElement("h2");
