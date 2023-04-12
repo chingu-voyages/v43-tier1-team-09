@@ -1,0 +1,20 @@
+form {
+  div {
+    background: #a595d94a;
+    width: fit-content;
+    margin: 1em auto;
+    padding: 1rem;
+    border-radius: 10px 20px 30px 40px;
+    input {
+      background: #b0b30e8c;
+      color: #200f0f;
+      font-size: 2.2em;
+      font-family: "Baloo Thambi 2";
+      text-align: center;
+      display: flex;
+      &::placeholder {
+        color: #00f5d4;
+      }
+    }
+  }
+}
