@@ -20,12 +20,12 @@ const renderInputPage = (title, variables, index) => {
   form.append(h3);
   // Maps over the keys array to render divs with labels and placeholders for form inputs
   keys.map((key, i) => {
-    const div = document.createElement("div");
-    div.innerHTML = `
+    const input = document.createElement("div");
+    input.innerHTML = `
           <label for="${key}">${placeholders[i]}: </label>
           <input type="text" name="${key}" id="${key}" required />
         `;
-    form.append(div);
+    form.append(input);
   });
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("InputPage");
