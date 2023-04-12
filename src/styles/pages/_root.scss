@@ -8,6 +8,14 @@ header {
   color: $color-secondary;
 }
 
+section.game {
+  background: #a595d94a;
+  width: 70vw;
+  height: fit-content;
+  margin: 1em auto;
+  padding: 1rem;
+  border-radius: 10px 20px 30px 40px;
+}
 .flex {
   display: flex;
   display: flex;
@@ -20,12 +28,9 @@ main {
   margin-top: 8em;
 
   ul.flex.wrap.no-list.center {
-    overflow-x: auto;
-
     & li {
       list-style: none;
       margin: 1em;
-
       img {
         border-radius: 100%;
       }
