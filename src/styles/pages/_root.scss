@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
-
-body {
-  background-color: $color-primary;
+html {
+  height: 100vh;
+  background: linear-gradient(45deg, $color-primary, $color-tertiary);
 }
 
 header {
@@ -14,7 +14,7 @@ section.game {
   height: fit-content;
   margin: 1em auto;
   padding: 1rem;
-  border-radius: 10px 20px 30px 40px;
+  border-radius: random(10)+px random(20)+px random(30)+px random(40)+px;
 }
 .flex {
   display: flex;
