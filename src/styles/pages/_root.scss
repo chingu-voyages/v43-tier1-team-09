@@ -45,11 +45,12 @@ main {
           cursor: pointer;
           transform: scale(1.075);
           & a{
-            color: #fff;
+            color: $color-secondary-light;
             text-decoration: underline;
           }
          }
          a {
+          color: $color-secondary;
           text-decoration: none;
          }
         }
