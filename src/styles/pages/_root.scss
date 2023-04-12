@@ -39,6 +39,20 @@ main {
         img {
           border-radius: 100%;
         }
+        div {
+         transition: .75s all;
+         &:hover {
+          cursor: pointer;
+          transform: scale(1.075);
+          & a{
+            color: #fff;
+            text-decoration: underline;
+          }
+         }
+         a {
+          text-decoration: none;
+         }
+        }
       }
     }
   }
