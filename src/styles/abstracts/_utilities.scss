@@ -11,9 +11,9 @@
   }
 }
 
-.hide, form div[data-completed=false] {
-  display: none;
-}
-form div[data-completed=false][data-inprogress=true]{
+div[data-completed=false][data-inprogress=true]{
   display: block;
+}
+.hide, div[data-completed=true], div[data-inprogress=false] {
+    display: none;
 }
