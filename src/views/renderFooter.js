@@ -1,3 +1,4 @@
+import { styles } from "./clearAnchor";
 import renderTeamPage from "./renderTeamPage";
 const renderFooter = (page) => {
   // defines dots div containers or creates them as needed
@@ -37,7 +38,7 @@ const renderFooter = (page) => {
       setTimeout(() => bottomLeftDots.remove(), 300);
       // Adds a class that renders the dots off screen initially
       bottomRightDots.classList = "shift-right dots__bottom-right";
-      document.body.append(bottomRightDots); // renders the dots on screen
+      styles.append(bottomRightDots); // renders the dots on screen
       // Immediately removes the class, causing them to shift from the right onto the screen
       setTimeout(() => bottomRightDots.classList.remove("shift-right"), 1);
       break;
@@ -52,7 +53,7 @@ const renderFooter = (page) => {
       // Adds a class to the bottom left dots that will render them off screen initially
       bottomLeftDots.classList = "shift-down dots__bottom-left";
       // Appends the bottom left dots to the document body
-      document.body.append(bottomLeftDots);
+      styles.append(bottomLeftDots);
       // Immediately invokes a function to remove the class which positions the element off screen, which causes it to appear on screen
       setTimeout(() => bottomLeftDots.classList.remove("shift-down"), 1);
       break;
@@ -60,7 +61,7 @@ const renderFooter = (page) => {
       bottomLeftDots.classList.add("shift-down");
       setTimeout(() => bottomLeftDots.remove(), 300);
       bottomRightDots.classList = "shift-down dots__bottom-right";
-      document.body.append(bottomRightDots);
+      styles.append(bottomRightDots);
       setTimeout(() => bottomRightDots.classList.remove("shift-down"));
       break;
     default:
@@ -73,13 +74,13 @@ const renderFooter = (page) => {
       const rocket =
         document.querySelector(".rocket") || document.createElement("div");
       // If we do not have a rocket container already then append one to the document body
-      if (!document.querySelector(".rocket")) document.body.append(rocket);
+      if (!document.querySelector(".rocket")) styles.append(rocket);
       // addes the rocket class to our rocket which is how the CSS styles the container
       rocket.classList = "rocket";
       // Adds a class to the bottom left dots that will render them off screen initially
       bottomLeftDots.classList = "shift-left dots__bottom-left";
       // Appends the bottom left dots to the document body
-      document.body.append(bottomLeftDots);
+      styles.append(bottomLeftDots);
       // Immediately invokes a function to remove the class which positions the element off screen, which causes it to appear on screen
       setTimeout(() => bottomLeftDots.classList.remove("shift-left"), 1);
   }
