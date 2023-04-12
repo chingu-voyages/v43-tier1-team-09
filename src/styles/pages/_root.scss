@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
 html {
+  height: 100vh;
   background: linear-gradient(45deg, $color-primary, $color-tertiary);
+  background-attachment: fixed;
 }
 
 header {
