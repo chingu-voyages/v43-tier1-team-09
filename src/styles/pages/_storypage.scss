@@ -1,8 +1,3 @@
 main section.scenario {
-    background: #a595d94a;
-    width: 70vw;
-    height: fit-content;
-    margin: 1em auto;
-    padding: 1rem;
-    border-radius: random(10)+px random(20)+px random(30)+px random(40)+px;
+  @extend .window-pane;
 }
