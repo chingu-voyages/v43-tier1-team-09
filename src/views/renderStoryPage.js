@@ -4,7 +4,7 @@ import renderFooter from "./renderFooter";
 // function to render a story page
 const renderStoryPage = (scenario, values, title, index, keys) => {
   const section = document.createElement("section"); // creates an html element to build page within
-  section.classList = 'scenario';
+  section.classList = 'scenario fade-in';
   let madlib = scenario;
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("StoryPage");

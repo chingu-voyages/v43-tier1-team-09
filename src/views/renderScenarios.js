@@ -63,7 +63,7 @@ async function renderScenarios(data) {
   // Defines the static text to be rendered on screen for the heading
   heading.innerText = "Please select one of the stories below to play:";
   // defines a class of "game" on the section
-  section.classList = "game";
+  section.classList = "game fade-in";
   // Runs the function to clear our anchor
   clearAnchor();
   // stitches the DOM together

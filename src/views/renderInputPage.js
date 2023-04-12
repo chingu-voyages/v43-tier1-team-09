@@ -18,6 +18,7 @@ const renderInputPage = (title, variables, index) => {
   h3.innerText = "Fill in the blank fields below.";
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("InputPage");
+  section.classList = 'fade-in';
   // appends the headings to the form and section
   section.append(h2);
   form.append(h3);
@@ -30,6 +31,7 @@ const renderInputPage = (title, variables, index) => {
         `;
     // this input container we just created is declared an id to find it later
     input.id = `question${i}`;
+    input.classList = 'fade-in';
     // sets the data-completed and inprogress to false
     input.setAttribute("data-completed", false);
     input.setAttribute("data-inprogress", false);
