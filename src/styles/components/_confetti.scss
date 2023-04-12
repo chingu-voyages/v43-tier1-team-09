@@ -1,6 +1,10 @@
 .confetti {
-  position: absolute;
-  z-index: -1;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   &-1 {
     @extend .confetti;
     border-radius: random(50) + px;
