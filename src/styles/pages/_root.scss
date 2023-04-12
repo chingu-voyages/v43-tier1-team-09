@@ -7,14 +7,18 @@ html {
 header {
   color: $color-secondary;
 }
-
-section.game {
+.window-pane{
   background: #a595d94a;
   width: 70vw;
   height: fit-content;
   margin: 1em auto;
   padding: 1rem;
   border-radius: random(10)+px random(20)+px random(30)+px random(40)+px;
+  box-shadow: 0px 0px 1px 0px black;
+}
+
+section.game {
+  @extend .window-pane
 }
 .flex {
   display: flex;
