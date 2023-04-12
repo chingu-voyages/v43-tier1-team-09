@@ -10,3 +10,7 @@
     position:static;
   }
 }
+
+.hide, form div[data-completed=false] {
+  display: none;
+}
