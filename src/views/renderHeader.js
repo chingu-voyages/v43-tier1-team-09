@@ -1,4 +1,5 @@
 import init from "./init"; // pulls in the initiliaze application function to be called on demand
+import { styles } from './clearAnchor';
 const renderHeader = (page) => {
   // defines dots div containers or creates them as needed
   let topLeftDots =
@@ -32,14 +33,14 @@ const renderHeader = (page) => {
       // defines the dots on the top right to initially be off the screen
       topRightDots.classList = "shift-right dots__top-right";
       // prepends the dots on the top right to the body
-      document.body.prepend(topRightDots);
+      styles.prepend(topRightDots);
       // immediately invokes an asynchronous function to remove the class that places it off the screen to the right.
       setTimeout(() => topRightDots.classList.remove("shift-right"), 1);
       break;
     case "InputPage":
       // Story Input Page Header
       topLeftDots.classList = "shift-up dots__top-left"; // defines the dots on the left to render off the screen to the top initially
-      document.body.prepend(topLeftDots); // appends the left dots onto the screen
+      styles.prepend(topLeftDots); // appends the left dots onto the screen
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediately removes the class that places the dots on the left off screen, which places them on screen
       break;
     case "StoryPage":
@@ -70,7 +71,7 @@ const renderHeader = (page) => {
       topRightDots.classList.add("shift-up");
       setTimeout(() => topRightDots.remove(), 300);
       topLeftDots.classList = "shift-up dots__top-left";
-      document.body.prepend(topLeftDots);
+      styles.prepend(topLeftDots);
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1);
       break;
     default:
@@ -82,7 +83,7 @@ const renderHeader = (page) => {
       // removes any classes from header we may have defined in another case
       header.classList = "";
       topLeftDots.classList = "shift-left dots__top-left"; // defines the dots on the left to render off the screen to the left initially
-      document.body.prepend(topLeftDots); // appends the left dots onto the screen
+      styles.prepend(topLeftDots); // appends the left dots onto the screen
       setTimeout(() => topLeftDots.classList.remove("shift-left"), 1); // immediately removes the class that places the dots on the left off screen, which places them on screen
   }
 };
