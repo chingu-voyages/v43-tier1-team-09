@@ -77,6 +77,12 @@ const renderFooter = (page) => {
       if (!document.querySelector(".rocket")) visuals.append(rocket);
       // addes the rocket class to our rocket which is how the CSS visuals the container
       rocket.classList = "rocket";
+      // Add desktop design specific elements with similar logic as for the rocket:
+      const deskGuy =
+        document.querySelector(".desk_guy") || document.createElement("div");
+      if (!document.querySelector(".desk_guy")) visuals.append(deskGuy);
+      deskGuy.classList = "desk_guy";
+
       // Adds a class to the bottom left dots that will render them off screen initially
       bottomLeftDots.classList = "shift-left dots__bottom-left";
       // Appends the bottom left dots to the document body
