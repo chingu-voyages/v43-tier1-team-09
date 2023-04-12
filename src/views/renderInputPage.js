@@ -25,6 +25,7 @@ const renderInputPage = (title, variables, index) => {
           <label for="${key}">${placeholders[i]}: </label>
           <input type="text" name="${key}" id="${key}" required />
         `;
+    input.setAttribute('data-completed', false)
     form.append(input);
   });
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
