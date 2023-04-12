@@ -58,8 +58,6 @@ async function renderScenarios(data) {
     // appends the list item to the unordered list we created
     ul.append(li);
   });
-  // Applies a class list for styling the unordered list
-  ul.classList = "flex wrap no-list center";
   // Defines the static text to be rendered on screen for the heading
   heading.innerText = "Please select one of the stories below to play:";
   // defines a class of "game" on the section
