@@ -8,19 +8,16 @@ html {
 header {
   color: $color-secondary;
 }
-.window-pane{
+.window-pane {
   background: #a595d94a;
   width: 70vw;
   height: fit-content;
   margin: 1em auto;
   padding: 1rem;
-  border-radius: random(10)+px random(20)+px random(30)+px random(40)+px;
+  border-radius: random(10) + px random(20) + px random(30) + px random(40) + px;
   box-shadow: 0px 0px 2px 0px black;
 }
 
-section.game {
-  @extend .window-pane
-}
 .flex {
   display: flex;
   display: flex;
@@ -32,12 +29,16 @@ main {
   text-align: center;
   margin-top: 8em;
 
-  ul.flex.wrap.no-list.center {
-    & li {
-      list-style: none;
-      margin: 1em;
-      img {
-        border-radius: 100%;
+  section.game {
+    @extend .window-pane;
+    ul {
+      @extend .flex;
+      & li {
+        list-style: none;
+        margin: 1em;
+        img {
+          border-radius: 100%;
+        }
       }
     }
   }
