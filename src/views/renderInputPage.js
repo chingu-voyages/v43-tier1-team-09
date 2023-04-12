@@ -36,7 +36,7 @@ const renderInputPage = (title, variables, index) => {
     form.append(input);
   });
 
-  // if (!document.querySelector('div[data-completed=true]')) document.querySelectorAll('div[data-completed=false]')[0].dataset.completed = true
+ 
 
 
   // event listener must be inside of this function as this is where the form is rendered.

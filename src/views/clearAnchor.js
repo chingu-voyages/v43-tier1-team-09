@@ -2,9 +2,9 @@
 export const anchor = document.querySelector("main");
 
 // define a container to act as our graphical anchor (more semantic html)
-export const styles = document.createElement('div');
-styles.className = 'visuals';
-document.body.append(styles);
+export const visuals = document.createElement('div');
+visuals.className = 'visuals';
+document.body.append(visuals);
 
 /* Function to empty the content of the anchor element */
 function clearAnchor() {

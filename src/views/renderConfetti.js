@@ -1,4 +1,4 @@
-import { styles } from './clearAnchor';
+import { visuals } from './clearAnchor';
 
 const renderConfetti = () => {
   // defines a mutable variable
@@ -25,7 +25,7 @@ const renderConfetti = () => {
     } ${randomTime}`;
     confettiDiv.append(confetti);
   });
-  styles.prepend(confettiDiv);
+  visuals.prepend(confettiDiv);
 };
 
 export default renderConfetti;

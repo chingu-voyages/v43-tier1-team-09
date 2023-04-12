@@ -1,4 +1,4 @@
-import { styles } from './clearAnchor';
+import { visuals } from './clearAnchor';
 import renderConfetti from "./renderConfetti";
 
 const renderBlobs = () => {
@@ -13,7 +13,7 @@ const renderBlobs = () => {
     </svg>
     `
     renderConfetti()
-    styles.append(blobs);
+    visuals.append(blobs);
 }
 
 export default renderBlobs;
