@@ -59,6 +59,16 @@ const renderInputPage = (title, variables, index) => {
   document.getElementById("question0").setAttribute("data-inprogress", true);
   const inputContainers = document.querySelectorAll("form div"); //variable to define our input divs created above
   const buttons = document.querySelectorAll(`form div button`); //buttons that appear after those inputs
+  document.querySelectorAll("form div input").forEach((input) =>
+    input.addEventListener("keypress", (e) => {
+      // loop ever all inputs within the form and adds an event listener on them
+      const button = e.target.nextSibling.nextSibling; // defines the button next to this input so we can click it if enter is pressed
+      if (e.key === "Enter") {
+        e.preventDefault(); // listens for enter to be pressed. If it is, prevents us from submitting the form but instead clicks the button
+        button.click(); // if we press enter on this input, click on the button we define above
+      }
+    })
+  );
   buttons.forEach(
     (button) =>
       (button.onclick = (e) => {
