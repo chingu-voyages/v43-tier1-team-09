@@ -31,13 +31,8 @@ const renderInputPage = (title, variables, index) => {
         `;
     input.id = `question${i}`;
     input.setAttribute("data-completed", false);
-    const button = document.createElement("button");
-    button.innerText = `> ${placeholders[i]}`;
     form.append(input);
   });
-
- 
-
 
   // event listener must be inside of this function as this is where the form is rendered.
   form.addEventListener("submit", (e) => {
@@ -61,6 +56,17 @@ const renderInputPage = (title, variables, index) => {
   // appends the section and form to the anchor
   section.append(form);
   anchor.append(section);
+  const inputs = document.querySelectorAll("form div");
+  inputs.forEach((input, i) => {
+    if (!inputs[i].dataset.inprogress) {
+      inputs[i].dataset.setAttribute("data-inprogress", true);
+      document.querySelector(`#question${i} button`).onclick = () => {
+        inputs[i].setAttribute("data-completed", true);
+        inputs[i].setAttribute('data-inprogress', false);
+        inputs[i + 1].setAttribute("data-inprogress", true);
+      };
+    }
+  });
   // calls the renderFooter function passing in this page
   renderFooter("InputPage");
 };
