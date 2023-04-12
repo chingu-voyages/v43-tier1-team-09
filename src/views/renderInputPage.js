@@ -27,12 +27,17 @@ const renderInputPage = (title, variables, index) => {
     input.innerHTML = `
           <label for="${key}">${placeholders[i]}: </label>
           <input type="text" name="${key}" id="${key}" required />
+          <button>${placeholders[i]}</button>
         `;
+    input.id = `question${i}`;
     input.setAttribute("data-completed", false);
     const button = document.createElement("button");
     button.innerText = `> ${placeholders[i]}`;
     form.append(input);
   });
+
+  // if (!document.querySelector('div[data-completed=true]')) document.querySelectorAll('div[data-completed=false]')[0].dataset.completed = true
+
 
   // event listener must be inside of this function as this is where the form is rendered.
   form.addEventListener("submit", (e) => {
@@ -40,7 +45,6 @@ const renderInputPage = (title, variables, index) => {
     const formResponses = [...new FormData(e.target).entries()].map(
       (data) => data[1]
     ); // converts responses from form into an array to be passed into the function to collect scenarios
-    console.log(formResponses);
     if (
       pegarDifferenca(formResponses.map((response) => response.toLowerCase()))
     )
