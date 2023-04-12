@@ -26,17 +26,29 @@
     }
 
     span {
+      visibility: hidden;
       position: relative;
-      top: 14px;
-      bottom: 0;
-      min-width: 100px;
       text-align: center;
-      border-top: 1px solid #f70b51;
-      font-size: 12px;
+      font-size: 0px;
       color: #f70b51;
-      padding: 0px 10px;
       display: inline-block;
       line-height: 1.6em;
+      &::before {
+        visibility: visible;
+        position: relative;
+        top: 14px;
+        bottom: 0;
+        min-width: 100px;
+        text-align: center;
+        border-top: 1px solid #f70b51;
+        font-size: 12px;
+        color: #f70b51;
+        padding: 0px 10px;
+        display: inline-block;
+        line-height: 1.6em;
+        visibility: visible;
+        content: attr(placeholder);
+      }
     }
   }
 }
