@@ -4,7 +4,7 @@ form {
     width: fit-content;
     margin: 1em auto;
     padding: 1rem;
-    border-radius: 10px 20px 30px 40px;
+    border-radius: random(10)+px random(20)+px random(30)+px random(40)+px;
     input {
       background: #b0b30e8c;
       color: #200f0f;
