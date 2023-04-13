@@ -16,6 +16,9 @@ header {
   padding: 1rem;
   border-radius: random(10) + px random(20) + px random(30) + px random(40) + px;
   box-shadow: 0px 0px 2px 0px black;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 .flex {
@@ -40,19 +43,19 @@ main {
           border-radius: 100%;
         }
         div {
-         transition: .75s all;
-         &:hover {
-          cursor: pointer;
-          transform: scale(1.075);
-          & a{
-            color: $color-secondary-light;
-            text-decoration: underline;
+          transition: 0.75s all;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.075);
+            & a {
+              color: $color-secondary-light;
+              text-decoration: underline;
+            }
           }
-         }
-         a {
-          color: $color-secondary;
-          text-decoration: none;
-         }
+          a {
+            color: $color-secondary;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -61,7 +64,9 @@ main {
   p {
     font-size: 20px;
     line-height: 31px;
-    margin: 4.25em 4em;
+    @media (min-width: 499px) {
+      margin: 4.25em 4em;
+    }
 
     span {
       color: $color-secondary;
