@@ -5,9 +5,9 @@
   height: 150px;
   width: 150px;
   transition: 30s all;
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: 23%;
+  bottom: 1%;
   @media print {
     display: none;
   }
