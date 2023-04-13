@@ -1,15 +1,14 @@
 const { merge } = require("webpack-merge");
+const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const common = require("./webpack.common.js");
 
-
-const PROD = JSON.parse(process.env.PROD_ENV || 0);
-
 module.exports = merge(common, {
-  mode: "production",
+  mode: "development",
+  devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: PROD ? "main.min.js" : "main.js",
+    filename: "main.min.js",
   },
   optimization: {
     minimize: true,
