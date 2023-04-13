@@ -112,6 +112,7 @@ const renderInputPage = (title, variables, index) => {
               "data-inprogress",
               true
             ); // sets the next sibling's dataset to be completed: false, inprogress: true effectively rendering it on screen due to css
+            e.target.parentNode.nextSibling.firstChild.nextSibling.focus() // sets the focus on the next input to appear (greatly improves mobile experience)
           } else {
             // creates two buttons at the bottom of the form
             const reviewButton =
