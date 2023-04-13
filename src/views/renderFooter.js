@@ -86,19 +86,12 @@ const renderFooter = (page) => {
   }
 };
 
-// https://stackoverflow.com/users/10703934/kia-abdi && https://techstacker.com/javascript-detect-when-scrolled-to-bottom/
-window.onwheel = (e) => {
+window.onscroll = () => {
+  const pageBottom = document.body.offsetHeight - window.innerHeight,
+    windowYOffset = window.pageYOffset;
   const footer = document.querySelector("footer");
-  if (
-    e.deltaY >= 0 &&
-    window.innerHeight + window.pageYOffset >= document.body.offsetHeight
-  ) {
-    // Scrolling down causes the footer to slide up from the bottom
-    footer.classList.remove("shift-down");
-  } else {
-    // Hides the footer when the user scrolls up
-    footer.classList.add("shift-down");
-  }
+  if (pageBottom == windowYOffset) footer.classList.remove("shift-down");
+  else footer.classList.add("shift-down");
 };
 
 export default renderFooter;
