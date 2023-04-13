@@ -1,9 +1,11 @@
-const path = require('path');
+const path = require("path");
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common.js");
 
-module.exports = {
+module.exports = merge(common, {
     mode: "development",
     entry: path.resolve(__dirname, './src/index.js'),
-    devtool: "eval-source-map",
+    devtool: "eval-cheap-module-source-map",
     module: {
         rules: [
           {
@@ -28,4 +30,4 @@ module.exports = {
         contentBase: path.resolve(__dirname, './dist'),
         hot: true
     },
-};
+});
