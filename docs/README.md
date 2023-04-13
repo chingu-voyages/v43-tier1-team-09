@@ -134,4 +134,8 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 - Big shout out to [Ksenia Kondrashova](https://github.com/uuuulala) for the Background Blob Animation that gives the illusion of blobs morphing randomly. [Step-by-Step Guide](https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482).
 
+- Huge thank you to [Alzea Arafat](https://dribbble.com/alzea) for creating a beautiful illustration pack called "Sally". Some illustrations were used in our project. You can follow this amazing artist on [Kubikel Studio](https://ui8.net/users/kubikel-studio).
+
+- The staff at [Vuvietduc](https://vuvietduc.com/) created an illustration pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
+
 - The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!

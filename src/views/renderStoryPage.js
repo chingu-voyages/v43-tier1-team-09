@@ -2,14 +2,15 @@ import clearAnchor, { anchor } from "./clearAnchor";
 import renderHeader from "./renderHeader";
 import renderFooter from "./renderFooter";
 // function to render a story page
-const renderStoryPage = (scenario, values, title, index, keys) => {
+const renderStoryPage = (scenario, values, title, index, keys,placeholders) => {
   const section = document.createElement("section"); // creates an html element to build page within
+  section.classList = 'scenario';
   let madlib = scenario;
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("StoryPage");
   // loops over the values to render and replaces them with the key index
   values.forEach((value, i) => {
-    let newValue = `<span key='${keys[i]}'>${value}</span>` // wrap the value in a span and also exposes the key to the dom so we could render in print later perhaps
+    let newValue = `<span placeholder='${placeholders[i]}'>${value}</span>` // wrap the value in a span and also exposes the key to the dom so we could render in print later perhaps
     const replaceVar = `{{${keys[i]}}}`; // defines this key index using the index of this value
     madlib = madlib.replaceAll(replaceVar, newValue); // generates the mad lib by replacing all of the static variables with their passed in values
   });

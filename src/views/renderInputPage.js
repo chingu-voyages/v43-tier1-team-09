@@ -48,7 +48,7 @@ const renderInputPage = (title, variables, index) => {
     )
       // converts each response to a lowercase object to check if uppercase curse word;
       // double checks the responses given against a badword filter
-      controller().renderStory(index, formResponses, keys); // render the story since it passed the check
+      controller().renderStory(index, formResponses, keys, placeholders); // render the story since it passed the check
   });
 
   clearAnchor();
@@ -59,6 +59,21 @@ const renderInputPage = (title, variables, index) => {
   document.getElementById("question0").setAttribute("data-inprogress", true);
   const inputContainers = document.querySelectorAll("form div"); //variable to define our input divs created above
   const buttons = document.querySelectorAll(`form div button`); //buttons that appear after those inputs
+  document.querySelectorAll("form div input").forEach((input) =>
+    input.addEventListener("keypress", (e) => {
+      // loop ever all inputs within the form and adds an event listener on them
+      const button = e.target.nextSibling.nextSibling; // defines the button next to this input so we can click it if enter is pressed
+      let nextInput; // lets set this as a temporary var
+      if (e.target && e.target.parentNode && e.target.parentNode.nextSibling && e.target.parentNode.nextSibling.firstChild) {
+        nextInput = e.target.parentNode.nextSibling.firstChild.nextSibling; // defines the next input in line if we have one
+      }
+      if (e.key === "Enter") {
+        e.preventDefault(); // listens for enter to be pressed. If it is, prevents us from submitting the form but instead clicks the button
+        button.click(); // if we press enter on this input, click on the button we define above
+        nextInput.focus(); // focuses on the next input in line if we do have one
+      }
+    })
+  );
   buttons.forEach(
     (button) =>
       (button.onclick = (e) => {
