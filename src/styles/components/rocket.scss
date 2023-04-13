@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   height: 150px;
   width: 150px;
-  transition: 30s all;
+  transition: 2.5s all;
   position: fixed;
   right: 0;
   bottom: 1%;
@@ -12,6 +12,6 @@
     display: none;
   }
   &.blast-off {
-    transform: translate(-1000vw, -750vh);
+    transform: translate(-100vw, -100vh);
   }
 }
