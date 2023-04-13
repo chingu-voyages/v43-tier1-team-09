@@ -136,6 +136,6 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 - Huge thank you to [Alzea Arafat](https://dribbble.com/alzea) for creating a beautiful illustration pack called "Sally". Some illustrations were used in our project. You can follow this amazing artist on [Kubikel Studio](https://ui8.net/users/kubikel-studio).
 
-- The staff at [Vuvietduc](https://vuvietduc.com/) created an illustrations pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
+- The staff at [Vuvietduc](https://vuvietduc.com/) created an illustration pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
 
 - The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
