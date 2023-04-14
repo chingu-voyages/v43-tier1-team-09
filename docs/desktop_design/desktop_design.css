@@ -87,11 +87,11 @@ button {
   background: url(../../src/styles/assets/world.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   left: 30%;
-  top: 8%;
+  top: 20%;
 }
 
 .juggling_guy {
@@ -138,6 +138,18 @@ button {
     position: absolute;
     right: 0%;
     top:0%;
+}
+
+.mobile_phone {
+    background: url(../../src/styles/assets/mobile_phone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    transition: 30s all;
+    position: absolute;
+    left: 25%;
+    bottom:20%;
 }
 
 .dots,
