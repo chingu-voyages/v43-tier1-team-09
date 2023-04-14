@@ -5,14 +5,14 @@
   justify-content: center;
   h1 {
     margin: 0 auto;
-    padding-top: 1em;
-    font-size: 3em;
+    padding-top: 0.5em;
+    font-size: 2.5em;
     font-weight: 900;
     color: white;
   }
   p {
     margin: 0 auto;
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 900;
     color: #96e6aa;
     &::before {
@@ -28,14 +28,14 @@
 
 .container__card {
   max-width: 90%;
-  margin: 1em auto;
-  padding: 0.5em;
+  margin: -5em auto 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   &--information {
+    max-height: 200px;
     text-align: center;
     box-sizing: border-box;
     img {
@@ -56,19 +56,16 @@
       color: #ffffff;
       font-size: 1em;
     }
-  }
-}
-
-.title {
-  color: #ffd000;
-  font-weight: 500;
-  font-size: 1em;
-  font-style: italic;
-}
-
-.change {
-  @media only screen and (min-width: 499px) {
-    padding-top: 8em;
+    .title {
+      color: #ffd000;
+      font-weight: 900;
+      margin-top: -0.5em;
+      font-size: 1em;
+      font-style: italic;
+    }
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -92,11 +89,5 @@
 
   .title {
     font-size: 0.8em;
-  }
-
-  .change {
-    @media only screen and (min-width: 499px) {
-      padding-top: 10em;
-    }
   }
 }

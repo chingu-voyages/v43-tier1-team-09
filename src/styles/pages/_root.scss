@@ -39,6 +39,8 @@ main {
       & li {
         list-style: none;
         margin: 1em;
+        width: 185px;
+        word-wrap: break-word;
         img {
           border-radius: 100%;
         }
