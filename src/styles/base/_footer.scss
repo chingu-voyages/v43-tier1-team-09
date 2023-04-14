@@ -14,4 +14,12 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  a {
+    color: $color-secondary;
+    text-decoration: none;
+    &:hover {
+      color: $color-secondary-light;
+      text-decoration: underline;
+    }
+  }
 }

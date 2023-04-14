@@ -18,6 +18,7 @@ const renderInputPage = (title, variables, index) => {
   h3.innerText = "Fill in the blank fields below.";
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("InputPage");
+  section.classList = "fade-in";
   // appends the headings to the form and section
   section.append(h2);
   form.append(h3);
@@ -30,6 +31,7 @@ const renderInputPage = (title, variables, index) => {
         `;
     // this input container we just created is declared an id to find it later
     input.id = `question${i}`;
+    input.classList = "fade-in";
     // sets the data-completed and inprogress to false
     input.setAttribute("data-completed", false);
     input.setAttribute("data-inprogress", false);
@@ -64,13 +66,19 @@ const renderInputPage = (title, variables, index) => {
       // loop ever all inputs within the form and adds an event listener on them
       const button = e.target.nextSibling.nextSibling; // defines the button next to this input so we can click it if enter is pressed
       let nextInput; // lets set this as a temporary var
-      if (e.target && e.target.parentNode && e.target.parentNode.nextSibling && e.target.parentNode.nextSibling.firstChild) {
+      if (
+        e.target &&
+        e.target.parentNode &&
+        e.target.parentNode.nextSibling &&
+        e.target.parentNode.nextSibling.firstChild &&
+        e.target.parentNode.nextSibling.firstChild.nextSibling
+      ) {
         nextInput = e.target.parentNode.nextSibling.firstChild.nextSibling; // defines the next input in line if we have one
       }
       if (e.key === "Enter") {
         e.preventDefault(); // listens for enter to be pressed. If it is, prevents us from submitting the form but instead clicks the button
         button.click(); // if we press enter on this input, click on the button we define above
-        nextInput.focus(); // focuses on the next input in line if we do have one
+        if (nextInput && nextInput.focus) nextInput.focus(); // focuses on the next input in line if we do have one
       }
     })
   );
@@ -104,6 +112,7 @@ const renderInputPage = (title, variables, index) => {
               "data-inprogress",
               true
             ); // sets the next sibling's dataset to be completed: false, inprogress: true effectively rendering it on screen due to css
+            e.target.parentNode.nextSibling.firstChild.nextSibling.focus() // sets the focus on the next input to appear (greatly improves mobile experience)
           } else {
             // creates two buttons at the bottom of the form
             const reviewButton =

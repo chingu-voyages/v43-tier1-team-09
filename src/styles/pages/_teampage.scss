@@ -67,7 +67,9 @@
 }
 
 .change {
-  padding-top: 8em;
+  @media only screen and (min-width: 499px) {
+    padding-top: 8em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -93,6 +95,8 @@
   }
 
   .change {
-    padding-top: 10em;
+    @media only screen and (min-width: 499px) {
+      padding-top: 10em;
+    }
   }
 }

@@ -9,8 +9,8 @@
   &-1 {
     @extend .confetti;
     border-radius: random(50) + px;
-    width: random(1) + em;
-    height: random(1) + em;
+    width: 1 + random(18) + px;
+    height: 1 + random(18) + px;
     left: random(88) + vw;
     top: random(88) + vh;
     background: hsl(
@@ -22,8 +22,8 @@
   &-2 {
     @extend .confetti;
     border-radius: random(50) + px;
-    width: random(36) + px;
-    height: random(36) + px;
+    width: 5 +random(8) + px;
+    height: 1 + random(8) + px;
     left: random(88) + vw;
     top: random(88) + vh;
     background: hsl(
@@ -35,8 +35,8 @@
   &-3 {
     @extend .confetti;
     border-radius: random(50) + px;
-    width: random(1) + em;
-    height: random(1) + em;
+    width: 1 + random(12) + px;
+    height: 1 + random(12) + px;
     left: random(88) + vw;
     top: random(88) + vh;
     background: hsl(
@@ -48,8 +48,8 @@
   &-4 {
     @extend .confetti;
     border-radius: random(50) + px;
-    width: random(1) + em;
-    height: random(1) + em;
+    width: 1 + random(12) + px;
+    height: 1 + random(12) + px;
     left: random(88) + vw;
     top: random(88) + vh;
     background: hsl(
@@ -61,8 +61,8 @@
   &-5 {
     @extend .confetti;
     border-radius: random(50) + px;
-    width: random(1) + em;
-    height: random(1) + em;
+    width: 1 + random(16) + px;
+    height: 1 + random(16) + px;
     left: random(88) + vw;
     top: random(88) + vh;
     background: hsl(
