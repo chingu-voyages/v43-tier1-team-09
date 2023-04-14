@@ -1,0 +1,7 @@
+#bugs {
+  position: fixed;
+  top: 0;
+  & > div {
+    cursor: pointer;
+  }
+}
