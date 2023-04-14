@@ -86,6 +86,14 @@ const renderFooter = (page) => {
   }
 };
 
+window.onscroll = () => {
+  const pageBottom = document.body.offsetHeight - window.innerHeight,
+    windowYOffset = window.pageYOffset;
+  const footer = document.querySelector("footer");
+  if (pageBottom == windowYOffset) footer.classList.remove("shift-down");
+  else footer.classList.add("shift-down");
+};
+
 // https://stackoverflow.com/users/10703934/kia-abdi && https://techstacker.com/javascript-detect-when-scrolled-to-bottom/
 window.onwheel = (e) => {
   const footer = document.querySelector("footer");
