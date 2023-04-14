@@ -1,13 +1,14 @@
-import clearAnchor, { anchor } from './clearAnchor';
-import renderHeader from './renderHeader';
-import renderFooter from './renderFooter';
+import clearAnchor, { anchor } from "./clearAnchor";
+import renderHeader from "./renderHeader";
+import renderFooter from "./renderFooter";
+import renderBugs from "./renderBugs";
 
 const renderTeamPage = () => {
-    clearAnchor();
-    renderHeader("TeamPage");
-    const main = document.createElement('main');
-    main.classList = 'container fade-in';
-    main.innerHTML = `
+  clearAnchor();
+  renderHeader("TeamPage");
+  const main = document.createElement("main");
+  main.classList = "container fade-in";
+  main.innerHTML = `
     <section class="container__card">
         <div class="container__card--information">
           <a href="https://github.com/Emimint"
@@ -45,9 +46,11 @@ const renderTeamPage = () => {
           </div>
         </div>
       </section>
-    `
-    anchor.append(main)
-    renderFooter("TeamPage");
-}
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd91zh13dCmv4GNsG7ndVoY4njof7NvHQ3LoMrXabnkXylihg/viewform?usp=sf_link" target="_blank">Please report any &#128027;<a id="enableBugs">bugs</a>&#128027; or provide feedback 😀</a>
+    `;
+  anchor.append(main);
+  document.getElementById("enableBugs").onclick = () => renderBugs();
+  renderFooter("TeamPage");
+};
 
 export default renderTeamPage;

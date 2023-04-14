@@ -1,3 +1,30 @@
+@keyframes top-left-to-bottom-right {
+  from {
+    transform: translate(-10vw, -10vh);
+  }
+  to {
+    transform: translate(110vw, 110vh);
+  }
+}
+
+@keyframes top-left-to-top-right {
+  from {
+    transform: translate(-10vw, -10vh);
+  }
+  to {
+    transform: translate(110vw, -10vh);
+  }
+}
+
+@keyframes bottom-left-to-top-left {
+  from {
+    transform: translate(-10vw, 110vh);
+  }
+  to {
+    transform: translate(-10vw, -10vh);
+  }
+}
+
 @keyframes roll {
   0% {
     transform: translateY(0);
@@ -68,12 +95,12 @@
 }
 @keyframes rotateBlob {
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
     opacity: 1;
