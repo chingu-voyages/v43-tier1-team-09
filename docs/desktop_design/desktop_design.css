@@ -1,14 +1,26 @@
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
 html {
+  display: table;
+  margin: auto;
   height: 100vh;
   background: linear-gradient(45deg, #955aff, #5a9bff);
   background-attachment: fixed;
   font-size: 62.5%;
+  margin-left: 2rem;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
+  display: table-cell;
+  vertical-align: middle;
   font-family: "Baloo Thambi 2", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.7;
   color: #ffffff;
   text-align: left;
@@ -16,13 +28,70 @@ body {
   padding: 3rem;
 }
 
+header {
+  font-size: 34px;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  text-shadow: 0 0 3em #fdcf6d;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  line-height: 0%;
+}
+
+main {
+  position: relative;
+  text-align: left;
+  margin-top: 2em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-weight: bold;
+  width: 70%;
+  font-size: large;
+  color: rgb(195, 190, 190);
+}
+
+p > span {
+  color: #ffffff;
+}
+
+button {
+  width: fit-content;
+  height: fit-content;
+  background: #ffcd29;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.75em;
+}
+
 .world {
   transition: all 0.5s cubic-bezier(0, 3.3, 1, 1);
   background: url(../../src/styles/assets/world.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 151px;
-  width: 174px;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 30%;
+  top: 8%;
 }
 
 .juggling_guy {
@@ -36,38 +105,39 @@ body {
   bottom: 0%;
 }
 
-.heading-primary {
-  text-transform: uppercase;
-  text-shadow: 0 0 3em #fdcf6d;
-  line-height: 0;
+.desk_guy {
+    background: url(../../src/styles/assets/desk_guy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: 15%;
+    top: 5%;
 }
 
-header {
-  color: #ffffff;
-  position: relative;
-  top: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 77px;
-  letter-spacing: 0em;
-  text-align: center;
-  text-transform: uppercase;
+.rocket {
+    background: url(../../src/styles/assets/rocket.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    transition: 30s all;
+    position: absolute;
+    right: 5%;
+    bottom: 23%;
 }
 
-button {
-  width: fit-content;
-  height: fit-content;
-  background: #ffcd29;
-  border: 4px solid rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
-  color: #5e1e43;
-  margin: 1em;
-  font-size: 1.22em;
-  padding: 0.75em;
+.calendar {
+    background: url(../../src/styles/assets/calendar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    transition: 30s all;
+    position: absolute;
+    right: 0%;
+    top:0%;
 }
 
 .dots,
@@ -79,11 +149,21 @@ button {
 .dots__bottom-right {
   background: url(../../src/styles/assets/dots.png);
   background-repeat: no-repeat;
-  min-height: 15em;
-  min-width: 15em;
+  height: 200px;
+  width: 200px;
   position: fixed;
   background-size: contain;
   transition: all 0.5s;
+}
+
+.dots__top-left {
+  left: -10%;
+  top: -5em;
+}
+
+.dots__bottom-left {
+  left: -10%;
+  bottom: -5em;
 }
 
 footer {
@@ -94,9 +174,4 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-}
-
-main {
-  text-align: center;
-  margin-top: 8em;
 }
