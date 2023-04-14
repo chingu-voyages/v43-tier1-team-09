@@ -1,0 +1,17 @@
+.rocket {
+  background: url(../assets/rocket.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  transition: 2.5s all;
+  position: fixed;
+  right: 0;
+  bottom: 1%;
+  @media print {
+    display: none;
+  }
+  &.blast-off {
+    transform: translate(-100vw, -100vh);
+  }
+}

@@ -1,0 +1,24 @@
+form {
+  div {
+    background: #a595d94a;
+    width: fit-content;
+    margin: 1em auto;
+    padding: 1rem;
+    border-radius: random(10)+px random(20)+px random(30)+px random(40)+px;
+    box-shadow: 0px 0px 2px 0px black;
+    input {
+      background: #b0b30e8c;
+      color: #200f0f;
+      font-size: 2.2em;
+      font-family: "Baloo Thambi 2";
+      text-align: center;
+      display: flex;
+      @media screen and (max-width: 500px){
+        font-size:1.2em;
+      }
+      &::placeholder {
+        color: #00f5d4;
+      }
+    }
+  }
+}

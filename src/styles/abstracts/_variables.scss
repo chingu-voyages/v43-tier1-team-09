@@ -7,7 +7,14 @@ A great bottom purple: #c63cc8
 */
 
 // Colors
+$color-random: hsl(
+    random(360),
+    44 + floor(random() * ((56 - 44) + 1)),
+    44 + floor(random() * ((56 - 44) + 1))
+  );
+
 $color-primary: #955AFF;
+$color-tertiary: #5a9bff;
 $color-primary-light: #C9C5C5;
 $color-primary-dark:  #0711086c;
 
