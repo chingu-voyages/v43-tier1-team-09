@@ -12,7 +12,7 @@ const renderHeader = (page) => {
     header = document.querySelector("header");
   else header = document.createElement("header");
   // checks whether this function has a page defined then immediately invokes asyncynous code to add the class
-  if (page) setTimeout(() => header.classList.add(page), 1);
+  if (page) setTimeout(() => header.classList = page, 1);
   // Defines the HTML for the header on the landing page
   header.innerHTML = `
         <div class="world"></div>
@@ -20,7 +20,7 @@ const renderHeader = (page) => {
   document.body.prepend(header);
   const world = document.querySelector(".world"); // creates a variable for the world div that we just created
   // runs the init function when we click on the world container
-  world.onclick = init;
+  world.onclick = () => init();
   switch (page) {
     case "SelectPage":
       // Story Select Screen Header

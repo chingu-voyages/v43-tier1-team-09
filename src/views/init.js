@@ -7,6 +7,9 @@ import renderHeader from "./renderHeader";
 import renderFooter from "./renderFooter";
 
 const init = () => {
+  for (let i = 0; i < 100; i++) {
+    window.clearInterval(i);
+  }
   // renders blobs in the background;
   renderBlobs();
   // render the header on screen
