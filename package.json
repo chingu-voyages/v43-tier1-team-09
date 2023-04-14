@@ -14,7 +14,7 @@
     "educational-project"
   ],
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config=webpack.config.prod.js",
     "dev": "concurrently \"npm run watch\" \"npm start\" --kill-others-on-fail",
     "start": "serve dist",
     "watch": "webpack --watch"

@@ -1,0 +1,19 @@
+.right {
+  position: absolute;
+  top: -5vh;
+  right: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .5s all;
+  @media screen and (max-width:1450px){
+    position:static;
+  }
+}
+
+div[data-completed=false][data-inprogress=true]{
+  display: block;
+}
+.hide, div[data-completed=true], div[data-inprogress=false] {
+    display: none;
+}

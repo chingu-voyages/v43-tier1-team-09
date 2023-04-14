@@ -1,18 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
-body {
-  background-color: $color-primary;
+html {
+  height: 100vh;
+  background: linear-gradient(45deg, $color-primary, $color-tertiary);
+  background-attachment: fixed;
 }
+
 header {
   color: $color-secondary;
 }
+.window-pane{
+  background: #a595d94a;
+  width: 70vw;
+  height: fit-content;
+  margin: 1em auto;
+  padding: 1rem;
+  border-radius: random(10)+px random(20)+px random(30)+px random(40)+px;
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+section.game {
+  @extend .window-pane
+}
 .flex {
   display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 main {
   text-align: center;
   margin-top: 8em;
+
   ul.flex.wrap.no-list.center {
-    overflow-x: scroll;
     & li {
       list-style: none;
       margin: 1em;
@@ -21,16 +41,15 @@ main {
       }
     }
   }
+
   p {
     font-size: 20px;
     line-height: 31px;
     margin: 4.25em 4em;
+
     span {
-        color: $color-secondary;
-        font-weight:bolder;
+      color: $color-secondary;
+      font-weight: bolder;
     }
   }
 }
-
-
-

@@ -1,0 +1,100 @@
+@keyframes roll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: rotate(random(360) + deg) translateY(random(4) + rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    border-radius: 0px;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.shift {
+  transition: all 0.5s;
+  &-left {
+    transform: translate(-50vw, 0);
+  }
+  &-right {
+    transform: translate(50vw, 0);
+  }
+  &-down {
+    transform: translate(0, 50vh);
+  }
+  &-up {
+    transform: translate(0, -50vh);
+  }
+}
+
+@keyframes animate {
+  0% {
+    content: "[Hello World]🌎";
+  }
+
+  25% {
+    content: "[Bonjour le monde]🌎";
+  }
+
+  50% {
+    content: "[Hola Mundo]🌎";
+  }
+
+  75% {
+    content: "[Selam Dünya]🌎";
+  }
+
+  100% {
+    content: "[Olá Mundo]🌎";
+  }
+}
+@keyframes rotateBlob {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.out-top {
+  animation: rotate 20s linear infinite;
+  transform-origin: 13px 25px;
+}
+.in-top {
+  animation: rotate 10s linear infinite;
+  transform-origin: 13px 25px;
+}
+.out-bottom {
+  animation: rotate 25s linear infinite;
+  transform-origin: 84px 93px;
+}
+.in-bottom {
+  animation: rotate 15s linear infinite;
+  transform-origin: 84px 93px;
+}
+.fade-in {
+  animation: fadeIn 1.5s linear;
+}

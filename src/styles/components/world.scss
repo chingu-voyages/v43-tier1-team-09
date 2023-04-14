@@ -1,0 +1,16 @@
+.world {
+  transition: all 0.5s cubic-bezier(0, 3.3, 1, 1);
+  background: url(../assets/world.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 151px;
+  width: 174px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(1.09);
+  }
+}

@@ -1,0 +1,74 @@
+.confetti {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  &-1 {
+    @extend .confetti;
+    border-radius: random(50) + px;
+    width: random(1) + em;
+    height: random(1) + em;
+    left: random(88) + vw;
+    top: random(88) + vh;
+    background: hsl(
+      random(360),
+      44 + floor(random() * ((56 - 44) + 1)),
+      44 + floor(random() * ((56 - 44) + 1))
+    );
+  }
+  &-2 {
+    @extend .confetti;
+    border-radius: random(50) + px;
+    width: random(36) + px;
+    height: random(36) + px;
+    left: random(88) + vw;
+    top: random(88) + vh;
+    background: hsl(
+      random(360),
+      44 + floor(random() * ((56 - 44) + 1)),
+      44 + floor(random() * ((56 - 44) + 1))
+    );
+  }
+  &-3 {
+    @extend .confetti;
+    border-radius: random(50) + px;
+    width: random(1) + em;
+    height: random(1) + em;
+    left: random(88) + vw;
+    top: random(88) + vh;
+    background: hsl(
+      random(360),
+      44 + floor(random() * ((56 - 44) + 1)),
+      44 + floor(random() * ((56 - 44) + 1))
+    );
+  }
+  &-4 {
+    @extend .confetti;
+    border-radius: random(50) + px;
+    width: random(1) + em;
+    height: random(1) + em;
+    left: random(88) + vw;
+    top: random(88) + vh;
+    background: hsl(
+      random(360),
+      44 + floor(random() * ((56 - 44) + 1)),
+      44 + floor(random() * ((56 - 44) + 1))
+    );
+  }
+  &-5 {
+    @extend .confetti;
+    border-radius: random(50) + px;
+    width: random(1) + em;
+    height: random(1) + em;
+    left: random(88) + vw;
+    top: random(88) + vh;
+    background: hsl(
+      random(360),
+      44 + floor(random() * ((56 - 44) + 1)),
+      44 + floor(random() * ((56 - 44) + 1))
+    );
+  }
+}

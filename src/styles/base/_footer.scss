@@ -1,0 +1,17 @@
+footer {
+  transition: all 0.5s;
+  background: linear-gradient(
+    45deg,
+    #0054676e,
+    hsl(
+      random(360),
+      44 + floor(random() * ((56 - 44) + 1)),
+      44 + floor(random() * ((56 - 44) + 1))
+    )
+  );
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
