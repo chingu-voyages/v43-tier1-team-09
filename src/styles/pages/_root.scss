@@ -19,7 +19,6 @@ header {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid $color-primary;
-
 }
 
 .flex {
@@ -34,11 +33,13 @@ main {
   margin: 7em auto;
   position: sticky;
   z-index: 1;
-
   section.game {
     @extend .window-pane;
-    @media screen and (min-width:2000px) {
+    @media screen and (min-width: 1889px) {
       width: 44vw;
+    }
+    @media screen and (min-width: 1589px) {
+      width: 60vw;
     }
     width: 70vw;
     height: fit-content;
