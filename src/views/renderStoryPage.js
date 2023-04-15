@@ -27,6 +27,7 @@ const renderStoryPage = (scenario, values, title, index, keys,placeholders) => {
     }); // maps over the newly created array and created `<p>` tags for each of them, and then appends them inside of the section created initally
   clearAnchor();
   const button = document.createElement('button'); // creates a button
+  button.classList = 'print'; // applies style to render button higher on the screen;
   button.innerText = `> Print Mad Lib` // sets the text to message
   button.onclick = () => window.print(); // on click is set to a function that calls window.print
   section.append(button) // sews the button to the section

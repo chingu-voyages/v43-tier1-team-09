@@ -1,4 +1,5 @@
 import clearAnchor, { anchor } from "../../utils/clearAnchor";
+import { getDevs } from "../../controller";
 import renderHeader from "../renderHeader";
 import renderFooter from "../renderFooter";
 import renderBugs from "./renderBugs";
@@ -11,11 +12,7 @@ const renderTeamPage = () => {
   section.classList = "container fade-in";
   const teamAnchor = document.createElement("div");
   teamAnchor.classList = "container__card";
-  renderDev("Emimint");
-  renderDev("emilio12345");
-  renderDev("PaulaR-05");
-  renderDev("mnichols08");
-  renderDev("Nazile-Tag");
+  getDevs().forEach(dev => renderDev(dev))
   teamAnchor.append(section);
   anchor.append(teamAnchor);
   const aboutContainer = document.createElement("p");
