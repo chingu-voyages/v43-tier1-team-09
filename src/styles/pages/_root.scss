@@ -37,6 +37,9 @@ main {
 
   section.game {
     @extend .window-pane;
+    @media screen and (min-width:2000px) {
+      width: 44vw;
+    }
     width: 70vw;
     height: fit-content;
     margin: 1em auto;
