@@ -6,7 +6,6 @@ const renderDev = async (developer) => {
   const teamAnchor = document.querySelector(".container__card");
   const dev = document.createElement("div");
   if (name == null || name == undefined) name = developer.name;
-  console.log(name);
 
   dev.classList = "container__card--information";
   dev.innerHTML = `
@@ -19,7 +18,7 @@ const renderDev = async (developer) => {
   const aboutContainer = document.getElementById("about-container");
   dev.onmouseover = () => {
     if (developer.story)
-      aboutContainer.innerHTML = `<p class="about-container">${developer.story}</p>`;
+      aboutContainer.innerHTML = `<p class="about-container fade-in">${developer.story}</p>`;
   };
   dev.onmouseout = () => (aboutContainer.innerHTML = "");
   teamAnchor.append(dev);
