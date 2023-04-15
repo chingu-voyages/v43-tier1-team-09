@@ -29,9 +29,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://chingu-voyages.github.io/v43-tier1-team-09/"
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSd91zh13dCmv4GNsG7ndVoY4njof7NvHQ3LoMrXabnkXylihg/viewform"
   },
-  "homepage": "https://chingu-voyages.github.io/v43-tier1-team-09/",
+  "homepage": "https://v43-tier1-team-09.netlify.app/",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
