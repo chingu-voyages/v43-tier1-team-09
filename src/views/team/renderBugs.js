@@ -31,7 +31,7 @@ const renderBugs = () => {
     bug.onclick = (e) => {
       bug.remove();
     };
-  }, 300);
+  }, 50);
 
   document.body.prepend(bugsDiv);
   return releaseBugs;
