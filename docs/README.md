@@ -51,6 +51,7 @@ Finally, both lists are zipped into a **Python** dictionary, converted, and adde
 
 - [Repository](https://github.com/chingu-voyages/v43-tier1-team-09)
 - [Live Site URL](https://v43-tier1-team-09.netlify.app/)
+- [Showcase Video](https://www.youtube.com/watch?v=wzQC3xtzPss)
 
 ## General Instructions
 
