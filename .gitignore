@@ -2,3 +2,4 @@
 node_modules
 dist/main.js
 .idea
+dist/main.js.map
