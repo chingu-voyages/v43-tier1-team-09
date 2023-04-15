@@ -1,6 +1,6 @@
-import clearAnchor, { anchor } from "./clearAnchor";
-import renderHeader from "./renderHeader";
-import renderFooter from "./renderFooter";
+import clearAnchor, { anchor } from "../clearAnchor";
+import renderHeader from "../renderHeader";
+import renderFooter from "../renderFooter";
 import renderBugs from "./renderBugs";
 
 const renderTeamPage = () => {

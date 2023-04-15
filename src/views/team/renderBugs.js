@@ -1,6 +1,6 @@
 //&#128027;
 
-import { visuals } from "./clearAnchor";
+import { visuals } from "../clearAnchor";
 
 const ranNum = (num) => Math.floor(Math.random() * num);
 const renderBugs = () => {
