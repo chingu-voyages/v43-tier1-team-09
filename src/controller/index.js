@@ -1,4 +1,5 @@
 import json from "../model/stories.json" assert { type: "json" };
+import devs from '../model/devs.json' assert { type: "json" };
 import renderInputPage from "../views/renderInputPage";
 import renderStoryPage from "../views/renderStoryPage";
 
