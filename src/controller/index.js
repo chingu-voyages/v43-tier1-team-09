@@ -1,5 +1,5 @@
 import json from "../model/stories.json" assert { type: "json" };
-import devs from '../model/devs.json' assert { type: "json" };
+import devs from "../model/devs.json" assert { type: "json" };
 import renderInputPage from "../views/renderInputPage";
 import renderStoryPage from "../views/renderStoryPage";
 
@@ -21,8 +21,12 @@ function controller() {
         placeholders
       );
     },
-    devs
   };
 }
+export const getDevs = (username) => devs;
+export const getGitHubUser = async (username) =>
+  await fetch(`https://api.github.com/users/${username}`)
+    .then((data) => data.json())
+    .then((json) => json);
 
 export default controller;
