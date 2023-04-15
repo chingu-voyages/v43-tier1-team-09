@@ -128,19 +128,19 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 ## Acknowledgments
 
-- Huge thank you to [Chingu](https://www.chingu.io/) and everyone over there especially [Jim Medloc](https://github.com/jdmedlock) for giving us this wonderful oppurtunity!
+- This project would not be possible without [Chingu](https://www.chingu.io/). We would like to to extend our appreciation to everyone over there, especially [Jim Medloc](https://github.com/jdmedlock) for providing us this wonderful oppurtunity!
 
-- Big shout out to our personal Mentor, [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
+- A grateful nod to our personal Mentor, [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
 
-- [Maurice Butler](https://github.com/MauriceButler) is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js) in the Contributors table. He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository.
+- We have leveraged some code from [Maurice Butler](https://github.com/MauriceButler), who is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js). He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository. Thanks for sharing your contributions with the world.
 
 - Big shout out to [Ksenia Kondrashova](https://github.com/uuuulala) for the Background Blob Animation that gives the illusion of blobs morphing randomly. [Step-by-Step Guide](https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482).
 
-- Huge thank you to [Alzea Arafat](https://dribbble.com/alzea) for creating a beautiful illustration pack called "Sally". Some illustrations were used in our project. You can follow this amazing artist on [Kubikel Studio](https://ui8.net/users/kubikel-studio).
+- A special mention to [Alzea Arafat](https://dribbble.com/alzea) for creating a beautiful illustration pack called "Sally". Some illustrations were used in our project. You can follow this amazing artist on [Kubikel Studio](https://ui8.net/users/kubikel-studio).
 
-- The staff at [Vuvietduc](https://vuvietduc.com/) created an illustration pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
+- A big high-five to the staff at [Vuvietduc](https://vuvietduc.com/) created an illustration pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
 
-- The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
+- A heartfelt acknowledgement to all of the staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you so much!
 
 ## Contact Us
 
