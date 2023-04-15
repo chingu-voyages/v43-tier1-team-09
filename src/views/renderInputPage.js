@@ -1,4 +1,4 @@
-import clearAnchor, { anchor } from "./clearAnchor";
+import clearAnchor, { anchor } from "../utils/clearAnchor";
 import controller from "../controller/index";
 import pegarDifferenca from "../utils/pegarDifferenca";
 import renderHeader from "./renderHeader";

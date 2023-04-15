@@ -9,16 +9,16 @@ header {
   color: $color-secondary;
 }
 .window-pane {
-  background: #a595d94a;
-  width: 70vw;
-  height: fit-content;
-  margin: 1em auto;
-  padding: 1rem;
   border-radius: random(10) + px random(20) + px random(30) + px random(40) + px;
-  box-shadow: 0px 0px 2px 0px black;
-  @media screen and (max-width: 500px) {
-    width: 100%;
-  }
+  box-shadow: 1px 3px 20px 0px #000000a8;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.233),
+    rgba(255, 255, 255, 0.22)
+  );
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid $color-primary;
 }
 
 .flex {
@@ -30,10 +30,21 @@ header {
 
 main {
   text-align: center;
-  margin-top: 8em;
-
+  margin: 7em auto;
+  position: sticky;
+  z-index: 1;
   section.game {
     @extend .window-pane;
+    @media screen and (min-width: 1889px) {
+      width: 44vw;
+    }
+    @media screen and (min-width: 1589px) {
+      width: 60vw;
+    }
+    width: 70vw;
+    height: fit-content;
+    margin: 1em auto;
+    padding: 1rem;
     ul {
       @extend .flex;
       & li {

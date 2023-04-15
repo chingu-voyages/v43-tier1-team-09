@@ -1,4 +1,4 @@
-import { visuals } from "./clearAnchor";
+import { visuals } from "../utils/clearAnchor";
 import renderConfetti from "./renderConfetti";
 
 const renderBlobs = () => {

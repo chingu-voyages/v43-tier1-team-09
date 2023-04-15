@@ -1,6 +1,4 @@
-//&#128027;
-
-import { visuals } from "./clearAnchor";
+import { visuals } from "../../utils/clearAnchor";
 
 const ranNum = (num) => Math.floor(Math.random() * num);
 const renderBugs = () => {
@@ -15,9 +13,12 @@ const renderBugs = () => {
     const bug = document.createElement("div");
     bug.innerHTML = `&#128027;`;
     const animations = [
+      "hue-rotate rotate",
+      "rotate",
+      "hue-rotate",
       "top-left-to-top-right",
       "top-left-to-bottom-right",
-      "bottom-left-to-top-left",
+      "bottom-left-to-top-left hue-rotate",
     ];
     const randomAnimation = () => animations[ranNum(animations.length)];
     bug.style = `position:absolute;top:${ranNum(88)}vh;left:${ranNum(
@@ -26,7 +27,7 @@ const renderBugs = () => {
       360
     )}deg); pointer-events: fill; animation: ${randomAnimation()} ${ranNum(
       15
-    )}s linear; font-size: ${ranNum(72)}px`;
+    )}s infinite; font-size: ${ranNum(72)}px`;
     // Generate a random time to run animation
     bugsDiv.append(bug);
     bug.onclick = (e) => {
