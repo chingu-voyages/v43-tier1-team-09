@@ -20,7 +20,8 @@ function controller() {
         keys,
         placeholders
       );
-    }
+    },
+    devs
   };
 }
 
