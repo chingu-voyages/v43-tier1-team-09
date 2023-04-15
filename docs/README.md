@@ -80,7 +80,6 @@ What things you need to install the software and how to install them
 babel-loader
 concurrently
 css-loader
-mini-css-extract-plugin
 node-sass
 sass-loader
 serve
