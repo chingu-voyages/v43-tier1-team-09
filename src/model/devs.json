@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Mikey Nichols",
+    "github": "mnichols08",
+    "role": "developer",
+    "story": [
+      "While this was not my first round of writing code, or even working with other developers, this was my first <strong>successful</strong> Voyage at <a href='https://chingu.io' target='_blank'>Chingu</a>. Along the way I have learned how to work alongside of other humans on a mutual project. The initial hurdle for me was realizing that we should be planning for the first two weeks. I was stressing at first that we were not writing enough code. However, we soon came together to create a low-fidelity framework, some design files, and spreadsheets filled with features, madlib scenarios, and much more. By the time it became time to code, it was tough because we did not have a road map, but I came prepared. I have studied Javascript extensively over the years and was able to contribute by helping the team realize a Model View Controller application utilizing the very basics of ES6. We leverage webpack but it is not even necessary for the code we have written. One of the biggest strengths it offers is the ability to transfer this data and others from json to text without a fetch."
+    ]
+  }
+]
