@@ -74,7 +74,7 @@ const renderFooter = (page) => {
       const rocket =
         document.querySelector(".rocket") || document.createElement("div");
       // If we do not have a rocket container already then append one to the document body
-      if (!document.querySelector(".rocket")) visuals.append(rocket);
+      if (!document.querySelector(".rocket")) document.body.append(rocket); // appends the rocket to the body so it is above everything else
       // addes the rocket class to our rocket which is how the CSS visuals the container
       rocket.classList = "rocket";
       // Adds a class to the bottom left dots that will render them off screen initially
