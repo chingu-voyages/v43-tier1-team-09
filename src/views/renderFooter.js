@@ -1,5 +1,5 @@
 import { visuals } from "./clearAnchor";
-import renderTeamPage from "./renderTeamPage";
+import renderTeamPage from "./team/renderTeamPage";
 const renderFooter = (page) => {
   // defines dots div containers or creates them as needed
   const bottomLeftDots =
