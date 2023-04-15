@@ -19,9 +19,7 @@ header {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid $color-primary;
-  @media screen and (max-width: 500px) {
-    width: 100%;
-  }
+
 }
 
 .flex {
