@@ -1,4 +1,4 @@
-import clearAnchor, { anchor } from '../init';
+import clearAnchor, { anchor } from "../../utils/clearAnchor";
 
 const renderMikey = () => {
     clearAnchor()
