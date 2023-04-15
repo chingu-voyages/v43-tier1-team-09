@@ -8,6 +8,7 @@
   position: fixed;
   right: 0;
   bottom: 1%;
+  z-index: 1;
   @media print {
     display: none;
   }
