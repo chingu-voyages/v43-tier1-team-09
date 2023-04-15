@@ -9,6 +9,13 @@ header {
   color: $color-secondary;
 }
 .window-pane {
+  @media only print {
+    border-radius: none;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    border: none;
+  }
   border-radius: random(10) + px random(20) + px random(30) + px random(40) + px;
   box-shadow: 1px 3px 20px 0px #000000a8;
   background: linear-gradient(

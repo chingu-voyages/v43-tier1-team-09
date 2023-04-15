@@ -17,12 +17,16 @@
     .world {
       display: none;
     }
+
+    #bugs {
+      display: none;
+    }
     main section.scenario {
-      border-radius:0px;
-      border: 1px ridge rgb(228, 21, 56);
+      border: none;
+      background-color: none;
       margin: 0 auto;
       width: 90%;
-      padding: 0.5em 1em;
+      padding: 0.5em 0.5em;
       line-height: 2;
     }
 
