@@ -134,7 +134,7 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 - We have leveraged some code from [Maurice Butler](https://github.com/MauriceButler), who is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js). He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository. Thanks for sharing your contributions with the world.
 
-- Big shout out to [Ksenia Kondrashova](https://github.com/uuuulala) for the Background Blob Animation that gives the illusion of blobs morphing randomly. [Step-by-Step Guide](https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482).
+- Huge shout out to [Ksenia Kondrashova](https://github.com/uuuulala) for the Background Blob Animation that gives the illusion of blobs morphing randomly. [Step-by-Step Guide](https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482).
 
 - A special mention to [Alzea Arafat](https://dribbble.com/alzea) for creating a beautiful illustration pack called "Sally". Some illustrations were used in our project. You can follow this amazing artist on [Kubikel Studio](https://ui8.net/users/kubikel-studio).
 
