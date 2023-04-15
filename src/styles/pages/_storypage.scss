@@ -1,3 +1,6 @@
 main section.scenario {
-  @extend section.game
+  @extend section.game;
+  & h2 {
+    margin: 2em auto -2em;
+  }
 }

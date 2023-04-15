@@ -34,7 +34,7 @@ const renderDev = async (username) => {
   dev.onmouseover = () => {
     switch (username) {
       case "mnichols08":
-        aboutContainer.innerHTML= `${getDevs()[3].story}`;
+        aboutContainer.innerHTML= `<p class="about-container">${getDevs()[3].story}</p>`;
         break;
       default:
         break;

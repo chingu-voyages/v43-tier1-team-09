@@ -25,6 +25,9 @@
     font-weight: bolder;
   }
 }
+.about-container {
+  @extend section.game
+}
 
 .container__card {
   max-width: 90%;
