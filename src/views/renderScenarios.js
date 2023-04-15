@@ -1,5 +1,5 @@
 // imports other views from our project
-import clearAnchor, { anchor } from "./clearAnchor";
+import clearAnchor, { anchor } from "../utils/clearAnchor";
 import renderHeader from './renderHeader';
 import renderFooter from './renderFooter';
 

@@ -1,4 +1,4 @@
-import clearAnchor, { anchor } from "../clearAnchor";
+import clearAnchor, { anchor } from "../../utils/clearAnchor";
 import renderHeader from "../renderHeader";
 import renderFooter from "../renderFooter";
 import renderBugs from "./renderBugs";

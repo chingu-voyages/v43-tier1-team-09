@@ -1,5 +1,5 @@
 import init from "./init"; // pulls in the initiliaze application function to be called on demand
-import { visuals } from "./clearAnchor";
+import { visuals } from "../utils/clearAnchor";
 const renderHeader = (page) => {
   // defines dots div containers or creates them as needed
   let topLeftDots =

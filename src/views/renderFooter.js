@@ -1,4 +1,4 @@
-import { visuals } from "./clearAnchor";
+import { visuals } from "../utils/clearAnchor";
 import renderTeamPage from "./team/renderTeamPage";
 const renderFooter = (page) => {
   // defines dots div containers or creates them as needed
