@@ -30,15 +30,17 @@ const renderDev = async (username) => {
       <p class="title">Developer</p>
       `;
   // each dev has a potential to show their perpspectives or reflect on the project
-  dev.onclick = () => {
+  const aboutContainer = document.getElementById('about-container');
+  dev.onmouseover = () => {
     switch (username) {
       case "mnichols08":
-        dev.innerHTML += `<p>${getDevs()[3].story}`;
+        aboutContainer.innerHTML= `${getDevs()[3].story}`;
         break;
       default:
         break;
     }
   };
+  dev.onmouseout = () => aboutContainer.innerHTML = '';
   teamAnchor.append(dev);
 };
 
