@@ -187,7 +187,7 @@
     "Category": "Fun Facts",
     "Word Count": 69,
     "Scenario_title": "Spring Baby Animals!",
-    "Scenario": "Spring is a season when {{adjective}} baby animals are born. {{animal}}s build {{noun}}s in trees, where they {{verb}}, {{secondNoun}}s that will hatch in a few weeks. Some animals like {{animal}}s and {{secondAdjective}}, {{otherAnimal}},{{secondVerb}} underground and their babies are born there. Others, like {{thirdAdjective}},{{thirdAnimal}}s and {fourthAnimal}}s live in the forest or on farms. Wherever they live, baby animals are so {{fourthAdjective}}!",
+    "Scenario": "Spring is a season when {{adjective}} baby animals are born. {{animal}}s build {{noun}}s in trees, where they {{verb}}, {{secondNoun}}s that will hatch in a few weeks. Some animals like {{animal}}s and {{secondAdjective}}, {{otherAnimal}},{{secondVerb}} underground and their babies are born there. Others, like {{thirdAdjective}},{{thirdAnimal}}s and {{fourthAnimal}}s live in the forest or on farms. Wherever they live, baby animals are so {{fourthAdjective}}!",
     "Source": "Mikey",
     "Variables": {
       "adjective": "Adjective",
