@@ -8,12 +8,14 @@ const renderDev = async (developer) => {
   const dev = document.createElement("div"); // creates an element to contain individual dev information
   if (name == null || name == undefined) name = developer.name; // checks if we have a name (Nazile bugs out for some reason) and if not just stick with thename we provide in the devs.json
   dev.classList = "container__card--information"; // sets a class of container__card--information to our dev container
+  console.log(user)
+  const img = developer.image ? `./assets/images/${developer.github}.png` : user.avatar_url
   dev.innerHTML = `
       <a href="https://github.com/${developer.github}" target="_blank">
-      <img src='./assets/images/${developer.github}.png' alt='${name}' />
+      <img src='${img}' alt='${name}' ${img === user.avatar_url ? `style='border-radius:50%; border: 7px solid #ffe500; box-shadow: 0 0 3px black'` : ''} />
       <h2>${name}</h2>
       <p class="title">${developer.role}</p>
-      `; // sets our dev containers inner html to render dynamic data from both our json and the Github API
+      `; // sets our dev containers inner html to render dynamic data from both our json and the Github API it checks whether we have an image assigned to user or not and will pull from github if need be XD
   const aboutContainer = document.getElementById("about-container"); // defines our about-container created and rendered on our team page
   // if we mouse over a developer rendered from this function, we run another function
   dev.onmouseover = () => {
