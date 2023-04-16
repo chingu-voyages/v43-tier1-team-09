@@ -34,7 +34,7 @@ async function renderScenarios(data) {
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader('SelectPage');
   // defines our scenarios from the data being passed into this function (shuffled)
-  const scenarios = shuffle(data.json);
+  const scenarios = shuffle(data.stories);
   // creates DOM elements for our scenarios
   const section = document.createElement("section");
   const heading = document.createElement("h2");

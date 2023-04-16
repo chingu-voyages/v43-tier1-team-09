@@ -1,15 +1,18 @@
+// base styles that resets some defaults
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-/*  box-sizing: border-box;*/
 }
 
 html {
-    // This defines what 1rem is
+  // This defines what 1rem is
   font-size: 62.5%; // 1 rem = 10px;
+  height: 100vh;
+  background: linear-gradient(45deg, $color-primary, $color-tertiary);
+  background-attachment: fixed;
 }
 
 body {

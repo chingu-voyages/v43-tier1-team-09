@@ -28,13 +28,13 @@ const renderInputPage = (title, variables, index) => {
     input.innerHTML = `
           <input type="text" name="${key}" id="${key}" placeholder='${placeholders[i]}' required />
           <button>${placeholders[i]}</button>
-        `;
+        `; 
     // this input container we just created is declared an id to find it later
     input.id = `question${i}`;
     input.classList = "fade-in";
     // sets the data-completed and inprogress to false
-    input.setAttribute("data-completed", false);
-    input.setAttribute("data-inprogress", false);
+    input.setAttribute("data-completed", false); // our css will render this on screen under the conditions
+    input.setAttribute("data-inprogress", false); // of whether the element is not in progress / or completed
     // appends this input to the form (css hides it in this state)
     form.append(input);
   });
