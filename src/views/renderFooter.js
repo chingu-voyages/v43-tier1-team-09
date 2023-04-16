@@ -1,3 +1,4 @@
+import { getDevs } from "../controller";
 import { visuals } from "../utils/clearAnchor";
 import renderTeamPage from "./team/renderTeamPage";
 const renderFooter = (page) => {
@@ -15,10 +16,10 @@ const renderFooter = (page) => {
   footer.innerHTML = `
   <span> &lt;/&gt; with </span><i class="heart"></i><span> by </span>
 <span>
-	<a href="https://github.com/Emimint" target="_blank">Emimint</a>,
-	<a href="https://github.com/emilio12345" target="_blank">emilio12345</a>, <a href="https://github.com/PaulaR-05" target="_blank">PaulaR-05</a>,
-	<a href="https://github.com/mnichols08" target="_blank">mnichols08</a>,
-	<a href="https://github.com/Nazile-Tag" target="_blank">Nazile-Tag</a>
+${getDevs().map(
+  (dev) =>
+    `<a href="https://github.com/${dev.github}" target="_blank"> ${dev.github}</a>`
+)}
 </span>
 <hr />
 <span> &copy; ${new Date().getFullYear()} </span><span>Inspired by <a href="https://www.chingu.io" target="_blank">Chingu</a>.
