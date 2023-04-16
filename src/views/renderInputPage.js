@@ -11,20 +11,25 @@ const renderInputPage = (title, variables, index) => {
   // maps over the inputContainers array to extract the key values from it
   const keys = Object.keys(variables);
   const placeholders = keys.map((key) => variables[key]);
-  const section = createEle("section", "", anchor); // creates section element and appends to anchor tag
+  const section = createEle("section", `<h2>${title}</h2>`, anchor); // creates section element with a dynamic h2 printing the title within and appends to anchor tag
   section.classList = "fade-in"; // applies classlist of fade-in to section causing it to fade into view
-  const form = createEle("form", "", section); // creates form element and appends to section
-  // renders the text on screen
-  createEle('h2', 'Fill in the blank fields below.', section); // creates an h2 element and renders it to our section
-  createEle('h3', title, form); // creates an h3 element and sets its content to title dynamically and appends it to our form
+  const form = createEle(
+    "form",
+    "<h3>Fill in the blank fields below</h3>",
+    section
+  ); // creates form element with a heading already filled in and appends to section
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("InputPage");
   // Maps over the keys array to render divs with labels and placeholders for form inputContainers
   keys.map((key, i) => {
-    const input = createEle('div', `
+    const input = createEle(
+      "div",
+      `
       <input type="text" name="${key}" id="${key}" placeholder='${placeholders[i]}' required />
       <button>${placeholders[i]}</button>
-    `, form); // creates an input container to contain form elements and dynamically generates the content, then appends to the form element
+    `,
+      form
+    ); // creates an input container to contain form elements and dynamically generates the content, then appends to the form element
     // this input container we just created is declared an id to find it later
     input.id = `question${i}`; // sets our input id to a dynamic value
     input.classList = "fade-in"; // sets our input class list to fade-in
@@ -107,12 +112,12 @@ const renderInputPage = (title, variables, index) => {
             // creates two buttons at the bottom of the form
             const reviewButton =
               document.getElementById("reviewButton") ||
-              createEle('button', '&lt; Review', form); // Checks if we have a review button already or creates one
+              createEle("button", "&lt; Review", form); // Checks if we have a review button already or creates one
             reviewButton.id = "reviewButton"; // defines the id of reviewButton so we can find it after it is made
 
             const goMadButton =
               document.getElementById("goMadButton") ||
-              createEle('button', '&gt; Go Mad!', form); // checks if we have a go mad button or creates one
+              createEle("button", "&gt; Go Mad!", form); // checks if we have a go mad button or creates one
             goMadButton.id = "goMadButton"; // defines the id of the button to find later
             reviewButton.onclick = (e) => {
               e.preventDefault(); // prevents us from rendering the next screen when we press the button
