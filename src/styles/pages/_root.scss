@@ -1,13 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
-html {
-  height: 100vh;
-  background: linear-gradient(45deg, $color-primary, $color-tertiary);
-  background-attachment: fixed;
-}
+// defines styles for the majority of app
 
-header {
-  color: $color-secondary;
-}
 .window-pane {
   @media only screen {
     border-radius: random(10) + px random(20) + px random(30) + px random(40) +
