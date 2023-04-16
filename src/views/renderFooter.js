@@ -1,5 +1,4 @@
 import { getDevs } from "../controller";
-import createEle from "../utils/createEle";
 import { visuals } from "../utils/clearAnchor";
 import renderTeamPage from "./team/renderTeamPage";
 const renderFooter = (page) => {
