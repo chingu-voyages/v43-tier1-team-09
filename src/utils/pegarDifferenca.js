@@ -16,11 +16,10 @@ const pegarDifferenca = (responses) => {
   if (responses)
     caughtWords = responses.filter((word) => badwordsArray.includes(word));
   if (caughtWords && caughtWords.length > 0) {
-    count++
-    let response = funnyPhrase();
-    alert(response);
-    console.error(response);
-    if (count > 2) renderBugs()
+    count++ // if we detect a cuss word increment our counter
+    let response = funnyPhrase(); // picks a funny phrase
+    alert(response); // sends an alert to the user 
+    if (count > 2) renderBugs() // if user has a potty mouth, flood them with bugs!
     return false
   }
   // checks if we caught any naughty words and if we did we alert the user and console error
