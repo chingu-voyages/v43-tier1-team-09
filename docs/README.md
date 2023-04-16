@@ -1,6 +1,4 @@
-![](./Images/madlibs.png#gh-light-mode-only)
-![](./Images/Readme_frame.png#gh-dark-mode-only)
-
+![](../docs/Images/madlibs.png)
 
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
