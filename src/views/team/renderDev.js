@@ -8,7 +8,6 @@ const renderDev = async (developer) => {
   const dev = document.createElement("div"); // creates an element to contain individual dev information
   if (name == null || name == undefined) name = developer.name; // checks if we have a name (Nazile bugs out for some reason) and if not just stick with thename we provide in the devs.json
   dev.classList = "container__card--information"; // sets a class of container__card--information to our dev container
-  console.log(user)
   const img = developer.image ? `./assets/images/${developer.github}.png` : user.avatar_url
   dev.innerHTML = `
       <a href="https://github.com/${developer.github}" target="_blank">
