@@ -1,10 +1,11 @@
 @media print {
-  footer,
-  button {
-    display: none;
+  @page {
+    size: auto;
+    margin: 0mm;
   }
 
-  .visuals {
+  .visuals,
+  button {
     display: none;
   }
 
@@ -24,14 +25,20 @@
     main section.scenario {
       border: 1px ridge rgb(228, 21, 56);
       background-color: none;
-      margin: 0 auto;
-      width: 90%;
-      padding: 0.5em 1em;
-      line-height: 2;
+      margin: -15px auto 0;
+      width: 100%;
+      line-height: 1.7;
+    }
+
+    section.scenario h2 {
+      margin-top: 1em;
+    }
+    section.scenario p {
+      margin-top: 0.5em;
     }
 
     section p {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     span {
