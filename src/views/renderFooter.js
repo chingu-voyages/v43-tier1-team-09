@@ -12,7 +12,7 @@ const renderFooter = (page) => {
   // checks if we have a footer or not or creates it otherwise
   const footer =
     document.querySelector("footer") || document.createElement("footer");
-  // Defines the static HTML for the footer on the page
+  // Defines the static HTML for the footer on the page and dynamically generates devs in the footer
   footer.innerHTML = `
   <span> &lt;/&gt; with </span><i class="heart"></i><span> by </span>
 <span>
