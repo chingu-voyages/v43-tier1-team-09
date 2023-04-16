@@ -1,74 +1,13 @@
-.confetti {
+// defines the confetti div and lets the children inherit these properties
+#confetti {
   position: fixed;
   overflow: hidden;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
-  &-1 {
-    @extend .confetti;
-    border-radius: random(50) + px;
-    width: 1 + random(18) + px;
-    height: 1 + random(18) + px;
-    left: random(88) + vw;
-    top: random(88) + vh;
-    background: hsl(
-      random(360),
-      44 + floor(random() * ((56 - 44) + 1)),
-      44 + floor(random() * ((56 - 44) + 1))
-    );
-  }
-  &-2 {
-    @extend .confetti;
-    border-radius: random(50) + px;
-    width: 5 +random(8) + px;
-    height: 1 + random(8) + px;
-    left: random(88) + vw;
-    top: random(88) + vh;
-    background: hsl(
-      random(360),
-      44 + floor(random() * ((56 - 44) + 1)),
-      44 + floor(random() * ((56 - 44) + 1))
-    );
-  }
-  &-3 {
-    @extend .confetti;
-    border-radius: random(50) + px;
-    width: 1 + random(12) + px;
-    height: 1 + random(12) + px;
-    left: random(88) + vw;
-    top: random(88) + vh;
-    background: hsl(
-      random(360),
-      44 + floor(random() * ((56 - 44) + 1)),
-      44 + floor(random() * ((56 - 44) + 1))
-    );
-  }
-  &-4 {
-    @extend .confetti;
-    border-radius: random(50) + px;
-    width: 1 + random(12) + px;
-    height: 1 + random(12) + px;
-    left: random(88) + vw;
-    top: random(88) + vh;
-    background: hsl(
-      random(360),
-      44 + floor(random() * ((56 - 44) + 1)),
-      44 + floor(random() * ((56 - 44) + 1))
-    );
-  }
-  &-5 {
-    @extend .confetti;
-    border-radius: random(50) + px;
-    width: 1 + random(16) + px;
-    height: 1 + random(16) + px;
-    left: random(88) + vw;
-    top: random(88) + vh;
-    background: hsl(
-      random(360),
-      44 + floor(random() * ((56 - 44) + 1)),
-      44 + floor(random() * ((56 - 44) + 1))
-    );
+  & > div {
+    @extend #confetti;
+    position: fixed;
   }
 }

@@ -1,45 +1,49 @@
+// print styles
 @media print {
-  footer,
-  button {
-    display: none;
-  }
+  @page {
+    size: auto;
+    margin: 0mm;
+  } // removes text on top and bottom of page
 
-  .visuals {
-    display: none;
-  }
+  .visuals,
+    button,
+    footer,
+    #bugs,
+    .heading-primary,
+    .world {
+        display: none;
+    }
 
   body {
     text-align: center;
     background-color: white;
     color: black;
 
-    .heading-primary,
-    .world {
-      display: none;
-    }
     main section.scenario {
-      border-radius:0px;
       border: 1px ridge rgb(228, 21, 56);
-      margin: 0 auto;
-      width: 90%;
-      padding: 0.5em 1em;
-      line-height: 2;
+      background-color: none;
+      margin: -15px auto 0;
+      width: 100%;
+      line-height: 1.7;
+    }
+
+    section.scenario h2 {
+      margin-top: 1em;
+    }
+    section.scenario p {
+      margin-top: 0.5em;
     }
 
     section p {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     span {
-      visibility: hidden;
       position: relative;
-      text-align: center;
       font-size: 0px;
-      color: #f70b51;
       display: inline-block;
       line-height: 1.6em;
       &::before {
-        visibility: visible;
         position: relative;
         top: 14px;
         bottom: 0;
@@ -51,8 +55,7 @@
         padding: 0px 10px;
         display: inline-block;
         line-height: 1.6em;
-        visibility: visible;
-        content: attr(placeholder);
+        content: attr(placeholder); // sets the content befor the span to be the value of the placeholder we provide to the html
       }
     }
   }

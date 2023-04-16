@@ -1,3 +1,4 @@
+import createEle from "../utils/createEle";
 import clearAnchor, { anchor } from "../utils/clearAnchor";
 import controller from "../controller/index";
 import pegarDifferenca from "../utils/pegarDifferenca";
@@ -6,37 +7,36 @@ import renderFooter from "./renderFooter";
 
 // function to render inputContainers
 const renderInputPage = (title, variables, index) => {
+  clearAnchor(); // runs clearAnchor function to generate a clean html anchor
   // maps over the inputContainers array to extract the key values from it
   const keys = Object.keys(variables);
   const placeholders = keys.map((key) => variables[key]);
-  const section = document.createElement("section");
-  const form = document.createElement("form");
-  // renders the text on screen
-  const h2 = document.createElement("h2");
-  const h3 = document.createElement("h3");
-  h2.innerHTML = title; // dynamically changes the title
-  h3.innerText = "Fill in the blank fields below.";
+  const section = createEle("section", `<h2>${title}</h2>`, anchor); // creates section element with a dynamic h2 printing the title within and appends to anchor tag
+  section.classList = "fade-in"; // applies classlist of fade-in to section causing it to fade into view
+  const form = createEle(
+    "form",
+    "<h3>Fill in the blank fields below</h3>",
+    section
+  ); // creates form element with a heading already filled in and appends to section
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("InputPage");
-  section.classList = "fade-in";
-  // appends the headings to the form and section
-  section.append(h2);
-  form.append(h3);
   // Maps over the keys array to render divs with labels and placeholders for form inputContainers
   keys.map((key, i) => {
-    const input = document.createElement("div");
-    input.innerHTML = `
-          <input type="text" name="${key}" id="${key}" placeholder='${placeholders[i]}' required />
-          <button>${placeholders[i]}</button>
-        `;
+    const input = createEle(
+      "div",
+      `
+      <input type="text" name="${key}" id="${key}" placeholder='${placeholders[i]}' required />
+      <button>${placeholders[i]}</button>
+    `,
+      form
+    ); // creates an input container to contain form elements and dynamically generates the content, then appends to the form element
+
     // this input container we just created is declared an id to find it later
-    input.id = `question${i}`;
-    input.classList = "fade-in";
+    input.id = `question${i}`; // sets our input id to a dynamic value
+    input.classList = "fade-in"; // sets our input class list to fade-in
     // sets the data-completed and inprogress to false
     input.setAttribute("data-completed", false);
     input.setAttribute("data-inprogress", false);
-    // appends this input to the form (css hides it in this state)
-    form.append(input);
   });
 
   // event listener must be inside of this function as this is where the form is rendered.
@@ -53,10 +53,6 @@ const renderInputPage = (title, variables, index) => {
       controller().renderStory(index, formResponses, keys, placeholders); // render the story since it passed the check
   });
 
-  clearAnchor();
-  // appends the section and form to the anchor
-  section.append(form);
-  anchor.append(section);
   // the first question will have it's data-inprogress set to true, rendering it visible as per css data-style that is defined within utilities.scss
   document.getElementById("question0").setAttribute("data-inprogress", true);
   const inputContainers = document.querySelectorAll("form div"); //variable to define our input divs created above
@@ -112,20 +108,18 @@ const renderInputPage = (title, variables, index) => {
               "data-inprogress",
               true
             ); // sets the next sibling's dataset to be completed: false, inprogress: true effectively rendering it on screen due to css
-            e.target.parentNode.nextSibling.firstChild.nextSibling.focus() // sets the focus on the next input to appear (greatly improves mobile experience)
+            e.target.parentNode.nextSibling.firstChild.nextSibling.focus(); // sets the focus on the next input to appear (greatly improves mobile experience)
           } else {
             // creates two buttons at the bottom of the form
             const reviewButton =
               document.getElementById("reviewButton") ||
-              document.createElement("button"); // Checks if we have a review button already or creates one
+              createEle("button", "&lt; Review", form); // Checks if we have a review button already or creates one
             reviewButton.id = "reviewButton"; // defines the id of reviewButton so we can find it after it is made
 
             const goMadButton =
               document.getElementById("goMadButton") ||
-              document.createElement("button"); // checks if we have a go mad button or creates one
+              createEle("button", "&gt; Go Mad!", form); // checks if we have a go mad button or creates one
             goMadButton.id = "goMadButton"; // defines the id of the button to find later
-            reviewButton.innerText = `< Review`; // sets the text of the button
-            goMadButton.innerText = `> Go Mad!`; // sets the innerText of the goMadButton
             reviewButton.onclick = (e) => {
               e.preventDefault(); // prevents us from rendering the next screen when we press the button
               reviewButton.classList.add("hide"); // hides the review button
@@ -139,8 +133,6 @@ const renderInputPage = (title, variables, index) => {
             // removes the hide classes from buttons and renders them on screen
             reviewButton.classList.remove("hide");
             goMadButton.classList.remove("hide");
-            form.append(reviewButton);
-            form.append(goMadButton);
           }
         }
       })

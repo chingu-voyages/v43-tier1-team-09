@@ -1,4 +1,6 @@
-@import "abstracts/animations";
+// Base SCSS file to import all other stylesheets
+
+@import "abstracts/animations"; 
 @import "abstracts/utilities";
 @import "abstracts/variables";
 

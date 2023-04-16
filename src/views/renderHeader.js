@@ -1,3 +1,4 @@
+import createEle from '../utils/createEle'; // imports createEle function
 import init from "./init"; // pulls in the initiliaze application function to be called on demand
 import { visuals } from "../utils/clearAnchor";
 const renderHeader = (page) => {
@@ -10,14 +11,11 @@ const renderHeader = (page) => {
   let header;
   if (document.querySelector("header"))
     header = document.querySelector("header");
-  else header = document.createElement("header");
+  else header = createEle('header', `
+  <div class="world"></div>
+  <h1 class="heading-primary">Mad Libs</h1>`, document.body); // creates a header element and appends to the body
   // checks whether this function has a page defined then immediately invokes asyncynous code to add the class
   if (page) setTimeout(() => header.classList = page, 1);
-  // Defines the HTML for the header on the landing page
-  header.innerHTML = `
-        <div class="world"></div>
-        <h1 class="heading-primary">Mad Libs</h1>`;
-  document.body.prepend(header);
   const world = document.querySelector(".world"); // creates a variable for the world div that we just created
   // runs the init function when we click on the world container
   world.onclick = () => init();

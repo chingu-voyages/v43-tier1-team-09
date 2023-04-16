@@ -1,3 +1,4 @@
+// applies styles to buttons
 button {
   width: fit-content;
   height: fit-content;
@@ -9,8 +10,10 @@ button {
   font-size: 1.22em;
   padding: 0.75em;
   &.print {
-    position: relative;
-    top: -2em;
+    @media screen and (min-width: 499px) {
+      position: relative;
+      top: -2em;
+    }
   }
 
   &:hover {
