@@ -13,8 +13,8 @@ const renderTeamPage = () => {
   const teamAnchor = document.createElement("div");
   teamAnchor.classList = "container__card";
   getDevs().forEach(dev => renderDev(dev))
-  teamAnchor.append(section);
-  anchor.append(teamAnchor);
+  section.append(teamAnchor);
+  anchor.append(section);
   const aboutContainer = document.createElement("p");
   aboutContainer.id = "about-container";
   const feedbackContainer = document.createElement("p");
