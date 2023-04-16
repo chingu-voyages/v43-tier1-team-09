@@ -1,4 +1,5 @@
-// We should have created a function for this but this file generates random confettis on screen
+// defines the confetti div and lets the children inherit these properties
+#confetti {
   position: fixed;
   overflow: hidden;
   left: 0;
