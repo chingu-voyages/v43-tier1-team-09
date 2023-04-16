@@ -1,4 +1,4 @@
-const ranNum = (num) => Math.floor(Math.random() * num);
+export const ranNum = (num) => Math.floor(Math.random() * num);
 const renderBugs = () => {
   // defines a mutable variable
   let bugsDiv;
