@@ -5,23 +5,19 @@
   }
 
   .visuals,
-  button,footer {
-    display: none;
-  }
+    button,
+    footer,
+    #bugs,
+    .heading-primary,
+    .world {
+        display: none;
+    }
 
   body {
     text-align: center;
     background-color: white;
     color: black;
 
-    .heading-primary,
-    .world {
-      display: none;
-    }
-
-    #bugs {
-      display: none;
-    }
     main section.scenario {
       border: 1px ridge rgb(228, 21, 56);
       background-color: none;
