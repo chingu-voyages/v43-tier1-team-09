@@ -26,7 +26,7 @@ function controller() {
 export const getDevs = () => devs; // renders our devs json to function that calls this
 export const getGitHubUser = async (username) =>
   await fetch(`https://api.github.com/users/${username}`)
-    .then((data) => data.stories())
-    .then((stories) => stories); // function to fetch a github user profile and return it
+    .then((data) => data.json())
+    .then((json) => json); // function to fetch a github user profile and return it
 
 export default controller;
