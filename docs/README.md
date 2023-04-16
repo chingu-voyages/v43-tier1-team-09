@@ -23,7 +23,7 @@
 
 ### The project
 
-A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program, following the Agile Methodology and the Minimum Viable Product(MVP). The game consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
+A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program, following the Agile Methodology to build a web app that utilized a Model View Controller (MVC) pattern. The game consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
 
 Users should be able to:
 
