@@ -1,4 +1,4 @@
-![](../docs/Images/madlibs.png)
+![](./Images/madlibs.png)
 
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
@@ -45,7 +45,7 @@ Finally, both lists are zipped into a **Python** dictionary, converted, and adde
 
 ### Screenshot
 
-![](../docs/Images/screenshot.png)
+![](./Images/screenshot.png)
 
 ### Links
 
