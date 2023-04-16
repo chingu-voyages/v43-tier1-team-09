@@ -1,4 +1,6 @@
-![](./Images/madlibs.png)
+![](./Images/madlibs.png#gh-light-mode-only)
+![](./Images/Readme_frame.png#gh-dark-mode-only)
+
 
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
@@ -17,6 +19,7 @@
   - [Deployment](#deployment)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
+- [Contact Us](#contact-us)
 
 ## Overview
 
@@ -36,7 +39,7 @@ Users should be able to:
 
 ### Project Setup
 
-The first step we took as a team was to create the required files for our project and ways to connect them. To organize, we did a simple Google search that led us to stories of different genres and scenarios, also with placeholders that would be used as input for adjectives, nouns, or a person's name. In our file, these placeholders were delimited by double brackets in camelcase _(ie.  {{placeholder}}  )_
+The first step we took as a team was to create the required files for our project and ways to connect them. To organize, we did a simple Google search that led us to stories of different genres and scenarios, also with placeholders that would be used as input for adjectives, nouns, or a person's name. In our file, these placeholders were delimited by double brackets in camelcase _(ie. {{placeholder}} )_.
 
 Therefore, the second step after organizing all these stories in a single CSV file separated by categories, size, and placeholders, was to convert the CSV to a JSON file. Once open, we use a for loop to go over each JSON object of the file. The first loop identified all the placeholder variables in a given scenario. Those variables are stored in the var*list array. In the second loop, each variable is split into a list of words *(ie. "aTypeOfBuilding" becomes ["a","Type","Of","Building"])_ and then converted into a string variable _(ie. the list["a","Type","Of","Building"] becomes the string "A type of building")\_. Those variables are then stored in the description_array.
 
@@ -44,12 +47,13 @@ Finally, both lists are zipped into a **Python** dictionary, converted, and adde
 
 ### Screenshot
 
-![](./Images/screenshot.jpg)
+![](../docs/Images/screenshot.png)
 
 ### Links
 
 - [Repository](https://github.com/chingu-voyages/v43-tier1-team-09)
 - [Live Site URL](https://v43-tier1-team-09.netlify.app/)
+- [Showcase Video](https://www.youtube.com/watch?v=wzQC3xtzPss)
 
 ## General Instructions
 
@@ -76,7 +80,6 @@ What things you need to install the software and how to install them
 babel-loader
 concurrently
 css-loader
-mini-css-extract-plugin
 node-sass
 sass-loader
 serve
@@ -125,10 +128,20 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 ## Acknowledgments
 
-- Huge thank you to [Chingu](https://www.chingu.io/) and everyone over there especially [Jim Medloc](https://github.com/jdmedlock) for giving us this wonderful oppurtunity!
+- This project would not be possible without [Chingu](https://www.chingu.io/). We would like to to extend our appreciation to everyone over there, especially [Jim Medloc](https://github.com/jdmedlock) for providing us this wonderful oppurtunity!
 
-- Big shout out to our personal Mentor, [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
+- A grateful nod to our personal Mentor, [Aryse Gabrielle Pagano](https://github.com/medic1111) for helping guide us along the way.
 
-- [Maurice Butler](https://github.com/MauriceButler) is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js) in the Contributors table. He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository.
+- We have leveraged some code from [Maurice Butler](https://github.com/MauriceButler), who is acknowledged with 🔣[Array.js](https://github.com/MauriceButler/badwords/blob/master/array.js). He is named as an author in the most recent version of the [BadWords](https://github.com/MauriceButler/badwords) repository. Thanks for sharing your contributions with the world.
 
-- The staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD have contributed in way they do not even know. Thank you!
+- Huge shout out to [Ksenia Kondrashova](https://github.com/uuuulala) for the Background Blob Animation that gives the illusion of blobs morphing randomly. [Step-by-Step Guide](https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482).
+
+- A special mention to [Alzea Arafat](https://dribbble.com/alzea) for creating a beautiful illustration pack called "Sally". Some illustrations were used in our project. You can follow this amazing artist on [Kubikel Studio](https://ui8.net/users/kubikel-studio).
+
+- A big high-five to the staff at [Vuvietduc](https://vuvietduc.com/) created an illustration pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
+
+- A heartfelt acknowledgement to all of the staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD who have contributed in ways that they do not even know. Thank you so much!
+
+## Contact Us
+
+Please report any [🐛bug🐛](https://docs.google.com/forms/d/e/1FAIpQLSd91zh13dCmv4GNsG7ndVoY4njof7NvHQ3LoMrXabnkXylihg/viewform?usp=sf_link) or provide us [feedback 🤗](https://docs.google.com/forms/d/e/1FAIpQLSd91zh13dCmv4GNsG7ndVoY4njof7NvHQ3LoMrXabnkXylihg/viewform?usp=sf_link)

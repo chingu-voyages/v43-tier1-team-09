@@ -1,0 +1,8 @@
+main section.scenario {
+  @extend section.game;
+  & h2 {
+    @media screen and (min-width: 499px) {
+      margin: 2em auto -2em;
+    }
+  }
+}

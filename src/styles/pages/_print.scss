@@ -1,0 +1,66 @@
+@media print {
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+
+  .visuals,
+    button,
+    footer,
+    #bugs,
+    .heading-primary,
+    .world {
+        display: none;
+    }
+
+  body {
+    text-align: center;
+    background-color: white;
+    color: black;
+
+    main section.scenario {
+      border: 1px ridge rgb(228, 21, 56);
+      background-color: none;
+      margin: -15px auto 0;
+      width: 100%;
+      line-height: 1.7;
+    }
+
+    section.scenario h2 {
+      margin-top: 1em;
+    }
+    section.scenario p {
+      margin-top: 0.5em;
+    }
+
+    section p {
+      font-size: 18px;
+    }
+
+    span {
+      visibility: hidden;
+      position: relative;
+      text-align: center;
+      font-size: 0px;
+      color: #f70b51;
+      display: inline-block;
+      line-height: 1.6em;
+      &::before {
+        visibility: visible;
+        position: relative;
+        top: 14px;
+        bottom: 0;
+        min-width: 100px;
+        text-align: center;
+        border-top: 1px solid #f70b51;
+        font-size: 12px;
+        color: #f70b51;
+        padding: 0px 10px;
+        display: inline-block;
+        line-height: 1.6em;
+        visibility: visible;
+        content: attr(placeholder);
+      }
+    }
+  }
+}

@@ -1,126 +1,13 @@
-.dots {
-  background: url(../assets/dots.png);
-  background-repeat: no-repeat;
-  min-height: 15em;
-  min-width: 15em;
-  position: fixed;
-  background-size: contain;
-  transition: all 0.5s;
-  &.shift-left {
-    transform: translate(-50vw, 0);
-  }
-  &.shift-right {
-    transform: translate(50vw, 0);
-  }
-  &__top {
-    @extend .dots;
-    top: -5em;
-    &-left {
-      @extend .dots__top;
-      left: -5em;
-    }
-    &-right {
-      @extend .dots__top;
-      right: -5em;
-    }
-  }
-  &__bottom {
-    @extend .dots;
-    bottom: -5em;
-    &-left {
-      @extend .dots__bottom;
-      left: -9em;
-    }
-    &-right {
-      @extend .dots__bottom;
-      right: -9em;
-    }
-  }
-}
-
-header {
-  position: relative;
-  top: 1em;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 38px;
-  font-weight: 400;
-  line-height: 77px;
-  letter-spacing: 0em;
-  text-align: center;
-  text-transform: uppercase;
-  
-  &.SelectPage {
-    & h1 {
-      transition: all .3s;
-      font-size: 1em;
-      z-index:1;
-    }
-    & .world {
-      transition: all .3s;
-      zoom: .5;
-    }
-  }
-}
-
-.world {
-  transition: all 0.5s cubic-bezier(0, 3.3, 1, 1);
-  background: url(../assets/world.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 151px;
-  width: 174px;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-  &:active {
-    transform: scale(1.09);
-  }
-}
-
-.rocket {
-  background: url(../assets/rocket.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 150px;
-  width: 150px;
-  transition: 30s all;
-  position: absolute;
-  right: 0;
-  bottom: 23%;
-  &.blast-off {
-    transform: translate(-1000vw, -750vh);
-  }
-}
-
-footer {
-  background: linear-gradient(
-    45deg,
-    #0054676e,
-    hsl(
-      random(360),
-      44 + floor(random() * ((56 - 44) + 1)),
-      44 + floor(random() * ((56 - 44) + 1))
-    )
-  );
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  .heart {
-    background: url(../assets/chinguheart.png);
-    display: inline-block;
-    height: 2em;
-    width: 2em;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 0.6em;
-  }
+@import 'dots';
+@import 'world';
+@import 'rocket';
+@import 'heart';
+.visuals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
 }
