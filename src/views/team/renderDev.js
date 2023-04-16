@@ -20,8 +20,8 @@ const renderDev = async (developer) => {
   dev.onmouseover = () => {
     if (developer.story) // we check if the developer has filled out a story within src/model/devs.json or not
       aboutContainer.innerHTML = `<p class="about-container fade-in">${developer.story}</p>`; // if so we set our innerHTML of the about container to be some dynamic html
+      else aboutContainer.innerHTML = ``;
   };
-  dev.onmouseout = () => (aboutContainer.innerHTML = ""); // then, we listen for the user to scroll away and will clear the html at that point
   teamAnchor.append(dev); // appends the dev container to the teamAnchor 
 };
 
