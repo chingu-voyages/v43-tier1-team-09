@@ -138,7 +138,7 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 - A big high-five to the staff at [Vuvietduc](https://vuvietduc.com/) created an illustration pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
 
-- A heartfelt acknowledgement to all of the staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD who have contributed in ways that they do not even know. Thank you so much!
+- A heartfelt acknowledgement to all of the staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD who have contributed in ways that they do not even know. Especially to [Tommy Dolly](https://github.com/Zed34k] and Ryan Bentz for putting in actual effort at testing the app. Thank you so much!
 
 ## Contact Us
 
