@@ -1,3 +1,4 @@
+// declares animations
 @keyframes top-left-to-bottom-right {
   from {
     transform: translate(-10vw, -10vh);
@@ -123,6 +124,5 @@
   transform-origin: 84px 93px;
 }
 .fade-in {
-  animation: fadeIn .75s linear;
+  animation: fadeIn 0.75s linear;
 }
-

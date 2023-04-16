@@ -30,6 +30,7 @@ const renderInputPage = (title, variables, index) => {
     `,
       form
     ); // creates an input container to contain form elements and dynamically generates the content, then appends to the form element
+
     // this input container we just created is declared an id to find it later
     input.id = `question${i}`; // sets our input id to a dynamic value
     input.classList = "fade-in"; // sets our input class list to fade-in

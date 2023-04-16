@@ -1,3 +1,4 @@
+// declares utility style used to place logo on header to the right side in the team page
 .right {
   position: absolute;
   top: -5vh;
@@ -10,10 +11,11 @@
     position:static;
   }
 }
-
+// css to cause our input divs to appear when they are i progress
 div[data-completed=false][data-inprogress=true]{
   display: block;
 }
+// css to hide our div inputs when they are no not in porgress
 .hide, div[data-completed=true], div[data-inprogress=false] {
     display: none;
 }
