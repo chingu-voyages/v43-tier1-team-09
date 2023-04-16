@@ -15,8 +15,8 @@ const renderInputPage = (title, variables, index) => {
   section.classList = "fade-in"; // applies classlist of fade-in to section causing it to fade into view
   const form = createEle("form", "", section); // creates form element and appends to section
   // renders the text on screen
-  const h2 = createEle('h2', 'Fill in the blank fields below.', section); // creates an h2 element and renders it to our section
-  const h3 = createEle('h3', title, form); // creates an h3 element and sets its content to title dynamically and appends it to our form
+  createEle('h2', 'Fill in the blank fields below.', section); // creates an h2 element and renders it to our section
+  createEle('h3', title, form); // creates an h3 element and sets its content to title dynamically and appends it to our form
   // calls the renderHeader function, passing in "SelectPage" as the argument, which tells the header we are on this page
   renderHeader("InputPage");
   // Maps over the keys array to render divs with labels and placeholders for form inputContainers
