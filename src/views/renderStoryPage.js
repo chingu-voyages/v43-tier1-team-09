@@ -57,7 +57,7 @@ const renderStoryPage = (
         min-width: 100px;
         text-align: center;
         font-size: 12px;
-        color: blue;
+        color: #955AFF;
         display: inline-block;
         line-height: 1.6em;
         content: attr(value);
