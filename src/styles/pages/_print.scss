@@ -1,8 +1,9 @@
+// print styles
 @media print {
   @page {
     size: auto;
     margin: 0mm;
-  }
+  } // removes text on top and bottom of page
 
   .visuals,
     button,
@@ -38,15 +39,11 @@
     }
 
     span {
-      visibility: hidden;
       position: relative;
-      text-align: center;
       font-size: 0px;
-      color: #f70b51;
       display: inline-block;
       line-height: 1.6em;
       &::before {
-        visibility: visible;
         position: relative;
         top: 14px;
         bottom: 0;
@@ -58,8 +55,7 @@
         padding: 0px 10px;
         display: inline-block;
         line-height: 1.6em;
-        visibility: visible;
-        content: attr(placeholder);
+        content: attr(placeholder); // sets the content befor the span to be the value of the placeholder we provide to the html
       }
     }
   }

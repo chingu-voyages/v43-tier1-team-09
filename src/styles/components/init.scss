@@ -1,13 +1,5 @@
+// imports dynamic css files that require us to import images
 @import 'dots';
 @import 'world';
 @import 'rocket';
 @import 'heart';
-.visuals {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-}
