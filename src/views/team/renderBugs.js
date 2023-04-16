@@ -6,7 +6,10 @@ const renderBugs = () => {
   // define a bugs div container
   else bugsDiv = document.createElement("div");
   bugsDiv.id = "bugs"; // sets div id to bugs to find later
+  let count = 0;
   const releaseBugs = setInterval(() => {
+    count++ // increments bug counter
+    if (count > 1000) clearInterval(releaseBugs); // threshold to limit number of bugs on screen to prevent breaking someoones browser
     // we create a div element to render a bug on screen
     const bug = document.createElement("div"); // creates an element we can turn into a bug
     bug.innerHTML = `&#128027;`; // defines our bug emoji as the innerHTML of the container
