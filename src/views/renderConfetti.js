@@ -1,6 +1,6 @@
-import createEle from '../utils/createEle';
-import { visuals } from '../utils/clearAnchor';
-import { ranNum } from './team/renderBugs';
+import createEle from "../utils/createEle";
+import { visuals } from "../utils/clearAnchor";
+import { ranNum } from "./team/renderBugs";
 
 const renderConfetti = () => {
   // defines a mutable variable
@@ -12,7 +12,7 @@ const renderConfetti = () => {
   confettiDiv.id = "confetti"; // applies an id of confetti to our confetti container
   let count = ranNum(20) + 2; // defines our maximum number of confettis to generate
   for (let i = 1; i <= count; i++) {
-    const confetti = createEle('div', '', confettiDiv) // creates a random number of confetti divs (up to 20)
+    const confetti = createEle("div", "", confettiDiv); // creates a random number of confetti divs (up to 20)
 
     // Generate a random time to run animation
     const randomTime = `${Math.floor(Math.random() * 3) + 1}s infinite`;
@@ -30,12 +30,12 @@ const renderConfetti = () => {
         ${ranNum(255)}
       );
     }
-    ` // declares each style to be  dynamically generated
+    `; // declares each style to be  dynamically generated
     // Set the animation to be a random animation for the randomTime defined above
     confetti.style.animation = `${
       animations[Math.floor(Math.random() * animations.length)]
     } ${randomTime}`;
-}
-
+  }
+};
 
 export default renderConfetti;
