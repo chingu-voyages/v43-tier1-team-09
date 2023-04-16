@@ -1,6 +1,4 @@
-![](./Images/madlibs.png#gh-light-mode-only)
-![](./Images/Readme_frame.png#gh-dark-mode-only)
-
+![](../docs/Images/madlibs.png)
 
 # [Chingu Voyage 43 - Tier 1 - Mad Libs Word Game](https://github.com/chingu-voyages/v43-tier1-team-09)
 
@@ -25,7 +23,7 @@
 
 ### The project
 
-A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program, following the Agile Methodology and the Minimum Viable Product(MVP). The game consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
+A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program, following the Agile Methodology to build a web app that utilizes a Model View Controller (MVC) pattern. The game consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.
 
 Users should be able to:
 
@@ -140,7 +138,7 @@ See also the list of [contributors](./CONTRIBUTORS.md) who participated in this 
 
 - A big high-five to the staff at [Vuvietduc](https://vuvietduc.com/) created an illustration pack compiling +750 World flags which we used on our developer's page to show off our multicultural team. Gracias, Obrigada, Merci, Teşekkür ederim & Thank You! 🌎
 
-- A heartfelt acknowledgement to all of the staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD who have contributed in ways that they do not even know. Thank you so much!
+- A heartfelt acknowledgement to all of the staff and crew at [Southern Auto Supply](https://www.napaonline.com/en/md/oakland/store/804877) in Mt. Lake Park, MD who have contributed in ways that they do not even know. Especially to [Tommy Dolly](https://github.com/Zed34k) and Ryan Bentz for putting in actual effort at testing the app. Thank you so much!
 
 ## Contact Us
 
