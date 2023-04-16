@@ -21,7 +21,7 @@ const renderFooter = (page) => {
 	<a href="https://github.com/Nazile-Tag" target="_blank">Nazile-Tag</a>
 </span>
 <hr />
-<span> &copy; 2023 </span><span>Inspired by <a href="https://www.chingu.io" target="_blank">Chingu</a>.
+<span> &copy; ${new Date().getFullYear()} </span><span>Inspired by <a href="https://www.chingu.io" target="_blank">Chingu</a>.
 	Built for Voyage 43.
 	| <a href="https://github.com/chingu-voyages/v43-tier1-team-09" target="_blank">View Source</a> | <a href="https://chingu-voyages.github.io/v43-tier1-team-09/" target="_blank">Learn More</a></span> | <a href="#" id="teamPage">Meet Team 09</a></span>
   `;
