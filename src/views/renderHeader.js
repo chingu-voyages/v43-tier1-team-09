@@ -20,7 +20,7 @@ const renderHeader = (page) => {
       document.body
     ); // creates a header element and appends to the body
   // checks whether this function has a page defined then immediately invokes asyncynous code to add the class
-  if (page) setTimeout(() => (header.classList = page), 1);
+  if (page) setTimeout(() => header.classList = `fade-in ${page}`, 1);
   const world = document.querySelector(".world"); // creates a variable for the world div that we just created
   // runs the init function when we click on the world container
   world.onclick = () => init();
@@ -78,9 +78,7 @@ const renderHeader = (page) => {
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediatley invokes a function to remove the class hiding them, causing them to slide into view
       break;
     default:
-      header.innerHTML = `
-      <div class="world"></div>
-      <h1 class="heading-primary">Mad Libs</h1>`;
+      header.innerHTML = `<div class="world"></div><h1 class="heading-primary">Mad Libs</h1>`;
       header.classList = "fade-in";
       // Landing Page Header
       // Adds a class to the dots on the right that shifts them off screen to the right
