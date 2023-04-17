@@ -33,6 +33,7 @@
 }
 
 main {
+  @extend .fade-in;
   text-align: center;
   margin: 7em auto;
   position: sticky;
