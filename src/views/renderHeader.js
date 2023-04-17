@@ -1,4 +1,4 @@
-import createEle from '../utils/createEle'; // imports createEle function
+import createEle from "../utils/createEle"; // imports createEle function
 import init from "./init"; // pulls in the initiliaze application function to be called on demand
 import { visuals } from "../utils/clearAnchor";
 const renderHeader = (page) => {
@@ -11,11 +11,16 @@ const renderHeader = (page) => {
   let header;
   if (document.querySelector("header"))
     header = document.querySelector("header");
-  else header = createEle('header', `
+  else
+    header = createEle(
+      "header",
+      `
   <div class="world"></div>
-  <h1 class="heading-primary">Mad Libs</h1>`, document.body); // creates a header element and appends to the body
+  <h1 class="heading-primary">Mad Libs</h1>`,
+      document.body
+    ); // creates a header element and appends to the body
   // checks whether this function has a page defined then immediately invokes asyncynous code to add the class
-  if (page) setTimeout(() => header.classList = page, 1);
+  if (page) setTimeout(() => (header.classList = page), 1);
   const world = document.querySelector(".world"); // creates a variable for the world div that we just created
   // runs the init function when we click on the world container
   world.onclick = () => init();
@@ -73,13 +78,16 @@ const renderHeader = (page) => {
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediatley invokes a function to remove the class hiding them, causing them to slide into view
       break;
     default:
+      header.innerHTML = `
+      <div class="world"></div>
+      <h1 class="heading-primary">Mad Libs</h1>`;
+      header.classList = "fade-in";
       // Landing Page Header
       // Adds a class to the dots on the right that shifts them off screen to the right
       topRightDots.classList.add("shift-right");
       // After a 300ms delay removes the dots on the right from the DOM
       setTimeout(() => topRightDots.remove(), 300);
       // removes any classes from header we may have defined in another case
-      header.classList = "";
       topLeftDots.classList = "shift-left dots__top-left"; // defines the dots on the left to render off the screen to the left initially
       visuals.prepend(topLeftDots); // appends the left dots onto the screen
       setTimeout(() => topLeftDots.classList.remove("shift-left"), 1); // immediately removes the class that places the dots on the left off screen, which places them on screen
