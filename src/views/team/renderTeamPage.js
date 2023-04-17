@@ -14,7 +14,7 @@ const renderTeamPage = () => {
   const teamAnchor = createEle("div", "", section); // creates a div container and appends it to the section
   teamAnchor.classList = "container__card"; // sets the class to container__card on that div
   getDevs().forEach((dev) => renderDev(dev)); // runs the getDevs function which returns a list of devs, and then forEach of those devs will render a Dev, passing in that individual developer information
-  const aboutContainer = createEle("p", anchor); // creates a paragraph element and appends it to the anchor
+  const aboutContainer = createEle("p", '', anchor); // creates a paragraph element and appends it to the anchor
   aboutContainer.id = "about-container"; // gives that element an id of about-container
   createEle(
     "p",
