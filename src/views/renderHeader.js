@@ -25,12 +25,13 @@ const renderHeader = (page) => {
     header = document.querySelector("header");
   else header = createEle('header', headerHTML, document.body); // creates a header element fills with default static html and prepends it to the body
   // checks whether this function has a page defined then immediately invokes asyncynous code to add the class
-  if (page) setTimeout(() => (header.classList = `fade-in ${page}`), 1);  
+  if (page) header.classList = `fade-in ${page}`;  
   const world = document.querySelector(".world"); // creates a variable for the world div that we just created
   // runs the init function when we click on the world container
   world.onclick = () => init();
   switch (page) {
     case "SelectPage":
+      header.classList = `fade-in ${page}`
       // Story Select Screen Header
       // Adds the class of shift-left to dots on screen causing them to shift off screen.
       topLeftDots.classList.add("shift-left");
@@ -44,18 +45,21 @@ const renderHeader = (page) => {
       setTimeout(() => topRightDots.classList.remove("shift-right"), 1);
       break;
     case "InputPage":
+      header.classList = `fade-in ${page}`
       // Story Input Page Header
       topLeftDots.classList = "shift-up dots__top-left"; // defines the dots on the left to render off the screen to the top initially
       visuals.prepend(topLeftDots); // appends the left dots onto the screen
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediately removes the class that places the dots on the left off screen, which places them on screen
       break;
     case "StoryPage":
+      header.classList = `fade-in ${page}`
       // Adds the class of shift-up to dots on screen causing them to shift off screen.
       topLeftDots.classList.add("shift-up");
       // After 300ms we remove the element from the DOM
       setTimeout(() => topLeftDots.remove(), 300);
       break;
     case "TeamPage":
+      header.classList = `fade-in ${page}`
       //renders the html from Gabriela's design file and adds the logo from before but inside of a div
       header.innerHTML = devHTML; // sets innerHTML of header to be the devHTML defined above
       const rightHeader = document.querySelector(".right"); // defines the right container we created above
@@ -69,6 +73,7 @@ const renderHeader = (page) => {
       setTimeout(() => topLeftDots.classList.remove("shift-up"), 1); // immediatley invokes a function to remove the class hiding them, causing them to slide into view
       break;
     default:
+      header.classList = `fade-in`
       header.innerHTML = headerHTML;     
       // Landing Page Header
       // Adds a class to the dots on the right that shifts them off screen to the right
