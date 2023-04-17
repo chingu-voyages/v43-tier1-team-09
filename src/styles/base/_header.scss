@@ -29,4 +29,7 @@ header {
       zoom: 0.5;
     }
   }
+  &.StoryPage {
+    @extend .SelectPage
+  }
 }
