@@ -1,5 +1,6 @@
 // applies styles to buttons
 button {
+  @extend .fade-in;
   width: fit-content;
   height: fit-content;
   background: #ffcd29;
