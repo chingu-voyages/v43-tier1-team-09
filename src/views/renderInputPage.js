@@ -1,6 +1,6 @@
 import createEle from "../utils/createEle";
 import clearAnchor, { anchor } from "../utils/clearAnchor";
-import controller from "../controller/index";
+import controller, { randomWords } from "../controller/index";
 import pegarDifferenca from "../utils/pegarDifferenca";
 import renderHeader from "./renderHeader";
 import renderFooter from "./renderFooter";
@@ -79,11 +79,11 @@ const renderInputPage = (title, variables, index) => {
       }
     })
   );
-  const randomButtons = document.querySelectorAll("form div a svg");
+  const randomButtons = document.querySelectorAll("form div a svg"); // declares a button as our svg element 
   randomButtons.forEach(
     (randomButton) =>
       (randomButton.onclick = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // for each button we run an onclick function that starts here
         let input;
         if (
           e.target.previousElementSibling !== null &&
@@ -94,29 +94,17 @@ const renderInputPage = (title, variables, index) => {
           e.target.parentNode.previousElementSibling !== null &&
           e.target.parentNode.previousElementSibling !== undefined
         )
-          input = e.target.parentNode.previousElementSibling;
+          input = e.target.parentNode.previousElementSibling; // we run some checks to find our previous input correctly 
         if (input) {
           const placeholderArr = input.name.split(/(?=[A-Z])/); // splits the array up on case change
           const inputName =
             placeholderArr[placeholderArr.length - 1].toLowerCase(); // declares  the input name as the final item in array
-          switch (inputName) {
-            case "number":
-              input.value = Math.floor(Math.random() * 1000000000) + 1;
-              setTimeout(
-                () =>
-                  input.parentNode.firstElementChild.nextElementSibling.nextElementSibling.click(),
-                500
-              );
-              break;
-            default:
-              input.value = "random";
-              setTimeout(
-                () =>
-                  input.parentNode.firstElementChild.nextElementSibling.nextElementSibling.click(),
-                500
-              );
-              break;
-          }
+          input.value = randomWords(inputName); // run the controller function and pass in the input name
+          setTimeout(
+            () =>
+              input.parentNode.firstElementChild.nextElementSibling.nextElementSibling.click(),
+            500
+          );
         }
       })
   );
