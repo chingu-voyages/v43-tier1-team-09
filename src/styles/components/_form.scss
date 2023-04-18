@@ -4,11 +4,12 @@ form {
     @extend .window-pane;
     background: #a595d94a;
     width: fit-content;
+    padding: 2.5em;
     margin: 1em auto;
-    padding: 1rem;
     display: flex;
-    a {
-      width: 20%;
+    align-items: center;;
+    span {
+      width: 10%;
       margin: auto;
       @media only screen and (max-width: 499px) {
         height: 1.25em;
@@ -19,7 +20,7 @@ form {
       svg {
         @media only screen and (min-width: 500px) {
           height: 3em;
-          margin: 1em 1.5em;
+          //margin: 1em 1.5em;
         }
         filter: invert(1);
         transition: all 0.25s;
@@ -30,14 +31,13 @@ form {
       }
     }
     input {
-      width: 75%;
+      width: 80%;
       margin: auto;
       background: #b0b30e8c;
       color: #200f0f;
       font-size: 2.2em;
       font-family: "Baloo Thambi 2";
       text-align: center;
-      display: flex;
       @media screen and (max-width: 500px) {
         font-size: 1.2em;
       }
