@@ -6,6 +6,21 @@ form {
     width: fit-content;
     margin: 1em auto;
     padding: 1rem;
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      svg {
+        height: 3em;
+        margin: 1em 1.5em;
+        filter: invert(1);
+        transition: all .25s;
+        &:hover{
+          cursor: pointer;
+          filter: invert(0);
+        }
+      }
+    }
     input {
       background: #b0b30e8c;
       color: #200f0f;
@@ -13,8 +28,8 @@ form {
       font-family: "Baloo Thambi 2";
       text-align: center;
       display: flex;
-      @media screen and (max-width: 500px){
-        font-size:1.2em;
+      @media screen and (max-width: 500px) {
+        font-size: 1.2em;
       }
       &::placeholder {
         color: #00f5d4;
