@@ -52,7 +52,7 @@ export const randomWords = (type) => {
     speech[5].places[Math.floor(Math.random() * speech[5].places.length)];
     const randomFlavor = speech[6].flavors[Math.floor(Math.random() * speech[6].flavors.length)];
     const randomFood = speech[7].foods[Math.floor(Math.random() * speech[7].foods.length)];
-    const randomAnimal = speech[8].foods[Math.floor(Math.random() * speech[8].animals.length)]
+    const randomAnimal = speech[8].animals[Math.floor(Math.random() * speech[8].animals.length)]
     const randomPronoun = speech[9].pronouns[Math.floor(Math.random() * speech[9].pronouns.length)]
   // declare a switch statement on type of speech
   switch (type) {
