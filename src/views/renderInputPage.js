@@ -96,8 +96,27 @@ const renderInputPage = (title, variables, index) => {
         )
           input = e.target.parentNode.previousElementSibling;
         if (input) {
-          input.value = "random";
-          setTimeout(() => input.parentNode.firstElementChild.nextElementSibling.nextElementSibling.click(), 500) 
+          const placeholderArr = input.name.split(/(?=[A-Z])/); // splits the array up on case change
+          const inputName =
+            placeholderArr[placeholderArr.length - 1].toLowerCase(); // declares  the input name as the final item in array
+          switch (inputName) {
+            case "number":
+              input.value = Math.floor(Math.random() * 1000000000) + 1;
+              setTimeout(
+                () =>
+                  input.parentNode.firstElementChild.nextElementSibling.nextElementSibling.click(),
+                500
+              );
+              break;
+            default:
+              input.value = "random";
+              setTimeout(
+                () =>
+                  input.parentNode.firstElementChild.nextElementSibling.nextElementSibling.click(),
+                500
+              );
+              break;
+          }
         }
       })
   );
