@@ -26,11 +26,12 @@ const renderInputPage = (title, variables, index) => {
       "div",
       `
       <input type="text" name="${key}" id="${key}" placeholder='${placeholders[i]}' required />
+      <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M403.8 34.4c12-5 25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160H352c-10.1 0-19.6 4.7-25.6 12.8L284 229.3 244 176l31.2-41.6C293.3 110.2 321.8 96 352 96h32V64c0-12.9 7.8-24.6 19.8-29.6zM164 282.7L204 336l-31.2 41.6C154.7 401.8 126.2 416 96 416H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c10.1 0 19.6-4.7 25.6-12.8L164 282.7zm274.6 188c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V416H352c-30.2 0-58.7-14.2-76.8-38.4L121.6 172.8c-6-8.1-15.5-12.8-25.6-12.8H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c30.2 0 58.7 14.2 76.8 38.4L326.4 339.2c6 8.1 15.5 12.8 25.6 12.8h32V320c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64z"/></svg></a>
       <button>${placeholders[i]}</button>
+      <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
     `,
       form
     ); // creates an input container to contain form elements and dynamically generates the content, then appends to the form element
-
     // this input container we just created is declared an id to find it later
     input.id = `question${i}`; // sets our input id to a dynamic value
     input.classList = "fade-in"; // sets our input class list to fade-in
@@ -60,7 +61,7 @@ const renderInputPage = (title, variables, index) => {
   document.querySelectorAll("form div input").forEach((input) =>
     input.addEventListener("keypress", (e) => {
       // loop ever all inputs within the form and adds an event listener on them
-      const button = e.target.nextSibling.nextSibling; // defines the button next to this input so we can click it if enter is pressed
+      const button = e.target.nextElementSibling.nextElementSibling; // defines the button next to this input so we can click it if enter is pressed
       let nextInput; // lets set this as a temporary var
       if (
         e.target &&
@@ -78,65 +79,81 @@ const renderInputPage = (title, variables, index) => {
       }
     })
   );
-  buttons.forEach(
-    (button) =>
-      (button.onclick = (e) => {
-        // for each button listens for a click and runs this function when we press one
-        e.preventDefault(); // prevents us from submitting the form when we press the button
+  const randomButtons = document.querySelectorAll("form div a svg");
+  randomButtons.forEach(
+    (randomButton) =>
+      (randomButton.onclick = (e) => {
+        e.preventDefault();
+        let input;
         if (
-          pegarDifferenca([
-            e.target.previousSibling.previousSibling.value.toLowerCase(),
-          ]) &&
-          e.target.previousSibling.previousSibling.value.length > 0 &&
-          e.target.parentNode !== document.getElementById("reviewButton")
-        ) {
-          // if we didn't input a cuss word and our input isn't blank then we proceed by setting the data-properties that change how it's rendered
-          e.target.parentNode.setAttribute("data-completed", true); // sets data-completed to true
-          e.target.parentNode.setAttribute("data-inprogress", false); // sets data-inprogress to false
-          if (
-            e.target.parentNode.nextSibling !==
-              document.getElementById("reviewButton") &&
-            e.target.parentNode.nextSibling !==
-              document.getElementById("goMadButton")
-          ) {
-            // we check whether our nextSibling happens to be present at all, and also whether it is our reviewButton or goMadButton or not
-            e.target.parentNode.nextSibling.setAttribute(
-              "data-completed",
-              false
-            );
-            e.target.parentNode.nextSibling.setAttribute(
-              "data-inprogress",
-              true
-            ); // sets the next sibling's dataset to be completed: false, inprogress: true effectively rendering it on screen due to css
-            e.target.parentNode.nextSibling.firstChild.nextSibling.focus(); // sets the focus on the next input to appear (greatly improves mobile experience)
-          } else {
-            // creates two buttons at the bottom of the form
-            const reviewButton =
-              document.getElementById("reviewButton") ||
-              createEle("button", "&lt; Review", form); // Checks if we have a review button already or creates one
-            reviewButton.id = "reviewButton"; // defines the id of reviewButton so we can find it after it is made
-
-            const goMadButton =
-              document.getElementById("goMadButton") ||
-              createEle("button", "&gt; Go Mad!", form); // checks if we have a go mad button or creates one
-            goMadButton.id = "goMadButton"; // defines the id of the button to find later
-            reviewButton.onclick = (e) => {
-              e.preventDefault(); // prevents us from rendering the next screen when we press the button
-              reviewButton.classList.add("hide"); // hides the review button
-              goMadButton.classList.add("hide"); // hides the go mad button
-              inputContainers.forEach((input) => {
-                input.setAttribute("data-inprogress", false);
-                input.setAttribute("data-completed", false);
-              }); // loops through the inputs and sets all of their data-properties to false to restart the cycle
-              inputContainers[0].setAttribute("data-inprogress", true); // renders the first input on screen by setting the data property of inprogress to true (again css sets it's display now to block)
-            };
-            // removes the hide classes from buttons and renders them on screen
-            reviewButton.classList.remove("hide");
-            goMadButton.classList.remove("hide");
-          }
+          e.target.previousElementSibling !== null &&
+          e.target.previousElementSibling !== undefined
+        )
+          input = e.target.previousElementSibling;
+        else if (
+          e.target.parentNode.previousElementSibling !== null &&
+          e.target.parentNode.previousElementSibling !== undefined
+        )
+          input = e.target.parentNode.previousElementSibling;
+        if (input) {
+          input.value = "random";
+          setTimeout(() => input.parentNode.firstElementChild.nextElementSibling.nextElementSibling.click(), 500) 
         }
       })
   );
+  buttons.forEach((button) => {
+    button.onclick = (e) => {
+      // for each button listens for a click and runs this function when we press one
+      e.preventDefault(); // prevents us from submitting the form when we press the button
+      if (
+        pegarDifferenca([
+          e.target.previousElementSibling.previousElementSibling.value.toLowerCase(),
+        ]) &&
+        e.target.previousElementSibling.previousElementSibling.value.length >
+          0 &&
+        e.target.parentNode !== document.getElementById("reviewButton")
+      ) {
+        // if we didn't input a cuss word and our input isn't blank then we proceed by setting the data-properties that change how it's rendered
+        e.target.parentNode.setAttribute("data-completed", true); // sets data-completed to true
+        e.target.parentNode.setAttribute("data-inprogress", false); // sets data-inprogress to false
+        if (
+          e.target.parentNode.nextSibling !==
+            document.getElementById("reviewButton") &&
+          e.target.parentNode.nextSibling !==
+            document.getElementById("goMadButton")
+        ) {
+          // we check whether our nextSibling happens to be present at all, and also whether it is our reviewButton or goMadButton or not
+          e.target.parentNode.nextSibling.setAttribute("data-completed", false);
+          e.target.parentNode.nextSibling.setAttribute("data-inprogress", true); // sets the next sibling's dataset to be completed: false, inprogress: true effectively rendering it on screen due to css
+          e.target.parentNode.nextSibling.firstChild.nextSibling.focus(); // sets the focus on the next input to appear (greatly improves mobile experience)
+        } else {
+          // creates two buttons at the bottom of the form
+          const reviewButton =
+            document.getElementById("reviewButton") ||
+            createEle("button", "&lt; Review", form); // Checks if we have a review button already or creates one
+          reviewButton.id = "reviewButton"; // defines the id of reviewButton so we can find it after it is made
+
+          const goMadButton =
+            document.getElementById("goMadButton") ||
+            createEle("button", "&gt; Go Mad!", form); // checks if we have a go mad button or creates one
+          goMadButton.id = "goMadButton"; // defines the id of the button to find later
+          reviewButton.onclick = (e) => {
+            e.preventDefault(); // prevents us from rendering the next screen when we press the button
+            reviewButton.classList.add("hide"); // hides the review button
+            goMadButton.classList.add("hide"); // hides the go mad button
+            inputContainers.forEach((input) => {
+              input.setAttribute("data-inprogress", false);
+              input.setAttribute("data-completed", false);
+            }); // loops through the inputs and sets all of their data-properties to false to restart the cycle
+            inputContainers[0].setAttribute("data-inprogress", true); // renders the first input on screen by setting the data property of inprogress to true (again css sets it's display now to block)
+          };
+          // removes the hide classes from buttons and renders them on screen
+          reviewButton.classList.remove("hide");
+          goMadButton.classList.remove("hide");
+        }
+      }
+    };
+  });
 
   // calls the renderFooter function passing in this page
   renderFooter("InputPage");
