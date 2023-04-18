@@ -35,7 +35,7 @@ export const getGitHubUser = async (username) =>
     .then((json) => json); // function to fetch a github user profile and return it
 
 export const randomWords = (type) => {
-  const combined = [speech[0].adjectives,speech[1].nouns,speech[2].verbs,speech[3].names,speech[4].colors,speech[5].places, speech[6].flavors, speech[7].foods, speech[8].animals]
+  const combined = [speech[0].adjectives,speech[1].nouns,speech[2].verbs,speech[3].names,speech[4].colors,speech[5].places, speech[6].flavors, speech[7].foods, speech[8].animals, speech[9].pronouns]
   const randomCat = combined[Math.floor(Math.random() * combined.length)];
   const randomWord = randomCat[Math.floor(Math.random() * randomCat.length)];
   const randomAdj =
@@ -53,6 +53,7 @@ export const randomWords = (type) => {
     const randomFlavor = speech[6].flavors[Math.floor(Math.random() * speech[6].flavors.length)];
     const randomFood = speech[7].foods[Math.floor(Math.random() * speech[7].foods.length)];
     const randomAnimal = speech[8].foods[Math.floor(Math.random() * speech[8].animals.length)]
+    const randomPronoun = speech[9].pronouns[Math.floor(Math.random() * speech[9].pronouns.length)]
   // declare a switch statement on type of speech
   switch (type) {
     case "number":
@@ -84,6 +85,9 @@ export const randomWords = (type) => {
       break;
       case "animal":
       return randomAnimal;
+      break;
+      case "pronoun":
+      return randomPronoun;
       break;
     default:
       return randomWord // random noun adj verb name color or place
