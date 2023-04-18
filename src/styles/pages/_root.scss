@@ -23,6 +23,9 @@
   height: 100vh;
   overflow: hidden;
   z-index: -1;
+  background: linear-gradient(45deg, $color-primary, $color-tertiary);
+  background-attachment: fixed;
+  animation: hue-rotate 20000s infinite;
 }
 
 .flex {
