@@ -7,15 +7,26 @@ form {
     margin: 1em auto;
     padding: 1rem;
     a {
-      position: absolute;
-      top: 0;
-      right: 0;
+     position: absolute;
+      @media only screen and (max-width: 500px) {
+        top:43%;
+        right: 14%;
+        height: 1.25em;
+        width: 1.25em;
+      }
+      @media only screen and (min-width: 501px) {
+        top: 0;
+        right: 0;
+      }
+
       svg {
-        height: 3em;
-        margin: 1em 1.5em;
+        @media only screen and (min-width: 501px) {
+          height: 3em;
+          margin: 1em 1.5em;
+        }
         filter: invert(1);
-        transition: all .25s;
-        &:hover{
+        transition: all 0.25s;
+        &:hover {
           cursor: pointer;
           filter: invert(0);
         }
