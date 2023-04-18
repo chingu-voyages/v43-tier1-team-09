@@ -13,7 +13,8 @@
 }
 // css to cause our input divs to appear when they are i progress
 div[data-completed=false][data-inprogress=true]{
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 // css to hide our div inputs when they are no not in porgress
 .hide, div[data-completed=true], div[data-inprogress=false] {
