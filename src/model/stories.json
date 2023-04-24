@@ -30,7 +30,7 @@
     "Category": "Celebration",
     "Word Count": 86,
     "Scenario_title": "Birthday Party Fun!",
-    "Scenario": "Yesterday I went to {{personsName}} birthday party. I got him/her a {{noun}}. The party was {{adjective}}. We started by playing {{activity}} and then there was a {{verb}} party. Lots of my friends were there but I mostly hung out with {{anotherPersonsName}}. We talked about {{secondNoun}} and how our friend {{personsName}} is a {{thirdNoun}}. During the cake everyone {{pastTenseVerb}} and sang {{songName}}. I had a {{secondAdjective}} time at the party and enjoyed celebrating {{personsName}}. He/she is such a {{thirdAdjective}} friend.",
+    "Scenario": "Yesterday I went to {{personsName}}'s birthday party. I got him/her a {{noun}}. The party was {{adjective}}. We started by playing {{activity}} and then there was a {{verb}} party. Lots of my friends were there but I mostly hung out with {{anotherPersonsName}}. We talked about {{secondNoun}} and how our friend {{personsName}} is a {{thirdNoun}}. During the cake everyone {{pastTenseVerb}} and sang {{songName}}. I had a {{secondAdjective}} time at the party and enjoyed celebrating {{personsName}}. He/she is such a {{thirdAdjective}} friend.",
     "Source": "Gabriela",
     "Variables": {
       "personsName": "Person's name",
