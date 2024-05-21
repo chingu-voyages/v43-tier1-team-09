@@ -1,0 +1,37 @@
+{
+    "project": "Daily Task App - Voyage 43 Tier 1 Team 09",
+    "description": "A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program, following the Agile Methodology to build a web app that utilizes a Model View Controller (MVC) pattern. The game consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.",
+    "position": "Developer / Product Owner",
+    "image": "./docs/Images/screenshot.png",
+    "language": {
+      "reason": "The Minimum Viable Product of this application allows users to create tasks, assign them a date, priority, frequency, and track their completion. ",
+      "language": ["Figma", "Python", "html", "SASS","Webpack", "Modular Javascript", "model view controller", "scrum"]
+    },
+    "project_goal": [
+      {
+        "title": "Optimal Layout",
+        "goal": "See focus and hover states for all interactive elements on the page.",
+        "description": "Automatically display the optimal interface layout based on the user's device screen size for an enhanced viewing experience."
+      },
+      {
+        "title": "Interactive Elements",
+        "goal": "See focus and hover states for all interactive elements on the page.",
+        "description": "Observe the focus and hover states for all interactive elements on the page. This allows you to identify and interact with clickable components more effectively."
+      },
+      {
+        "title": "Mad Lib Generation",
+        "goal": "View a Madlib story after submitting a valid data through the form.",
+        "description": "Our users could click on a Madlib story after submitting valid data through the form. This feature generates a customized narrative based on the information provided."
+      }
+    ],
+    "visual_identification": {
+      "reason": "Our project aimed to develop a user-friendly interface that could handle complex task management requirements while maintaining simplicity and ease of use. We adopted a clean and intuitive design that prioritized user experience and functionality, ensuring that users could easily manage their tasks and improve productivity. We later implemented a dark mode feature to enhance user experience and reduce eye strain during extended use.",
+      "fonts": ["roboto", "monospace", "sans-serif"],
+      "colors": ["blue", "gray", "green"]
+    },
+    "challenge_solution": {
+      "challenge": "The obvious challenge we faced was implementing the Madlib generation feature, which required us to create a form that could accept user input and generate a story based on the data provided. We overcame this challenge by creating a form that could accept user input and generate a story based on the data provided. We also implemented a validation system to ensure that users could only submit valid data, preventing errors and ensuring a seamless user experience. This was the easy part. We did not have a Product Owner or a Scrum Master on board and it was also the first time for most of us to be working on a project on a team. We had to learn how to work together as a team, communicate effectively, and manage our time efficiently to meet our deadlines. We also had to learn how to use new tools and technologies, such as Figma, Python, and Webpack, which added to the complexity of the project. Despite these challenges, we were able to successfully complete the project and deliver a high-quality product that met the requirements of our stakeholders.",
+      "solution": "The solution that I came up with was to jump in as the Product Owner and learn what it took to manage a team. Luckily I already had some skills in leadership and group dynamics so that was to my advantage. The team was very supportive and we all worked together to overcome the challenges we faced. We communicated regularly, held daily stand-up meetings, and used Github Projects to track our progress and manage our tasks. We also divided the work into smaller tasks and assigned them to team members based on their skills and expertise. This helped us to work more efficiently and meet our deadlines. We also used pair programming and code reviews to ensure that the code was of high quality and met the requirements of our stakeholders. Overall, I believe that the key to our success was effective communication, collaboration, and teamwork. By working together and supporting each other, we were able to overcome the challenges we faced and deliver a high-quality product that met the requirements of the Voyage program. I am proud of what we accomplished and grateful for the opportunity to work with such a talented and dedicated team."
+    },
+    "wireframe": "./docs/Images/wireframe.png"
+}
