@@ -1,10 +1,10 @@
 {
-    "project": "Daily Task App - Voyage 43 Tier 1 Team 09",
+    "project": "Mad Libs Number 9 - Voyage 43 Tier 1 Team 09",
     "description": "A collaborative attempt at creating a Mad Libs Word Game as part of the Chingu Voyage program, following the Agile Methodology to build a web app that utilizes a Model View Controller (MVC) pattern. The game consists of one player prompting a list of words to substitute for blanks in a story before reading aloud.",
     "position": "Developer / Product Owner",
     "image": "./docs/Images/screenshot.png",
     "language": {
-      "reason": "The Minimum Viable Product of this application allows users to create tasks, assign them a date, priority, frequency, and track their completion. ",
+      "reason": "The Minimum Viable Product of this application allows users to participate in a Mad Libs game where they input words and get a fun story to tell. ",
       "language": ["Figma", "Python", "html", "SASS","Webpack", "Modular Javascript", "model view controller", "scrum"]
     },
     "project_goal": [
